@@ -1,0 +1,394 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>libOSS: OSS::ObjectMetadata类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">libOSS
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">igis.me</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.2 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespace_o_s_s.html">OSS</a></li><li class="navelem"><a class="el" href="class_o_s_s_1_1_object_metadata.html">ObjectMetadata</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="class_o_s_s_1_1_object_metadata-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">OSS::ObjectMetadata类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Object元数据对象类  
+ <a href="class_o_s_s_1_1_object_metadata.html#details">更多...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a030b5c18104ec9bfccf53b1e84f3d1a1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_object_metadata.html#a030b5c18104ec9bfccf53b1e84f3d1a1">ObjectMetadata</a> (void)</td></tr>
+<tr class="separator:a030b5c18104ec9bfccf53b1e84f3d1a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19b2e5db57b8be22493ae4e3b90519ad"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_object_metadata.html#a19b2e5db57b8be22493ae4e3b90519ad">~ObjectMetadata</a> (void)</td></tr>
+<tr class="separator:a19b2e5db57b8be22493ae4e3b90519ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae290d3ba9634758e8c1baabc9205e2d2"><td class="memItemLeft" align="right" valign="top">map&lt; string, string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_object_metadata.html#ae290d3ba9634758e8c1baabc9205e2d2">GetUserMetadata</a> ()</td></tr>
+<tr class="separator:ae290d3ba9634758e8c1baabc9205e2d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5ce43871b50bdf987b96bcc755e25d6"><td class="memItemLeft" align="right" valign="top">map&lt; string, string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_object_metadata.html#ab5ce43871b50bdf987b96bcc755e25d6">GetMetadata</a> ()</td></tr>
+<tr class="separator:ab5ce43871b50bdf987b96bcc755e25d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a069f4c031d58761fb099d0297793b7a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_object_metadata.html#a069f4c031d58761fb099d0297793b7a8">AddHeader</a> (string key, string value)</td></tr>
+<tr class="separator:a069f4c031d58761fb099d0297793b7a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afba2e0d6ef3aca8c75469dfa1a552346"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_object_metadata.html#afba2e0d6ef3aca8c75469dfa1a552346">AddUserMetadata</a> (string key, string value)</td></tr>
+<tr class="separator:afba2e0d6ef3aca8c75469dfa1a552346"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a4b4c360b399e90e40ad3a624940d0d68"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_object_metadata.html#a4b4c360b399e90e40ad3a624940d0d68">lastModified</a></td></tr>
+<tr class="separator:a4b4c360b399e90e40ad3a624940d0d68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3b99dc70f61928598f3a75290d0070c"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_object_metadata.html#aa3b99dc70f61928598f3a75290d0070c">expirationTime</a></td></tr>
+<tr class="separator:aa3b99dc70f61928598f3a75290d0070c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf063820bcff11f8376274312e3f2530"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_object_metadata.html#aaf063820bcff11f8376274312e3f2530">contentLength</a></td></tr>
+<tr class="separator:aaf063820bcff11f8376274312e3f2530"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedcfebde809522f5e6955c5dbed06517"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_object_metadata.html#aedcfebde809522f5e6955c5dbed06517">contentType</a></td></tr>
+<tr class="separator:aedcfebde809522f5e6955c5dbed06517"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b32405ed90aaabe090c24dcf649d3ee"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_object_metadata.html#a3b32405ed90aaabe090c24dcf649d3ee">contentEncoding</a></td></tr>
+<tr class="separator:a3b32405ed90aaabe090c24dcf649d3ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a702b0a30f1f4ec473ff33d67f1f5c9b1"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_object_metadata.html#a702b0a30f1f4ec473ff33d67f1f5c9b1">cacheControl</a></td></tr>
+<tr class="separator:a702b0a30f1f4ec473ff33d67f1f5c9b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2596a5508b7f9932a3be21a0a6768d4"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_object_metadata.html#af2596a5508b7f9932a3be21a0a6768d4">contentDisposition</a></td></tr>
+<tr class="separator:af2596a5508b7f9932a3be21a0a6768d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bc6960e0478553cd8c02c7a2488ee13"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_object_metadata.html#a8bc6960e0478553cd8c02c7a2488ee13">eTag</a></td></tr>
+<tr class="separator:a8bc6960e0478553cd8c02c7a2488ee13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>Object元数据对象类 </p>
+
+<p>在文件 <a class="el" href="_object_metadata_8h_source.html">ObjectMetadata.h</a> 第 <a class="el" href="_object_metadata_8h_source.html#l00037">37</a> 行定义.</p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="a030b5c18104ec9bfccf53b1e84f3d1a1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OSS::ObjectMetadata::ObjectMetadata </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_object_metadata_8cpp_source.html">ObjectMetadata.cpp</a> 第 <a class="el" href="_object_metadata_8cpp_source.html#l00023">23</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a19b2e5db57b8be22493ae4e3b90519ad"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OSS::ObjectMetadata::~ObjectMetadata </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_object_metadata_8cpp_source.html">ObjectMetadata.cpp</a> 第 <a class="el" href="_object_metadata_8cpp_source.html#l00029">29</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="a069f4c031d58761fb099d0297793b7a8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OSS::ObjectMetadata::AddHeader </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_object_metadata_8cpp_source.html">ObjectMetadata.cpp</a> 第 <a class="el" href="_object_metadata_8cpp_source.html#l00040">40</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="afba2e0d6ef3aca8c75469dfa1a552346"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OSS::ObjectMetadata::AddUserMetadata </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_object_metadata_8cpp_source.html">ObjectMetadata.cpp</a> 第 <a class="el" href="_object_metadata_8cpp_source.html#l00044">44</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab5ce43871b50bdf987b96bcc755e25d6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">map&lt; string, string &gt; OSS::ObjectMetadata::GetMetadata </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_object_metadata_8cpp_source.html">ObjectMetadata.cpp</a> 第 <a class="el" href="_object_metadata_8cpp_source.html#l00036">36</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae290d3ba9634758e8c1baabc9205e2d2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">map&lt; string, string &gt; OSS::ObjectMetadata::GetUserMetadata </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_object_metadata_8cpp_source.html">ObjectMetadata.cpp</a> 第 <a class="el" href="_object_metadata_8cpp_source.html#l00032">32</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="a702b0a30f1f4ec473ff33d67f1f5c9b1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string OSS::ObjectMetadata::cacheControl</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_object_metadata_8h_source.html">ObjectMetadata.h</a> 第 <a class="el" href="_object_metadata_8h_source.html#l00051">51</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="af2596a5508b7f9932a3be21a0a6768d4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string OSS::ObjectMetadata::contentDisposition</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_object_metadata_8h_source.html">ObjectMetadata.h</a> 第 <a class="el" href="_object_metadata_8h_source.html#l00052">52</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3b32405ed90aaabe090c24dcf649d3ee"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string OSS::ObjectMetadata::contentEncoding</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_object_metadata_8h_source.html">ObjectMetadata.h</a> 第 <a class="el" href="_object_metadata_8h_source.html#l00050">50</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="aaf063820bcff11f8376274312e3f2530"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long OSS::ObjectMetadata::contentLength</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_object_metadata_8h_source.html">ObjectMetadata.h</a> 第 <a class="el" href="_object_metadata_8h_source.html#l00048">48</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="aedcfebde809522f5e6955c5dbed06517"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string OSS::ObjectMetadata::contentType</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_object_metadata_8h_source.html">ObjectMetadata.h</a> 第 <a class="el" href="_object_metadata_8h_source.html#l00049">49</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8bc6960e0478553cd8c02c7a2488ee13"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string OSS::ObjectMetadata::eTag</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_object_metadata_8h_source.html">ObjectMetadata.h</a> 第 <a class="el" href="_object_metadata_8h_source.html#l00053">53</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa3b99dc70f61928598f3a75290d0070c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string OSS::ObjectMetadata::expirationTime</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_object_metadata_8h_source.html">ObjectMetadata.h</a> 第 <a class="el" href="_object_metadata_8h_source.html#l00047">47</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4b4c360b399e90e40ad3a624940d0d68"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string OSS::ObjectMetadata::lastModified</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_object_metadata_8h_source.html">ObjectMetadata.h</a> 第 <a class="el" href="_object_metadata_8h_source.html#l00046">46</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>project/libOSS/libOSS/<a class="el" href="_object_metadata_8h_source.html">ObjectMetadata.h</a></li>
+<li>project/libOSS/libOSS/<a class="el" href="_object_metadata_8cpp_source.html">ObjectMetadata.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2012年 九月 28日 星期五 14:56:23 , 为 libOSS使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.2
+</small></address>
+</body>
+</html>

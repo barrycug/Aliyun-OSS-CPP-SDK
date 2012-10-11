@@ -1,0 +1,899 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>libOSS: OSS::OSSObjectOperation类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">libOSS
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">igis.me</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.2 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespace_o_s_s.html">OSS</a></li><li class="navelem"><a class="el" href="class_o_s_s_1_1_o_s_s_object_operation.html">OSSObjectOperation</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="class_o_s_s_1_1_o_s_s_object_operation-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">OSS::OSSObjectOperation类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Object相关操作  
+ <a href="class_o_s_s_1_1_o_s_s_object_operation.html#details">更多...</a></p>
+
+<p>继承自 <a class="el" href="class_o_s_s_1_1_o_s_s_operation.html">OSS::OSSOperation</a> .</p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a95ef910969640239c1b3fa3823857995"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_object_operation.html#a95ef910969640239c1b3fa3823857995">OSSObjectOperation</a> (string &amp;endpoint, <a class="el" href="class_o_s_s_1_1_service_credentials.html">ServiceCredentials</a> &amp;serviceCredentials, <a class="el" href="class_o_s_s_1_1_default_service_client.html">DefaultServiceClient</a> *client)</td></tr>
+<tr class="separator:a95ef910969640239c1b3fa3823857995"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a708547797ca14486e5378acfcb79f6de"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_object_operation.html#a708547797ca14486e5378acfcb79f6de">~OSSObjectOperation</a> (void)</td></tr>
+<tr class="separator:a708547797ca14486e5378acfcb79f6de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0765b37b828f5ee44b04fe93188f54ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_object_operation.html#a0765b37b828f5ee44b04fe93188f54ea">PutObject</a> (string &amp;bucketName, string &amp;key, char *<a class="el" href="struct_o_s_s_1_1data.html">data</a>, long dataLength, <a class="el" href="class_o_s_s_1_1_object_metadata.html">ObjectMetadata</a> &amp;objectMetadata, <a class="el" href="class_o_s_s_1_1_put_object_result.html">PutObjectResult</a> &amp;result)</td></tr>
+<tr class="separator:a0765b37b828f5ee44b04fe93188f54ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa905cf657473231753ebe2216f40a531"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_object_operation.html#aa905cf657473231753ebe2216f40a531">FetchObject</a> (string &amp;bucketName, string &amp;key, <a class="el" href="class_o_s_s_1_1_o_s_s_object.html">OSSObject</a> &amp;object)</td></tr>
+<tr class="separator:aa905cf657473231753ebe2216f40a531"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99b04b32ea91e4ab8943c3355a74dd74"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_object_operation.html#a99b04b32ea91e4ab8943c3355a74dd74">FetchObject</a> (<a class="el" href="class_o_s_s_1_1_fetch_object_request.html">FetchObjectRequest</a> &amp;<a class="el" href="class_o_s_s_1_1_o_s_s_operation.html#a82b9245da50d7e05f3684464a2c3d916">request</a>, <a class="el" href="class_o_s_s_1_1_o_s_s_object.html">OSSObject</a> &amp;object)</td></tr>
+<tr class="separator:a99b04b32ea91e4ab8943c3355a74dd74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d6dd81141f2c31619920fe770e944af"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_object_operation.html#a6d6dd81141f2c31619920fe770e944af">FetchObject</a> (string &amp;bucketName, string &amp;key, string &amp;filePath)</td></tr>
+<tr class="separator:a6d6dd81141f2c31619920fe770e944af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a348b2bb41f79c2ebc83d896b3ecb97da"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_object_operation.html#a348b2bb41f79c2ebc83d896b3ecb97da">FetchObject</a> (<a class="el" href="class_o_s_s_1_1_fetch_object_request.html">FetchObjectRequest</a> &amp;<a class="el" href="class_o_s_s_1_1_o_s_s_operation.html#a82b9245da50d7e05f3684464a2c3d916">request</a>, string &amp;filePath)</td></tr>
+<tr class="separator:a348b2bb41f79c2ebc83d896b3ecb97da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d384e4a65236e4256d13d6b4d681427"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_object_operation.html#a2d384e4a65236e4256d13d6b4d681427">GetObjectMetadata</a> (string &amp;bucketName, string &amp;key, <a class="el" href="class_o_s_s_1_1_object_metadata.html">ObjectMetadata</a> &amp;objectMetadata)</td></tr>
+<tr class="separator:a2d384e4a65236e4256d13d6b4d681427"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af10e7cb28d4e4eae0941ff8fa3514aa9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_object_operation.html#af10e7cb28d4e4eae0941ff8fa3514aa9">CopyObject</a> (<a class="el" href="class_o_s_s_1_1_copy_object_request.html">CopyObjectRequest</a> &amp;<a class="el" href="class_o_s_s_1_1_o_s_s_operation.html#a82b9245da50d7e05f3684464a2c3d916">request</a>, <a class="el" href="class_o_s_s_1_1_copy_object_result.html">CopyObjectResult</a> &amp;result)</td></tr>
+<tr class="separator:af10e7cb28d4e4eae0941ff8fa3514aa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e5e78b11f5e557833650cfae075da1a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_object_operation.html#a8e5e78b11f5e557833650cfae075da1a">DeleteObject</a> (string &amp;bucketName, string &amp;key)</td></tr>
+<tr class="separator:a8e5e78b11f5e557833650cfae075da1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5afacfa31d3bcc44aa982a272fa6a5c6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_object_operation.html#a5afacfa31d3bcc44aa982a272fa6a5c6">DeleteMultipleObjects</a> (string &amp;bucketName, vector&lt; string &gt; &amp;objNames, bool isQuiet, <a class="el" href="class_o_s_s_1_1_delete_objects_result.html">DeleteObjectsResult</a> &amp;result)</td></tr>
+<tr class="separator:a5afacfa31d3bcc44aa982a272fa6a5c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef8cc631db2fb300261b4d001d15fff8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_object_operation.html#aef8cc631db2fb300261b4d001d15fff8">PutObject_Async</a> (string &amp;bucketName, string &amp;key, char *<a class="el" href="struct_o_s_s_1_1data.html">data</a>, long dataLength, <a class="el" href="class_o_s_s_1_1_object_metadata.html">ObjectMetadata</a> &amp;objectMetadata)</td></tr>
+<tr class="separator:aef8cc631db2fb300261b4d001d15fff8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0de04286b050426e4775c85fa9b7848"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_object_operation.html#aa0de04286b050426e4775c85fa9b7848">FetchObject_Async</a> (string &amp;bucketName, string &amp;key)</td></tr>
+<tr class="separator:aa0de04286b050426e4775c85fa9b7848"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a088db703b94e2ebec0ee79cb17cd05a2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_object_operation.html#a088db703b94e2ebec0ee79cb17cd05a2">FetchObject_Async</a> (<a class="el" href="class_o_s_s_1_1_fetch_object_request.html">FetchObjectRequest</a> &amp;<a class="el" href="class_o_s_s_1_1_o_s_s_operation.html#a82b9245da50d7e05f3684464a2c3d916">request</a>)</td></tr>
+<tr class="separator:a088db703b94e2ebec0ee79cb17cd05a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cb2068dc723bd55f33addd92b902bbf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_object_operation.html#a8cb2068dc723bd55f33addd92b902bbf">FetchObject_Async</a> (string &amp;bucketName, string &amp;key, string &amp;filePath)</td></tr>
+<tr class="separator:a8cb2068dc723bd55f33addd92b902bbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a280c04507703b104fbaa061a5c65318f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_object_operation.html#a280c04507703b104fbaa061a5c65318f">FetchObject_Async</a> (<a class="el" href="class_o_s_s_1_1_fetch_object_request.html">FetchObjectRequest</a> &amp;<a class="el" href="class_o_s_s_1_1_o_s_s_operation.html#a82b9245da50d7e05f3684464a2c3d916">request</a>, string &amp;filePath)</td></tr>
+<tr class="separator:a280c04507703b104fbaa061a5c65318f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa045281501ddee9fe02afc6018fd4fdd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_object_operation.html#aa045281501ddee9fe02afc6018fd4fdd">GetObjectMetadata_Async</a> (string &amp;bucketName, string &amp;key)</td></tr>
+<tr class="separator:aa045281501ddee9fe02afc6018fd4fdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a491f3b956a3a8a3c1244c57a1f92bbc2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_object_operation.html#a491f3b956a3a8a3c1244c57a1f92bbc2">CopyObject_Async</a> (<a class="el" href="class_o_s_s_1_1_copy_object_request.html">CopyObjectRequest</a> &amp;<a class="el" href="class_o_s_s_1_1_o_s_s_operation.html#a82b9245da50d7e05f3684464a2c3d916">request</a>)</td></tr>
+<tr class="separator:a491f3b956a3a8a3c1244c57a1f92bbc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a371e50b6f92ad6b262d5c16fcef64dd9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_object_operation.html#a371e50b6f92ad6b262d5c16fcef64dd9">DeleteObject_Async</a> (string &amp;bucketName, string &amp;key)</td></tr>
+<tr class="separator:a371e50b6f92ad6b262d5c16fcef64dd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4aaf735105fb2be30ead9dca3bd31ba"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_object_operation.html#ac4aaf735105fb2be30ead9dca3bd31ba">DeleteMultipleObjects_Async</a> (string &amp;bucketName, vector&lt; string &gt; &amp;objNames, bool isQuiet)</td></tr>
+<tr class="separator:ac4aaf735105fb2be30ead9dca3bd31ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7ebe46e02624bdf5a33c647f536022f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_object_operation.html#af7ebe46e02624bdf5a33c647f536022f">serviceClientRequestFinished</a> (<a class="el" href="class_o_s_s_1_1_default_service_client.html">DefaultServiceClient</a> *defaultServiceClient, <a class="el" href="class_o_s_s_1_1_response_message.html">ResponseMessage</a> &amp;responseMessage)</td></tr>
+<tr class="separator:af7ebe46e02624bdf5a33c647f536022f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45070c32b4960cf80593f1b298a273d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_object_operation.html#a45070c32b4960cf80593f1b298a273d5">serviceClientRequestFailed</a> (<a class="el" href="class_o_s_s_1_1_default_service_client.html">DefaultServiceClient</a> *defaultServiceClient, <a class="el" href="class_o_s_s_1_1_response_message.html">ResponseMessage</a> &amp;responseMessage)</td></tr>
+<tr class="separator:a45070c32b4960cf80593f1b298a273d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_o_s_s_1_1_o_s_s_operation"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_o_s_s_1_1_o_s_s_operation')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="class_o_s_s_1_1_o_s_s_operation.html">OSS::OSSOperation</a></td></tr>
+<tr class="memitem:a98416f14de4c589ccca5dbd58cb63ea8 inherit pub_methods_class_o_s_s_1_1_o_s_s_operation"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_operation.html#a98416f14de4c589ccca5dbd58cb63ea8">OSSOperation</a> (string &amp;ednpoint, <a class="el" href="class_o_s_s_1_1_service_credentials.html">ServiceCredentials</a> &amp;serviceCredentials, <a class="el" href="class_o_s_s_1_1_default_service_client.html">DefaultServiceClient</a> *client)</td></tr>
+<tr class="separator:a98416f14de4c589ccca5dbd58cb63ea8 inherit pub_methods_class_o_s_s_1_1_o_s_s_operation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ea326408145abf832cc7b772e5f616d inherit pub_methods_class_o_s_s_1_1_o_s_s_operation"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_operation.html#a1ea326408145abf832cc7b772e5f616d">~OSSOperation</a> (void)</td></tr>
+<tr class="separator:a1ea326408145abf832cc7b772e5f616d inherit pub_methods_class_o_s_s_1_1_o_s_s_operation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a5987fc1513d74f321d886a5220aab1d6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_s_s_1_1_o_s_s_object_operation_callback.html">OSSObjectOperationCallback</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_object_operation.html#a5987fc1513d74f321d886a5220aab1d6">delegate</a></td></tr>
+<tr class="separator:a5987fc1513d74f321d886a5220aab1d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pro_methods_class_o_s_s_1_1_o_s_s_operation"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_o_s_s_1_1_o_s_s_operation')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el" href="class_o_s_s_1_1_o_s_s_operation.html">OSS::OSSOperation</a></td></tr>
+<tr class="memitem:a82b9245da50d7e05f3684464a2c3d916 inherit pro_methods_class_o_s_s_1_1_o_s_s_operation"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_s_s_1_1_response_message.html">ResponseMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_operation.html#a82b9245da50d7e05f3684464a2c3d916">request</a> (<a class="el" href="_o_s_s_api_8h.html#a4353a75834bb35c4acd80b51434eef59">HttpMethod</a> httpMethod, string bucketName, string objName, map&lt; string, string &gt; headers, map&lt; string, string &gt; params, char *content, long contentLength, map&lt; string, string &gt; userInfo)</td></tr>
+<tr class="separator:a82b9245da50d7e05f3684464a2c3d916 inherit pro_methods_class_o_s_s_1_1_o_s_s_operation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac206d99fee13473771f6328eb296e71d inherit pro_methods_class_o_s_s_1_1_o_s_s_operation"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_operation.html#ac206d99fee13473771f6328eb296e71d">request_Async</a> (<a class="el" href="_o_s_s_api_8h.html#a4353a75834bb35c4acd80b51434eef59">HttpMethod</a> httpMethod, string bucketName, string objName, map&lt; string, string &gt; headers, map&lt; string, string &gt; params, char *content, long contentLength, map&lt; string, string &gt; userInfo)</td></tr>
+<tr class="separator:ac206d99fee13473771f6328eb296e71d inherit pro_methods_class_o_s_s_1_1_o_s_s_operation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>Object相关操作 </p>
+
+<p>在文件 <a class="el" href="_o_s_s_object_operation_8h_source.html">OSSObjectOperation.h</a> 第 <a class="el" href="_o_s_s_object_operation_8h_source.html#l00044">44</a> 行定义.</p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="a95ef910969640239c1b3fa3823857995"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OSS::OSSObjectOperation::OSSObjectOperation </td>
+          <td>(</td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>endpoint</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_service_credentials.html">ServiceCredentials</a> &amp;&#160;</td>
+          <td class="paramname"><em>serviceCredentials</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_default_service_client.html">DefaultServiceClient</a> *&#160;</td>
+          <td class="paramname"><em>client</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_o_s_s_object_operation_8cpp_source.html">OSSObjectOperation.cpp</a> 第 <a class="el" href="_o_s_s_object_operation_8cpp_source.html#l00030">30</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a708547797ca14486e5378acfcb79f6de"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OSS::OSSObjectOperation::~OSSObjectOperation </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_o_s_s_object_operation_8cpp_source.html">OSSObjectOperation.cpp</a> 第 <a class="el" href="_o_s_s_object_operation_8cpp_source.html#l00036">36</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="af10e7cb28d4e4eae0941ff8fa3514aa9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a> OSS::OSSObjectOperation::CopyObject </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_copy_object_request.html">CopyObjectRequest</a> &amp;&#160;</td>
+          <td class="paramname"><em>request</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_copy_object_result.html">CopyObjectResult</a> &amp;&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_o_s_s_object_operation_8cpp_source.html">OSSObjectOperation.cpp</a> 第 <a class="el" href="_o_s_s_object_operation_8cpp_source.html#l00255">255</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a491f3b956a3a8a3c1244c57a1f92bbc2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool OSS::OSSObjectOperation::CopyObject_Async </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_copy_object_request.html">CopyObjectRequest</a> &amp;&#160;</td>
+          <td class="paramname"><em>request</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_o_s_s_object_operation_8cpp_source.html">OSSObjectOperation.cpp</a> 第 <a class="el" href="_o_s_s_object_operation_8cpp_source.html#l00534">534</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5afacfa31d3bcc44aa982a272fa6a5c6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a> OSS::OSSObjectOperation::DeleteMultipleObjects </td>
+          <td>(</td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>bucketName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector&lt; string &gt; &amp;&#160;</td>
+          <td class="paramname"><em>objNames</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isQuiet</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_delete_objects_result.html">DeleteObjectsResult</a> &amp;&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_o_s_s_object_operation_8cpp_source.html">OSSObjectOperation.cpp</a> 第 <a class="el" href="_o_s_s_object_operation_8cpp_source.html#l00345">345</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac4aaf735105fb2be30ead9dca3bd31ba"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool OSS::OSSObjectOperation::DeleteMultipleObjects_Async </td>
+          <td>(</td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>bucketName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector&lt; string &gt; &amp;&#160;</td>
+          <td class="paramname"><em>objNames</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isQuiet</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_o_s_s_object_operation_8cpp_source.html">OSSObjectOperation.cpp</a> 第 <a class="el" href="_o_s_s_object_operation_8cpp_source.html#l00568">568</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8e5e78b11f5e557833650cfae075da1a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a> OSS::OSSObjectOperation::DeleteObject </td>
+          <td>(</td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>bucketName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>key</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_o_s_s_object_operation_8cpp_source.html">OSSObjectOperation.cpp</a> 第 <a class="el" href="_o_s_s_object_operation_8cpp_source.html#l00318">318</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a371e50b6f92ad6b262d5c16fcef64dd9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool OSS::OSSObjectOperation::DeleteObject_Async </td>
+          <td>(</td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>bucketName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>key</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_o_s_s_object_operation_8cpp_source.html">OSSObjectOperation.cpp</a> 第 <a class="el" href="_o_s_s_object_operation_8cpp_source.html#l00554">554</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa905cf657473231753ebe2216f40a531"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a> OSS::OSSObjectOperation::FetchObject </td>
+          <td>(</td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>bucketName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_o_s_s_object.html">OSSObject</a> &amp;&#160;</td>
+          <td class="paramname"><em>object</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_o_s_s_object_operation_8cpp_source.html">OSSObjectOperation.cpp</a> 第 <a class="el" href="_o_s_s_object_operation_8cpp_source.html#l00071">71</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a99b04b32ea91e4ab8943c3355a74dd74"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a> OSS::OSSObjectOperation::FetchObject </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_fetch_object_request.html">FetchObjectRequest</a> &amp;&#160;</td>
+          <td class="paramname"><em>request</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_o_s_s_object.html">OSSObject</a> &amp;&#160;</td>
+          <td class="paramname"><em>object</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_o_s_s_object_operation_8cpp_source.html">OSSObjectOperation.cpp</a> 第 <a class="el" href="_o_s_s_object_operation_8cpp_source.html#l00078">78</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6d6dd81141f2c31619920fe770e944af"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a> OSS::OSSObjectOperation::FetchObject </td>
+          <td>(</td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>bucketName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>filePath</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_o_s_s_object_operation_8cpp_source.html">OSSObjectOperation.cpp</a> 第 <a class="el" href="_o_s_s_object_operation_8cpp_source.html#l00144">144</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a348b2bb41f79c2ebc83d896b3ecb97da"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a> OSS::OSSObjectOperation::FetchObject </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_fetch_object_request.html">FetchObjectRequest</a> &amp;&#160;</td>
+          <td class="paramname"><em>request</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>filePath</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_o_s_s_object_operation_8cpp_source.html">OSSObjectOperation.cpp</a> 第 <a class="el" href="_o_s_s_object_operation_8cpp_source.html#l00151">151</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa0de04286b050426e4775c85fa9b7848"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool OSS::OSSObjectOperation::FetchObject_Async </td>
+          <td>(</td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>bucketName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>key</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_o_s_s_object_operation_8cpp_source.html">OSSObjectOperation.cpp</a> 第 <a class="el" href="_o_s_s_object_operation_8cpp_source.html#l00406">406</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a088db703b94e2ebec0ee79cb17cd05a2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool OSS::OSSObjectOperation::FetchObject_Async </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_fetch_object_request.html">FetchObjectRequest</a> &amp;&#160;</td>
+          <td class="paramname"><em>request</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_o_s_s_object_operation_8cpp_source.html">OSSObjectOperation.cpp</a> 第 <a class="el" href="_o_s_s_object_operation_8cpp_source.html#l00413">413</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8cb2068dc723bd55f33addd92b902bbf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool OSS::OSSObjectOperation::FetchObject_Async </td>
+          <td>(</td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>bucketName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>filePath</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_o_s_s_object_operation_8cpp_source.html">OSSObjectOperation.cpp</a> 第 <a class="el" href="_o_s_s_object_operation_8cpp_source.html#l00459">459</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a280c04507703b104fbaa061a5c65318f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool OSS::OSSObjectOperation::FetchObject_Async </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_fetch_object_request.html">FetchObjectRequest</a> &amp;&#160;</td>
+          <td class="paramname"><em>request</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>filePath</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_o_s_s_object_operation_8cpp_source.html">OSSObjectOperation.cpp</a> 第 <a class="el" href="_o_s_s_object_operation_8cpp_source.html#l00466">466</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2d384e4a65236e4256d13d6b4d681427"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a> OSS::OSSObjectOperation::GetObjectMetadata </td>
+          <td>(</td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>bucketName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_object_metadata.html">ObjectMetadata</a> &amp;&#160;</td>
+          <td class="paramname"><em>objectMetadata</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_o_s_s_object_operation_8cpp_source.html">OSSObjectOperation.cpp</a> 第 <a class="el" href="_o_s_s_object_operation_8cpp_source.html#l00227">227</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa045281501ddee9fe02afc6018fd4fdd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool OSS::OSSObjectOperation::GetObjectMetadata_Async </td>
+          <td>(</td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>bucketName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>key</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_o_s_s_object_operation_8cpp_source.html">OSSObjectOperation.cpp</a> 第 <a class="el" href="_o_s_s_object_operation_8cpp_source.html#l00520">520</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0765b37b828f5ee44b04fe93188f54ea"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a> OSS::OSSObjectOperation::PutObject </td>
+          <td>(</td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>bucketName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>dataLength</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_object_metadata.html">ObjectMetadata</a> &amp;&#160;</td>
+          <td class="paramname"><em>objectMetadata</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_put_object_result.html">PutObjectResult</a> &amp;&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_o_s_s_object_operation_8cpp_source.html">OSSObjectOperation.cpp</a> 第 <a class="el" href="_o_s_s_object_operation_8cpp_source.html#l00039">39</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="aef8cc631db2fb300261b4d001d15fff8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool OSS::OSSObjectOperation::PutObject_Async </td>
+          <td>(</td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>bucketName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>dataLength</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_object_metadata.html">ObjectMetadata</a> &amp;&#160;</td>
+          <td class="paramname"><em>objectMetadata</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_o_s_s_object_operation_8cpp_source.html">OSSObjectOperation.cpp</a> 第 <a class="el" href="_o_s_s_object_operation_8cpp_source.html#l00392">392</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a45070c32b4960cf80593f1b298a273d5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OSS::OSSObjectOperation::serviceClientRequestFailed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_default_service_client.html">DefaultServiceClient</a> *&#160;</td>
+          <td class="paramname"><em>defaultServiceClient</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_response_message.html">ResponseMessage</a> &amp;&#160;</td>
+          <td class="paramname"><em>responseMessage</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>实现了 <a class="el" href="class_o_s_s_1_1_service_client_callback.html#a0bff47959bd137ac92f0b7f55de08ea2">OSS::ServiceClientCallback</a>.</p>
+
+<p>在文件 <a class="el" href="_o_s_s_object_operation_8cpp_source.html">OSSObjectOperation.cpp</a> 第 <a class="el" href="_o_s_s_object_operation_8cpp_source.html#l00733">733</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="af7ebe46e02624bdf5a33c647f536022f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OSS::OSSObjectOperation::serviceClientRequestFinished </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_default_service_client.html">DefaultServiceClient</a> *&#160;</td>
+          <td class="paramname"><em>defaultServiceClient</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_response_message.html">ResponseMessage</a> &amp;&#160;</td>
+          <td class="paramname"><em>responseMessage</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>实现了 <a class="el" href="class_o_s_s_1_1_service_client_callback.html#a60e0e1603e7aaa7ed87893b5f0c32989">OSS::ServiceClientCallback</a>.</p>
+
+<p>在文件 <a class="el" href="_o_s_s_object_operation_8cpp_source.html">OSSObjectOperation.cpp</a> 第 <a class="el" href="_o_s_s_object_operation_8cpp_source.html#l00603">603</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="a5987fc1513d74f321d886a5220aab1d6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_o_s_s_1_1_o_s_s_object_operation_callback.html">OSSObjectOperationCallback</a>* OSS::OSSObjectOperation::delegate</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_o_s_s_object_operation_8h_source.html">OSSObjectOperation.h</a> 第 <a class="el" href="_o_s_s_object_operation_8h_source.html#l00077">77</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>project/libOSS/libOSS/<a class="el" href="_o_s_s_object_operation_8h_source.html">OSSObjectOperation.h</a></li>
+<li>project/libOSS/libOSS/<a class="el" href="_o_s_s_object_operation_8cpp_source.html">OSSObjectOperation.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2012年 九月 28日 星期五 14:56:23 , 为 libOSS使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.2
+</small></address>
+</body>
+</html>

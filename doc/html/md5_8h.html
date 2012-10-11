@@ -1,0 +1,290 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>libOSS: project/libOSS/libOSS/md5.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">libOSS
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">igis.me</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.2 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_167790342fb55959539d550b874be046.html">project</a></li><li class="navelem"><a class="el" href="dir_3023ff01d1436e238124d7fcc5000422.html">libOSS</a></li><li class="navelem"><a class="el" href="dir_c2df5faff012d771a522b75d2c985cb4.html">libOSS</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#define-members">宏定义</a> &#124;
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">md5.h 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><a href="md5_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmd5__context_stru.html">md5_contextStru</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:adebe98eebec040f5be5b84a332e1f097"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="md5_8h.html#adebe98eebec040f5be5b84a332e1f097">OSSDLL_API</a>&#160;&#160;&#160;__declspec(dllimport)</td></tr>
+<tr class="separator:adebe98eebec040f5be5b84a332e1f097"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b665b394b050dba7f88a694f2e20994"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="md5_8h.html#a9b665b394b050dba7f88a694f2e20994">_MD5_H</a></td></tr>
+<tr class="separator:a9b665b394b050dba7f88a694f2e20994"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d25bcd37166cc98f0d823cdb8c553ef"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="md5_8h.html#a2d25bcd37166cc98f0d823cdb8c553ef">uint8</a>&#160;&#160;&#160;unsigned char</td></tr>
+<tr class="separator:a2d25bcd37166cc98f0d823cdb8c553ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9695cf1104606879c5d3f0221635a069"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="md5_8h.html#a9695cf1104606879c5d3f0221635a069">uint32</a>&#160;&#160;&#160;unsigned long int</td></tr>
+<tr class="separator:a9695cf1104606879c5d3f0221635a069"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:a5fb717e1a161d1f32460c0179c288ffc"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structmd5__context_stru.html">md5_contextStru</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="md5_8h.html#a5fb717e1a161d1f32460c0179c288ffc">md5_context</a></td></tr>
+<tr class="separator:a5fb717e1a161d1f32460c0179c288ffc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a9d3a48e70f01f4f54afd5b398c270f98"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_upload_part_result_8h.html#adebe98eebec040f5be5b84a332e1f097">OSSDLL_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="md5_8h.html#a9d3a48e70f01f4f54afd5b398c270f98">md5_starts</a> (<a class="el" href="md5_8h.html#a5fb717e1a161d1f32460c0179c288ffc">md5_context</a> *ctx)</td></tr>
+<tr class="separator:a9d3a48e70f01f4f54afd5b398c270f98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae18563be18478ca7b31598f118bf9e96"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_upload_part_result_8h.html#adebe98eebec040f5be5b84a332e1f097">OSSDLL_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="md5_8h.html#ae18563be18478ca7b31598f118bf9e96">md5_update</a> (<a class="el" href="md5_8h.html#a5fb717e1a161d1f32460c0179c288ffc">md5_context</a> *ctx, <a class="el" href="md5_8h.html#a2d25bcd37166cc98f0d823cdb8c553ef">uint8</a> *input, <a class="el" href="md5_8h.html#a9695cf1104606879c5d3f0221635a069">uint32</a> length)</td></tr>
+<tr class="separator:ae18563be18478ca7b31598f118bf9e96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ec1da7884be8a70678980c3e9b9a2b9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_upload_part_result_8h.html#adebe98eebec040f5be5b84a332e1f097">OSSDLL_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="md5_8h.html#a4ec1da7884be8a70678980c3e9b9a2b9">md5_finish</a> (<a class="el" href="md5_8h.html#a5fb717e1a161d1f32460c0179c288ffc">md5_context</a> *ctx, <a class="el" href="md5_8h.html#a2d25bcd37166cc98f0d823cdb8c553ef">uint8</a> digest[16])</td></tr>
+<tr class="separator:a4ec1da7884be8a70678980c3e9b9a2b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">宏定义说明</h2>
+<a class="anchor" id="a9b665b394b050dba7f88a694f2e20994"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define _MD5_H</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="md5_8h_source.html">md5.h</a> 第 <a class="el" href="md5_8h_source.html#l00011">11</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="adebe98eebec040f5be5b84a332e1f097"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OSSDLL_API&#160;&#160;&#160;__declspec(dllimport)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="md5_8h_source.html">md5.h</a> 第 <a class="el" href="md5_8h_source.html#l00007">7</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9695cf1104606879c5d3f0221635a069"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define uint32&#160;&#160;&#160;unsigned long int</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="md5_8h_source.html">md5.h</a> 第 <a class="el" href="md5_8h_source.html#l00018">18</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2d25bcd37166cc98f0d823cdb8c553ef"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define uint8&#160;&#160;&#160;unsigned char</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="md5_8h_source.html">md5.h</a> 第 <a class="el" href="md5_8h_source.html#l00014">14</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">类型定义说明</h2>
+<a class="anchor" id="a5fb717e1a161d1f32460c0179c288ffc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structmd5__context_stru.html">md5_contextStru</a> <a class="el" href="md5_8h.html#a5fb717e1a161d1f32460c0179c288ffc">md5_context</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a class="anchor" id="a4ec1da7884be8a70678980c3e9b9a2b9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_upload_part_result_8h.html#adebe98eebec040f5be5b84a332e1f097">OSSDLL_API</a> void md5_finish </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="md5_8h.html#a5fb717e1a161d1f32460c0179c288ffc">md5_context</a> *&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="md5_8h.html#a2d25bcd37166cc98f0d823cdb8c553ef">uint8</a>&#160;</td>
+          <td class="paramname"><em>digest</em>[16]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="md5_8c_source.html">md5.c</a> 第 <a class="el" href="md5_8c_source.html#l00224">224</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9d3a48e70f01f4f54afd5b398c270f98"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_upload_part_result_8h.html#adebe98eebec040f5be5b84a332e1f097">OSSDLL_API</a> void md5_starts </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="md5_8h.html#a5fb717e1a161d1f32460c0179c288ffc">md5_context</a> *&#160;</td>
+          <td class="paramname"><em>ctx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="md5_8c_source.html">md5.c</a> 第 <a class="el" href="md5_8c_source.html#l00043">43</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae18563be18478ca7b31598f118bf9e96"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_upload_part_result_8h.html#adebe98eebec040f5be5b84a332e1f097">OSSDLL_API</a> void md5_update </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="md5_8h.html#a5fb717e1a161d1f32460c0179c288ffc">md5_context</a> *&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="md5_8h.html#a2d25bcd37166cc98f0d823cdb8c553ef">uint8</a> *&#160;</td>
+          <td class="paramname"><em>input</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="md5_8h.html#a9695cf1104606879c5d3f0221635a069">uint32</a>&#160;</td>
+          <td class="paramname"><em>length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="md5_8c_source.html">md5.c</a> 第 <a class="el" href="md5_8c_source.html#l00177">177</a> 行定义.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2012年 九月 28日 星期五 14:56:22 , 为 libOSS使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.2
+</small></address>
+</body>
+</html>

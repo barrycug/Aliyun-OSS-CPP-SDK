@@ -1,0 +1,2488 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>libOSS: OSS::OSSClient类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">libOSS
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">igis.me</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.2 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespace_o_s_s.html">OSS</a></li><li class="navelem"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="class_o_s_s_1_1_o_s_s_client-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">OSS::OSSClient类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><a class="el" href="namespace_o_s_s.html">OSS</a> 类库主要操作类，提供了同步和异步的方式对OSS对象进行操作 同步的方式会直接返回结果 异步的方式需要使用者继承并实现OSSClientCallback类中的相关回调方法，并讲delegate设置为该类的指针。异步的方式不会阻塞进程。  
+ <a href="class_o_s_s_1_1_o_s_s_client.html#details">更多...</a></p>
+
+<p>继承自 <a class="el" href="class_o_s_s_1_1_o_s_s_bucket_operation_callback.html">OSS::OSSBucketOperationCallback</a>,<a class="el" href="class_o_s_s_1_1_o_s_s_object_operation_callback.html">OSS::OSSObjectOperationCallback</a>,<a class="el" href="class_o_s_s_1_1_o_s_s_multipart_operation_callback.html">OSS::OSSMultipartOperationCallback</a> , 以及 <a class="el" href="class_o_s_s_1_1_o_s_s_object_group_operation_callback.html">OSS::OSSObjectGroupOperationCallback</a> .</p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a0d60061908fcab905504e2d309e1d689"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html#a0d60061908fcab905504e2d309e1d689">OSSClient</a> (string &amp;accessID, string &amp;accessKey)</td></tr>
+<tr class="memdesc:a0d60061908fcab905504e2d309e1d689"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数，使用accessID 和accessKey 进行初始化  <a href="#a0d60061908fcab905504e2d309e1d689"></a><br/></td></tr>
+<tr class="separator:a0d60061908fcab905504e2d309e1d689"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed89cf47ad8405009e1ee321ac3df0b0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html#aed89cf47ad8405009e1ee321ac3df0b0">OSSClient</a> (string &amp;accessID, string &amp;accessKey, <a class="el" href="class_o_s_s_1_1_client_configuration.html">ClientConfiguration</a> &amp;config)</td></tr>
+<tr class="memdesc:aed89cf47ad8405009e1ee321ac3df0b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数，使用accessID 、accessKey和客户端配置参数进行初始化  <a href="#aed89cf47ad8405009e1ee321ac3df0b0"></a><br/></td></tr>
+<tr class="separator:aed89cf47ad8405009e1ee321ac3df0b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab14f3c25c00a7918c610e1e010d6680b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html#ab14f3c25c00a7918c610e1e010d6680b">OSSClient</a> (string &amp;endPoint, string &amp;accessID, string &amp;accessKey)</td></tr>
+<tr class="memdesc:ab14f3c25c00a7918c610e1e010d6680b"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数，使用endPoint，accessID 和accessKey进行初始化，endPoint 默认为"http://storage.aliyun.com"  <a href="#ab14f3c25c00a7918c610e1e010d6680b"></a><br/></td></tr>
+<tr class="separator:ab14f3c25c00a7918c610e1e010d6680b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabae3db40c899f3cc733241d974cefba"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html#aabae3db40c899f3cc733241d974cefba">OSSClient</a> (string &amp;endPoint, string &amp;accessID, string &amp;accessKey, <a class="el" href="class_o_s_s_1_1_client_configuration.html">ClientConfiguration</a> &amp;config)</td></tr>
+<tr class="memdesc:aabae3db40c899f3cc733241d974cefba"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数，使用endPoint，accessID 、accessKey和客户端配置参数进进行初始化，endPoint 默认为"http://storage.aliyun.com"  <a href="#aabae3db40c899f3cc733241d974cefba"></a><br/></td></tr>
+<tr class="separator:aabae3db40c899f3cc733241d974cefba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6353019a9e56d5ac7538e25546cd2624"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html#a6353019a9e56d5ac7538e25546cd2624">~OSSClient</a> (void)</td></tr>
+<tr class="memdesc:a6353019a9e56d5ac7538e25546cd2624"><td class="mdescLeft">&#160;</td><td class="mdescRight">析构函数  <a href="#a6353019a9e56d5ac7538e25546cd2624"></a><br/></td></tr>
+<tr class="separator:a6353019a9e56d5ac7538e25546cd2624"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fb4fd781dad2d7017517fd87106c95e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html#a3fb4fd781dad2d7017517fd87106c95e">CreateBucket</a> (string &amp;bucketName, <a class="el" href="class_o_s_s_1_1_bucket.html">Bucket</a> &amp;bucket)</td></tr>
+<tr class="memdesc:a3fb4fd781dad2d7017517fd87106c95e"><td class="mdescLeft">&#160;</td><td class="mdescRight">同步方法，创建bucket  <a href="#a3fb4fd781dad2d7017517fd87106c95e"></a><br/></td></tr>
+<tr class="separator:a3fb4fd781dad2d7017517fd87106c95e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae1bf7e9326dd6284b7708347f838be0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html#aae1bf7e9326dd6284b7708347f838be0">DeleteBucket</a> (string &amp;bucketName)</td></tr>
+<tr class="memdesc:aae1bf7e9326dd6284b7708347f838be0"><td class="mdescLeft">&#160;</td><td class="mdescRight">同步方法，删除bucket  <a href="#aae1bf7e9326dd6284b7708347f838be0"></a><br/></td></tr>
+<tr class="separator:aae1bf7e9326dd6284b7708347f838be0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a733e1f0a076dd22f4efd789179b57173"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html#a733e1f0a076dd22f4efd789179b57173">ListBuckets</a> (<a class="el" href="class_o_s_s_1_1_buckets.html">Buckets</a> &amp;buckets)</td></tr>
+<tr class="memdesc:a733e1f0a076dd22f4efd789179b57173"><td class="mdescLeft">&#160;</td><td class="mdescRight">同步方法，罗列所有的bucket  <a href="#a733e1f0a076dd22f4efd789179b57173"></a><br/></td></tr>
+<tr class="separator:a733e1f0a076dd22f4efd789179b57173"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49d01b156c3c51b5e86e2eb8eb34cdfa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html#a49d01b156c3c51b5e86e2eb8eb34cdfa">SetBucketACL</a> (string &amp;bucketName, <a class="el" href="class_o_s_s_1_1_canned_access_control_list.html">CannedAccessControlList</a> &amp;aclList)</td></tr>
+<tr class="memdesc:a49d01b156c3c51b5e86e2eb8eb34cdfa"><td class="mdescLeft">&#160;</td><td class="mdescRight">同步方法，设置Bucket的访问控制权限  <a href="#a49d01b156c3c51b5e86e2eb8eb34cdfa"></a><br/></td></tr>
+<tr class="separator:a49d01b156c3c51b5e86e2eb8eb34cdfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad03970a841ae0a811669c4d2ea535d61"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html#ad03970a841ae0a811669c4d2ea535d61">GetBucketACL</a> (string &amp;bucketName, <a class="el" href="class_o_s_s_1_1_canned_access_control_list.html">CannedAccessControlList</a> &amp;aclList)</td></tr>
+<tr class="memdesc:ad03970a841ae0a811669c4d2ea535d61"><td class="mdescLeft">&#160;</td><td class="mdescRight">同步方法，获得Bucket的访问控制权限  <a href="#ad03970a841ae0a811669c4d2ea535d61"></a><br/></td></tr>
+<tr class="separator:ad03970a841ae0a811669c4d2ea535d61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f4f34a3948af5cad0ae5a31c38539cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html#a3f4f34a3948af5cad0ae5a31c38539cf">IsBucketExist</a> (string &amp;bucketName, bool &amp;isExist)</td></tr>
+<tr class="memdesc:a3f4f34a3948af5cad0ae5a31c38539cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">同步方法，判断指定的bucket是否存在  <a href="#a3f4f34a3948af5cad0ae5a31c38539cf"></a><br/></td></tr>
+<tr class="separator:a3f4f34a3948af5cad0ae5a31c38539cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ecb687ded217b68848b8751fdbb4d4d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html#a9ecb687ded217b68848b8751fdbb4d4d">ListObjects</a> (<a class="el" href="class_o_s_s_1_1_list_objects_request.html">ListObjectsRequest</a> &amp;reuqest, <a class="el" href="class_o_s_s_1_1_object_listing.html">ObjectListing</a> &amp;objectListing)</td></tr>
+<tr class="memdesc:a9ecb687ded217b68848b8751fdbb4d4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">同步方法，罗列Bucket中的Object  <a href="#a9ecb687ded217b68848b8751fdbb4d4d"></a><br/></td></tr>
+<tr class="separator:a9ecb687ded217b68848b8751fdbb4d4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac139496e2948ecc1e7dc4a437a12544e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html#ac139496e2948ecc1e7dc4a437a12544e">CreateBucket_Async</a> (string &amp;bucketName)</td></tr>
+<tr class="memdesc:ac139496e2948ecc1e7dc4a437a12544e"><td class="mdescLeft">&#160;</td><td class="mdescRight">同步方法，创建bucket  <a href="#ac139496e2948ecc1e7dc4a437a12544e"></a><br/></td></tr>
+<tr class="separator:ac139496e2948ecc1e7dc4a437a12544e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad74e552963aba3df801cda33264165b1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html#ad74e552963aba3df801cda33264165b1">DeleteBucket_Async</a> (string &amp;bucketName)</td></tr>
+<tr class="memdesc:ad74e552963aba3df801cda33264165b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">异步方法，删除bucket  <a href="#ad74e552963aba3df801cda33264165b1"></a><br/></td></tr>
+<tr class="separator:ad74e552963aba3df801cda33264165b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e5a29db66812a34e64954d669ba4f9b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html#a0e5a29db66812a34e64954d669ba4f9b">ListBuckets_Async</a> ()</td></tr>
+<tr class="memdesc:a0e5a29db66812a34e64954d669ba4f9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">异步方法，罗列所有的bucket  <a href="#a0e5a29db66812a34e64954d669ba4f9b"></a><br/></td></tr>
+<tr class="separator:a0e5a29db66812a34e64954d669ba4f9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83447b5d34076a7e3554b885f835d17f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html#a83447b5d34076a7e3554b885f835d17f">SetBucketACL_Async</a> (string &amp;bucketName, <a class="el" href="class_o_s_s_1_1_canned_access_control_list.html">CannedAccessControlList</a> &amp;aclList)</td></tr>
+<tr class="memdesc:a83447b5d34076a7e3554b885f835d17f"><td class="mdescLeft">&#160;</td><td class="mdescRight">异步方法，设置Bucket的访问控制权限  <a href="#a83447b5d34076a7e3554b885f835d17f"></a><br/></td></tr>
+<tr class="separator:a83447b5d34076a7e3554b885f835d17f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f253aa8b475840dcc6a0c339a357b98"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html#a2f253aa8b475840dcc6a0c339a357b98">GetBucketACL_Async</a> (string &amp;bucketName)</td></tr>
+<tr class="memdesc:a2f253aa8b475840dcc6a0c339a357b98"><td class="mdescLeft">&#160;</td><td class="mdescRight">异步方法，获得Bucket的访问控制权限  <a href="#a2f253aa8b475840dcc6a0c339a357b98"></a><br/></td></tr>
+<tr class="separator:a2f253aa8b475840dcc6a0c339a357b98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4ea8e60e096aa656e9b4e8eadceac3a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html#aa4ea8e60e096aa656e9b4e8eadceac3a">IsBucketExist_Async</a> (string &amp;bucketName)</td></tr>
+<tr class="memdesc:aa4ea8e60e096aa656e9b4e8eadceac3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">异步方法，判断指定的bucket是否存在  <a href="#aa4ea8e60e096aa656e9b4e8eadceac3a"></a><br/></td></tr>
+<tr class="separator:aa4ea8e60e096aa656e9b4e8eadceac3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf89a084a61bf106968ebbbb23300bc1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html#abf89a084a61bf106968ebbbb23300bc1">ListObjects_Async</a> (<a class="el" href="class_o_s_s_1_1_list_objects_request.html">ListObjectsRequest</a> &amp;reuqest)</td></tr>
+<tr class="memdesc:abf89a084a61bf106968ebbbb23300bc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">异步方法，罗列Bucket中的Object  <a href="#abf89a084a61bf106968ebbbb23300bc1"></a><br/></td></tr>
+<tr class="separator:abf89a084a61bf106968ebbbb23300bc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e6a74a34d62f75eadb760fa56c246ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html#a2e6a74a34d62f75eadb760fa56c246ec">PutObject</a> (string &amp;bucketName, string &amp;key, char *<a class="el" href="struct_o_s_s_1_1data.html">data</a>, long dataLength, <a class="el" href="class_o_s_s_1_1_object_metadata.html">ObjectMetadata</a> &amp;objectMetadata, <a class="el" href="class_o_s_s_1_1_put_object_result.html">PutObjectResult</a> &amp;result)</td></tr>
+<tr class="memdesc:a2e6a74a34d62f75eadb760fa56c246ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">同步方法，上传Object，适合小文件上传，大文件上传请使用MultiPart相关接口  <a href="#a2e6a74a34d62f75eadb760fa56c246ec"></a><br/></td></tr>
+<tr class="separator:a2e6a74a34d62f75eadb760fa56c246ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9811ca3f0f87b6887799071e33aadf3c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html#a9811ca3f0f87b6887799071e33aadf3c">FetchObject</a> (string &amp;bucketName, string &amp;key, <a class="el" href="class_o_s_s_1_1_o_s_s_object.html">OSSObject</a> &amp;object)</td></tr>
+<tr class="memdesc:a9811ca3f0f87b6887799071e33aadf3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">同步方法，获取Object，适合小文件下载，大文件下载请使用FetchObject(string &amp;bucketName,string &amp;key,string &amp; filePath)方法  <a href="#a9811ca3f0f87b6887799071e33aadf3c"></a><br/></td></tr>
+<tr class="separator:a9811ca3f0f87b6887799071e33aadf3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8b59be183f3b7a16493c1d45ce38b9d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html#aa8b59be183f3b7a16493c1d45ce38b9d">FetchObject</a> (<a class="el" href="class_o_s_s_1_1_fetch_object_request.html">FetchObjectRequest</a> &amp;request, <a class="el" href="class_o_s_s_1_1_o_s_s_object.html">OSSObject</a> &amp;object)</td></tr>
+<tr class="memdesc:aa8b59be183f3b7a16493c1d45ce38b9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">同步方法，获取Object，适合小文件下载，大文件下载请使用FetchObject(string &amp;bucketName,string &amp;key,string &amp; filePath)方法  <a href="#aa8b59be183f3b7a16493c1d45ce38b9d"></a><br/></td></tr>
+<tr class="separator:aa8b59be183f3b7a16493c1d45ce38b9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5cf3caebce71085d9db0f7a5c727a9e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html#af5cf3caebce71085d9db0f7a5c727a9e">FetchObject</a> (string &amp;bucketName, string &amp;key, string &amp;filePath)</td></tr>
+<tr class="memdesc:af5cf3caebce71085d9db0f7a5c727a9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">同步方法，获取Object并直接写到指定文件中，适合大文件下载，会分块写入，不会造成内存溢出  <a href="#af5cf3caebce71085d9db0f7a5c727a9e"></a><br/></td></tr>
+<tr class="separator:af5cf3caebce71085d9db0f7a5c727a9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a314b644e2ba7f633c06941082a526b05"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html#a314b644e2ba7f633c06941082a526b05">FetchObject</a> (<a class="el" href="class_o_s_s_1_1_fetch_object_request.html">FetchObjectRequest</a> &amp;request, string &amp;filePath)</td></tr>
+<tr class="memdesc:a314b644e2ba7f633c06941082a526b05"><td class="mdescLeft">&#160;</td><td class="mdescRight">同步方法，获取Object并直接写到指定文件中，适合大文件下载，会分块写入，不会造成内存溢出  <a href="#a314b644e2ba7f633c06941082a526b05"></a><br/></td></tr>
+<tr class="separator:a314b644e2ba7f633c06941082a526b05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2edf2775ac09b9c91519a5f775e91a5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html#ac2edf2775ac09b9c91519a5f775e91a5">GetObjectMetadata</a> (string &amp;bucketName, string &amp;key, <a class="el" href="class_o_s_s_1_1_object_metadata.html">ObjectMetadata</a> &amp;objectMetadata)</td></tr>
+<tr class="memdesc:ac2edf2775ac09b9c91519a5f775e91a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">同步方法，获取Object元数据  <a href="#ac2edf2775ac09b9c91519a5f775e91a5"></a><br/></td></tr>
+<tr class="separator:ac2edf2775ac09b9c91519a5f775e91a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59dd841cf5029dfe6577f7766bdb7677"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html#a59dd841cf5029dfe6577f7766bdb7677">CopyObject</a> (<a class="el" href="class_o_s_s_1_1_copy_object_request.html">CopyObjectRequest</a> &amp;request, <a class="el" href="class_o_s_s_1_1_copy_object_result.html">CopyObjectResult</a> &amp;result)</td></tr>
+<tr class="memdesc:a59dd841cf5029dfe6577f7766bdb7677"><td class="mdescLeft">&#160;</td><td class="mdescRight">同步方法，拷贝Object  <a href="#a59dd841cf5029dfe6577f7766bdb7677"></a><br/></td></tr>
+<tr class="separator:a59dd841cf5029dfe6577f7766bdb7677"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a439f21fe0c40cf3a41861d1b77691dce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html#a439f21fe0c40cf3a41861d1b77691dce">DeleteObject</a> (string &amp;bucketName, string &amp;key)</td></tr>
+<tr class="memdesc:a439f21fe0c40cf3a41861d1b77691dce"><td class="mdescLeft">&#160;</td><td class="mdescRight">同步方法，删除Object  <a href="#a439f21fe0c40cf3a41861d1b77691dce"></a><br/></td></tr>
+<tr class="separator:a439f21fe0c40cf3a41861d1b77691dce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f51320ebb6c39757fa31869196fb9ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html#a0f51320ebb6c39757fa31869196fb9ec">DeleteMultipleObjects</a> (string &amp;bucketName, vector&lt; string &gt; &amp;objNames, bool isQuiet, <a class="el" href="class_o_s_s_1_1_delete_objects_result.html">DeleteObjectsResult</a> &amp;result)</td></tr>
+<tr class="memdesc:a0f51320ebb6c39757fa31869196fb9ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">同步方法，删除多个Object  <a href="#a0f51320ebb6c39757fa31869196fb9ec"></a><br/></td></tr>
+<tr class="separator:a0f51320ebb6c39757fa31869196fb9ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8682a8c422ec4e943e8bb1ed602dbe0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html#ad8682a8c422ec4e943e8bb1ed602dbe0">PutObject_Async</a> (string &amp;bucketName, string &amp;key, char *<a class="el" href="struct_o_s_s_1_1data.html">data</a>, long dataLength, <a class="el" href="class_o_s_s_1_1_object_metadata.html">ObjectMetadata</a> &amp;objectMetadata)</td></tr>
+<tr class="memdesc:ad8682a8c422ec4e943e8bb1ed602dbe0"><td class="mdescLeft">&#160;</td><td class="mdescRight">异步方法，上传Object，适合小文件上传，大文件上传请使用MultiPart相关接口  <a href="#ad8682a8c422ec4e943e8bb1ed602dbe0"></a><br/></td></tr>
+<tr class="separator:ad8682a8c422ec4e943e8bb1ed602dbe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f328031da324731683b018b2e952278"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html#a5f328031da324731683b018b2e952278">FetchObject_Async</a> (string &amp;bucketName, string &amp;key)</td></tr>
+<tr class="memdesc:a5f328031da324731683b018b2e952278"><td class="mdescLeft">&#160;</td><td class="mdescRight">异步方法，获取Object，适合小文件下载，大文件下载请使用FetchObject(string &amp;bucketName,string &amp;key,string &amp; filePath)方法  <a href="#a5f328031da324731683b018b2e952278"></a><br/></td></tr>
+<tr class="separator:a5f328031da324731683b018b2e952278"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a238b8240e162d25b527df8ec694538e3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html#a238b8240e162d25b527df8ec694538e3">FetchObject_Async</a> (<a class="el" href="class_o_s_s_1_1_fetch_object_request.html">FetchObjectRequest</a> &amp;request)</td></tr>
+<tr class="memdesc:a238b8240e162d25b527df8ec694538e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">异步方法，获取Object，适合小文件下载，大文件下载请使用FetchObject(string &amp;bucketName,string &amp;key,string &amp; filePath)方法  <a href="#a238b8240e162d25b527df8ec694538e3"></a><br/></td></tr>
+<tr class="separator:a238b8240e162d25b527df8ec694538e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5420f8b15ac402dd29c335efe604c9f2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html#a5420f8b15ac402dd29c335efe604c9f2">FetchObject_Async</a> (string &amp;bucketName, string &amp;key, string &amp;filePath)</td></tr>
+<tr class="memdesc:a5420f8b15ac402dd29c335efe604c9f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">异步方法，获取Object并直接写到指定文件中，适合大文件下载，会分块写入，不会造成内存溢出  <a href="#a5420f8b15ac402dd29c335efe604c9f2"></a><br/></td></tr>
+<tr class="separator:a5420f8b15ac402dd29c335efe604c9f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a641b1c2a122b51c1e5c83f5648884630"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html#a641b1c2a122b51c1e5c83f5648884630">FetchObject_Async</a> (<a class="el" href="class_o_s_s_1_1_fetch_object_request.html">FetchObjectRequest</a> &amp;request, string &amp;filePath)</td></tr>
+<tr class="memdesc:a641b1c2a122b51c1e5c83f5648884630"><td class="mdescLeft">&#160;</td><td class="mdescRight">异步方法，获取Object并直接写到指定文件中，适合大文件下载，会分块写入，不会造成内存溢出,如果filePath错误，则不会发送请求  <a href="#a641b1c2a122b51c1e5c83f5648884630"></a><br/></td></tr>
+<tr class="separator:a641b1c2a122b51c1e5c83f5648884630"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e456f46b72d577a14f2b9c2920d8764"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html#a6e456f46b72d577a14f2b9c2920d8764">GetObjectMetadata_Async</a> (string &amp;bucketName, string &amp;key)</td></tr>
+<tr class="memdesc:a6e456f46b72d577a14f2b9c2920d8764"><td class="mdescLeft">&#160;</td><td class="mdescRight">异步方法，获取Object元数据  <a href="#a6e456f46b72d577a14f2b9c2920d8764"></a><br/></td></tr>
+<tr class="separator:a6e456f46b72d577a14f2b9c2920d8764"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8d7c06140aad5d7a8c053d5879f8da7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html#ad8d7c06140aad5d7a8c053d5879f8da7">CopyObject_Async</a> (<a class="el" href="class_o_s_s_1_1_copy_object_request.html">CopyObjectRequest</a> &amp;request)</td></tr>
+<tr class="memdesc:ad8d7c06140aad5d7a8c053d5879f8da7"><td class="mdescLeft">&#160;</td><td class="mdescRight">异步方法，拷贝Object  <a href="#ad8d7c06140aad5d7a8c053d5879f8da7"></a><br/></td></tr>
+<tr class="separator:ad8d7c06140aad5d7a8c053d5879f8da7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c08eeb9ae184e888efc8d891da81db5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html#a4c08eeb9ae184e888efc8d891da81db5">DeleteObject_Async</a> (string &amp;bucketName, string &amp;key)</td></tr>
+<tr class="memdesc:a4c08eeb9ae184e888efc8d891da81db5"><td class="mdescLeft">&#160;</td><td class="mdescRight">异步方法，删除Object  <a href="#a4c08eeb9ae184e888efc8d891da81db5"></a><br/></td></tr>
+<tr class="separator:a4c08eeb9ae184e888efc8d891da81db5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b24a5eda21e71269209a20fab793f26"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html#a3b24a5eda21e71269209a20fab793f26">DeleteMultipleObjects_Async</a> (string &amp;bucketName, vector&lt; string &gt; &amp;objNames, bool isQuiet)</td></tr>
+<tr class="memdesc:a3b24a5eda21e71269209a20fab793f26"><td class="mdescLeft">&#160;</td><td class="mdescRight">异步方法，删除多个Object  <a href="#a3b24a5eda21e71269209a20fab793f26"></a><br/></td></tr>
+<tr class="separator:a3b24a5eda21e71269209a20fab793f26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72979a7f14c1e620e591de5ee7502908"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html#a72979a7f14c1e620e591de5ee7502908">UploadPart</a> (<a class="el" href="class_o_s_s_1_1_upload_part_request.html">UploadPartRequest</a> &amp;uploadPartRequest, <a class="el" href="class_o_s_s_1_1_upload_part_result.html">UploadPartResult</a> &amp;result)</td></tr>
+<tr class="memdesc:a72979a7f14c1e620e591de5ee7502908"><td class="mdescLeft">&#160;</td><td class="mdescRight">同步方法，多点上传之上传一部分  <a href="#a72979a7f14c1e620e591de5ee7502908"></a><br/></td></tr>
+<tr class="separator:a72979a7f14c1e620e591de5ee7502908"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bfeb9aa918020d1cf40265c64407c1c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html#a2bfeb9aa918020d1cf40265c64407c1c">ListParts</a> (<a class="el" href="class_o_s_s_1_1_list_parts_request.html">ListPartsRequest</a> &amp;listPartsRequest, <a class="el" href="class_o_s_s_1_1_part_listing.html">PartListing</a> &amp;result)</td></tr>
+<tr class="memdesc:a2bfeb9aa918020d1cf40265c64407c1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">同步方法，罗列上传的部分  <a href="#a2bfeb9aa918020d1cf40265c64407c1c"></a><br/></td></tr>
+<tr class="separator:a2bfeb9aa918020d1cf40265c64407c1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f975355b98060eaa4c5bda1e0a864ac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html#a9f975355b98060eaa4c5bda1e0a864ac">ListMultipartUploads</a> (<a class="el" href="class_o_s_s_1_1_list_multipart_uploads_request.html">ListMultipartUploadsRequest</a> &amp;listMultipartUploadsRequest, <a class="el" href="class_o_s_s_1_1_multipart_upload_listing.html">MultipartUploadListing</a> &amp;result)</td></tr>
+<tr class="memdesc:a9f975355b98060eaa4c5bda1e0a864ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">同步方法，罗列已经初始化的上传请求  <a href="#a9f975355b98060eaa4c5bda1e0a864ac"></a><br/></td></tr>
+<tr class="separator:a9f975355b98060eaa4c5bda1e0a864ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae15bf58abbb805a36675e859e4bc31cd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html#ae15bf58abbb805a36675e859e4bc31cd">InitiateMultipartUpload</a> (<a class="el" href="class_o_s_s_1_1_initiate_multipart_upload_request.html">InitiateMultipartUploadRequest</a> &amp;initiateMultipartUploadRequest, <a class="el" href="class_o_s_s_1_1_initiate_multipart_upload_result.html">InitiateMultipartUploadResult</a> &amp;result)</td></tr>
+<tr class="memdesc:ae15bf58abbb805a36675e859e4bc31cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">同步方法，初始化上传请求  <a href="#ae15bf58abbb805a36675e859e4bc31cd"></a><br/></td></tr>
+<tr class="separator:ae15bf58abbb805a36675e859e4bc31cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6657b326c25bef279c9b546df543be14"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html#a6657b326c25bef279c9b546df543be14">CompleteMultipartUpload</a> (<a class="el" href="class_o_s_s_1_1_complete_multipart_upload_request.html">CompleteMultipartUploadRequest</a> &amp;completeMultipartUploadRequest, <a class="el" href="class_o_s_s_1_1_complete_multipart_upload_result.html">CompleteMultipartUploadResult</a> &amp;result)</td></tr>
+<tr class="memdesc:a6657b326c25bef279c9b546df543be14"><td class="mdescLeft">&#160;</td><td class="mdescRight">同步方法，完成上传请求  <a href="#a6657b326c25bef279c9b546df543be14"></a><br/></td></tr>
+<tr class="separator:a6657b326c25bef279c9b546df543be14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a32ad8600f7a09849554e2d8c4761d3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html#a2a32ad8600f7a09849554e2d8c4761d3">AbortMultipartUpload</a> (<a class="el" href="class_o_s_s_1_1_abort_multipart_upload_request.html">AbortMultipartUploadRequest</a> &amp;abortMultipartUploadRequest, string &amp;uploadId)</td></tr>
+<tr class="memdesc:a2a32ad8600f7a09849554e2d8c4761d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">同步方法，中断并清除上传请求  <a href="#a2a32ad8600f7a09849554e2d8c4761d3"></a><br/></td></tr>
+<tr class="separator:a2a32ad8600f7a09849554e2d8c4761d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48bc57f35bc58850681540b1253258f4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html#a48bc57f35bc58850681540b1253258f4">UploadPart_Async</a> (<a class="el" href="class_o_s_s_1_1_upload_part_request.html">UploadPartRequest</a> &amp;uploadPartRequest)</td></tr>
+<tr class="memdesc:a48bc57f35bc58850681540b1253258f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">异步方法，多点上传之上传一部分  <a href="#a48bc57f35bc58850681540b1253258f4"></a><br/></td></tr>
+<tr class="separator:a48bc57f35bc58850681540b1253258f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a058a8c97f37993aad48a298f33911a84"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html#a058a8c97f37993aad48a298f33911a84">ListParts_Async</a> (<a class="el" href="class_o_s_s_1_1_list_parts_request.html">ListPartsRequest</a> &amp;listPartsRequest)</td></tr>
+<tr class="memdesc:a058a8c97f37993aad48a298f33911a84"><td class="mdescLeft">&#160;</td><td class="mdescRight">异步方法，罗列上传的部分  <a href="#a058a8c97f37993aad48a298f33911a84"></a><br/></td></tr>
+<tr class="separator:a058a8c97f37993aad48a298f33911a84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32cdee019df3c83ccab6cebbd21cc7ec"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html#a32cdee019df3c83ccab6cebbd21cc7ec">ListMultipartUploads_Async</a> (<a class="el" href="class_o_s_s_1_1_list_multipart_uploads_request.html">ListMultipartUploadsRequest</a> &amp;listMultipartUploadsRequest)</td></tr>
+<tr class="memdesc:a32cdee019df3c83ccab6cebbd21cc7ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">异步方法，罗列已经初始化的上传请求  <a href="#a32cdee019df3c83ccab6cebbd21cc7ec"></a><br/></td></tr>
+<tr class="separator:a32cdee019df3c83ccab6cebbd21cc7ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7427a4f4146f54a69f74cfb5be9a5321"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html#a7427a4f4146f54a69f74cfb5be9a5321">InitiateMultipartUpload_Async</a> (<a class="el" href="class_o_s_s_1_1_initiate_multipart_upload_request.html">InitiateMultipartUploadRequest</a> &amp;initiateMultipartUploadRequest)</td></tr>
+<tr class="memdesc:a7427a4f4146f54a69f74cfb5be9a5321"><td class="mdescLeft">&#160;</td><td class="mdescRight">异步方法，初始化上传请求  <a href="#a7427a4f4146f54a69f74cfb5be9a5321"></a><br/></td></tr>
+<tr class="separator:a7427a4f4146f54a69f74cfb5be9a5321"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae893319a9e7f4473795eb5debc54905b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html#ae893319a9e7f4473795eb5debc54905b">CompleteMultipartUpload_Async</a> (<a class="el" href="class_o_s_s_1_1_complete_multipart_upload_request.html">CompleteMultipartUploadRequest</a> &amp;completeMultipartUploadRequest)</td></tr>
+<tr class="memdesc:ae893319a9e7f4473795eb5debc54905b"><td class="mdescLeft">&#160;</td><td class="mdescRight">异步方法，完成上传请求  <a href="#ae893319a9e7f4473795eb5debc54905b"></a><br/></td></tr>
+<tr class="separator:ae893319a9e7f4473795eb5debc54905b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7060cdd637337d83d269e4e080d65295"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html#a7060cdd637337d83d269e4e080d65295">AbortMultipartUpload_Async</a> (<a class="el" href="class_o_s_s_1_1_abort_multipart_upload_request.html">AbortMultipartUploadRequest</a> &amp;abortMultipartUploadRequest)</td></tr>
+<tr class="memdesc:a7060cdd637337d83d269e4e080d65295"><td class="mdescLeft">&#160;</td><td class="mdescRight">异步方法，中断并清除上传请求  <a href="#a7060cdd637337d83d269e4e080d65295"></a><br/></td></tr>
+<tr class="separator:a7060cdd637337d83d269e4e080d65295"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bc28cc21b4b96993fd432b854402966"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html#a8bc28cc21b4b96993fd432b854402966">PostObjectGroup</a> (<a class="el" href="class_o_s_s_1_1_post_object_group_request.html">PostObjectGroupRequest</a> &amp;postObjectGroupRequest, <a class="el" href="class_o_s_s_1_1_post_object_group_result.html">PostObjectGroupResult</a> &amp;result)</td></tr>
+<tr class="memdesc:a8bc28cc21b4b96993fd432b854402966"><td class="mdescLeft">&#160;</td><td class="mdescRight">同步方法，构造ObjectGroup  <a href="#a8bc28cc21b4b96993fd432b854402966"></a><br/></td></tr>
+<tr class="separator:a8bc28cc21b4b96993fd432b854402966"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a000645707d48034ce4577b1814c5f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html#a9a000645707d48034ce4577b1814c5f8">GetObjectGroupIndex</a> (string &amp;bucketName, string &amp;key, <a class="el" href="class_o_s_s_1_1_fetch_object_group_index_result.html">FetchObjectGroupIndexResult</a> &amp;result)</td></tr>
+<tr class="memdesc:a9a000645707d48034ce4577b1814c5f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">同步方法，获取ObjectGroup的索引信息  <a href="#a9a000645707d48034ce4577b1814c5f8"></a><br/></td></tr>
+<tr class="separator:a9a000645707d48034ce4577b1814c5f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a066a439db550bd0f3d90eee5d598d5ad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html#a066a439db550bd0f3d90eee5d598d5ad">GetObjectGroup</a> (string &amp;bucketName, string &amp;key)</td></tr>
+<tr class="memdesc:a066a439db550bd0f3d90eee5d598d5ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">同步方法，GetObjectGroup 没有实现，请使用 GetObject 方法  <a href="#a066a439db550bd0f3d90eee5d598d5ad"></a><br/></td></tr>
+<tr class="separator:a066a439db550bd0f3d90eee5d598d5ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83cfd1ec844a664d041f42c5afa3dfd5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html#a83cfd1ec844a664d041f42c5afa3dfd5">DeleteObjectGroup</a> (string &amp;bucketName, string &amp;key)</td></tr>
+<tr class="memdesc:a83cfd1ec844a664d041f42c5afa3dfd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">同步方法，DeleteObjectGroup 没有实现，请使用 DeleteObject 方法  <a href="#a83cfd1ec844a664d041f42c5afa3dfd5"></a><br/></td></tr>
+<tr class="separator:a83cfd1ec844a664d041f42c5afa3dfd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87b238d5ea18bae998de45d6bffbe12f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html#a87b238d5ea18bae998de45d6bffbe12f">GetObjectGroupMetadata</a> (string &amp;bucketName, string &amp;key, <a class="el" href="class_o_s_s_1_1_object_metadata.html">ObjectMetadata</a> &amp;objectMetadata)</td></tr>
+<tr class="memdesc:a87b238d5ea18bae998de45d6bffbe12f"><td class="mdescLeft">&#160;</td><td class="mdescRight">同步方法，GetObjectGroupMetadata没有实现，请使用 GetObjectMetadata 方法  <a href="#a87b238d5ea18bae998de45d6bffbe12f"></a><br/></td></tr>
+<tr class="separator:a87b238d5ea18bae998de45d6bffbe12f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed71f50f11b75aefcd53edbfbbbe9e56"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html#aed71f50f11b75aefcd53edbfbbbe9e56">PostObjectGroup_Async</a> (<a class="el" href="class_o_s_s_1_1_post_object_group_request.html">PostObjectGroupRequest</a> &amp;postObjectGroupRequest)</td></tr>
+<tr class="memdesc:aed71f50f11b75aefcd53edbfbbbe9e56"><td class="mdescLeft">&#160;</td><td class="mdescRight">异步方法，构造ObjectGroup  <a href="#aed71f50f11b75aefcd53edbfbbbe9e56"></a><br/></td></tr>
+<tr class="separator:aed71f50f11b75aefcd53edbfbbbe9e56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97251e8d540ec322985d3f1243a2c80b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html#a97251e8d540ec322985d3f1243a2c80b">GetObjectGroupIndex_Async</a> (string &amp;bucketName, string &amp;key)</td></tr>
+<tr class="memdesc:a97251e8d540ec322985d3f1243a2c80b"><td class="mdescLeft">&#160;</td><td class="mdescRight">异步方法，获取ObjectGroup的索引信息  <a href="#a97251e8d540ec322985d3f1243a2c80b"></a><br/></td></tr>
+<tr class="separator:a97251e8d540ec322985d3f1243a2c80b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35c857ce18d953968a854cee04fabb5d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html#a35c857ce18d953968a854cee04fabb5d">GetObjectGroup_Async</a> (string &amp;bucketName, string &amp;key)</td></tr>
+<tr class="memdesc:a35c857ce18d953968a854cee04fabb5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">异步方法， GetObjectGroup_Async 没有实现，请使用 GetObject_Async 方法  <a href="#a35c857ce18d953968a854cee04fabb5d"></a><br/></td></tr>
+<tr class="separator:a35c857ce18d953968a854cee04fabb5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0941cc8ddaadeefdcc6a39b9f00df175"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html#a0941cc8ddaadeefdcc6a39b9f00df175">DeleteObjectGroup_Async</a> (string &amp;bucketName, string &amp;key)</td></tr>
+<tr class="memdesc:a0941cc8ddaadeefdcc6a39b9f00df175"><td class="mdescLeft">&#160;</td><td class="mdescRight">异步方法，DeleteObjectGroup_Async 没有实现，请使用 DeleteObject_Async 方法  <a href="#a0941cc8ddaadeefdcc6a39b9f00df175"></a><br/></td></tr>
+<tr class="separator:a0941cc8ddaadeefdcc6a39b9f00df175"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adefb958c51606f0fe9b510c4918e88fb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html#adefb958c51606f0fe9b510c4918e88fb">GetObjectGroupMetadata_Async</a> (string &amp;bucketName, string &amp;key)</td></tr>
+<tr class="memdesc:adefb958c51606f0fe9b510c4918e88fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">异步方法，GetObjectGroupMetadata_Async没有实现，请使用 GetObjectMetadata_Async 方法  <a href="#adefb958c51606f0fe9b510c4918e88fb"></a><br/></td></tr>
+<tr class="separator:adefb958c51606f0fe9b510c4918e88fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a53b7f5447bf8285b9a9e86715c01659c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_s_s_1_1_o_s_s_client_callback.html">OSSClientCallback</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html#a53b7f5447bf8285b9a9e86715c01659c">delegate</a></td></tr>
+<tr class="separator:a53b7f5447bf8285b9a9e86715c01659c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p><a class="el" href="namespace_o_s_s.html">OSS</a> 类库主要操作类，提供了同步和异步的方式对OSS对象进行操作 同步的方式会直接返回结果 异步的方式需要使用者继承并实现OSSClientCallback类中的相关回调方法，并讲delegate设置为该类的指针。异步的方式不会阻塞进程。 </p>
+
+<p>在文件 <a class="el" href="_o_s_s_client_8h_source.html">OSSClient.h</a> 第 <a class="el" href="_o_s_s_client_8h_source.html#l00143">143</a> 行定义.</p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="a0d60061908fcab905504e2d309e1d689"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OSS::OSSClient::OSSClient </td>
+          <td>(</td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>accessID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>accessKey</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>构造函数，使用accessID 和accessKey 进行初始化 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">accessID</td><td>string </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">accessKey</td><td>string </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="_o_s_s_client_8cpp_source.html">OSSClient.cpp</a> 第 <a class="el" href="_o_s_s_client_8cpp_source.html#l00023">23</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="aed89cf47ad8405009e1ee321ac3df0b0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OSS::OSSClient::OSSClient </td>
+          <td>(</td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>accessID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>accessKey</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_client_configuration.html">ClientConfiguration</a> &amp;&#160;</td>
+          <td class="paramname"><em>config</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>构造函数，使用accessID 、accessKey和客户端配置参数进行初始化 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">accessID</td><td>string </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">accessKey</td><td>string </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">config</td><td><a class="el" href="class_o_s_s_1_1_client_configuration.html" title="客户端配置对象">ClientConfiguration</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="_o_s_s_client_8cpp_source.html">OSSClient.cpp</a> 第 <a class="el" href="_o_s_s_client_8cpp_source.html#l00030">30</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab14f3c25c00a7918c610e1e010d6680b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OSS::OSSClient::OSSClient </td>
+          <td>(</td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>endPoint</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>accessID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>accessKey</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>构造函数，使用endPoint，accessID 和accessKey进行初始化，endPoint 默认为"http://storage.aliyun.com" </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">endPoint</td><td>string </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">accessID</td><td>string </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">accessKey</td><td>string </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="_o_s_s_client_8cpp_source.html">OSSClient.cpp</a> 第 <a class="el" href="_o_s_s_client_8cpp_source.html#l00038">38</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="aabae3db40c899f3cc733241d974cefba"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OSS::OSSClient::OSSClient </td>
+          <td>(</td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>endPoint</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>accessID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>accessKey</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_client_configuration.html">ClientConfiguration</a> &amp;&#160;</td>
+          <td class="paramname"><em>config</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>构造函数，使用endPoint，accessID 、accessKey和客户端配置参数进进行初始化，endPoint 默认为"http://storage.aliyun.com" </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">endPoint</td><td>string </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">accessID</td><td>string </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">accessKey</td><td>string </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">config</td><td><a class="el" href="class_o_s_s_1_1_client_configuration.html" title="客户端配置对象">ClientConfiguration</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="_o_s_s_client_8cpp_source.html">OSSClient.cpp</a> 第 <a class="el" href="_o_s_s_client_8cpp_source.html#l00045">45</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6353019a9e56d5ac7538e25546cd2624"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OSS::OSSClient::~OSSClient </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>析构函数 </p>
+
+<p>在文件 <a class="el" href="_o_s_s_client_8cpp_source.html">OSSClient.cpp</a> 第 <a class="el" href="_o_s_s_client_8cpp_source.html#l00054">54</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="a2a32ad8600f7a09849554e2d8c4761d3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a> OSS::OSSClient::AbortMultipartUpload </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_abort_multipart_upload_request.html">AbortMultipartUploadRequest</a> &amp;&#160;</td>
+          <td class="paramname"><em>abortMultipartUploadRequest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>uploadId</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>同步方法，中断并清除上传请求 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">abortMultipartUploadRequest</td><td><a class="el" href="class_o_s_s_1_1_abort_multipart_upload_request.html" title="AbortMultipartUploadRequest 中断多点上传请求类">AbortMultipartUploadRequest</a> </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">uploadId</td><td>string 中断的请求ID </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OSS_RESULTCODE类型值，用来判断函数是否成功以及返回错误码 </dd></dl>
+
+<p>在文件 <a class="el" href="_o_s_s_client_8cpp_source.html">OSSClient.cpp</a> 第 <a class="el" href="_o_s_s_client_8cpp_source.html#l00268">268</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7060cdd637337d83d269e4e080d65295"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool OSS::OSSClient::AbortMultipartUpload_Async </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_abort_multipart_upload_request.html">AbortMultipartUploadRequest</a> &amp;&#160;</td>
+          <td class="paramname"><em>abortMultipartUploadRequest</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>异步方法，中断并清除上传请求 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">abortMultipartUploadRequest</td><td><a class="el" href="class_o_s_s_1_1_abort_multipart_upload_request.html" title="AbortMultipartUploadRequest 中断多点上传请求类">AbortMultipartUploadRequest</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>bool类型值，用来判断函数是否成功 </dd></dl>
+
+<p>在文件 <a class="el" href="_o_s_s_client_8cpp_source.html">OSSClient.cpp</a> 第 <a class="el" href="_o_s_s_client_8cpp_source.html#l00293">293</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6657b326c25bef279c9b546df543be14"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a> OSS::OSSClient::CompleteMultipartUpload </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_complete_multipart_upload_request.html">CompleteMultipartUploadRequest</a> &amp;&#160;</td>
+          <td class="paramname"><em>completeMultipartUploadRequest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_complete_multipart_upload_result.html">CompleteMultipartUploadResult</a> &amp;&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>同步方法，完成上传请求 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">completeMultipartUploadRequest</td><td>CompleteMultipartUpload </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td><a class="el" href="class_o_s_s_1_1_complete_multipart_upload_result.html" title="完成多点上传请求结果类">CompleteMultipartUploadResult</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OSS_RESULTCODE类型值，用来判断函数是否成功以及返回错误码 </dd></dl>
+
+<p>在文件 <a class="el" href="_o_s_s_client_8cpp_source.html">OSSClient.cpp</a> 第 <a class="el" href="_o_s_s_client_8cpp_source.html#l00264">264</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae893319a9e7f4473795eb5debc54905b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool OSS::OSSClient::CompleteMultipartUpload_Async </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_complete_multipart_upload_request.html">CompleteMultipartUploadRequest</a> &amp;&#160;</td>
+          <td class="paramname"><em>completeMultipartUploadRequest</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>异步方法，完成上传请求 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">completeMultipartUploadRequest</td><td>CompleteMultipartUpload </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>bool类型值，用来判断函数是否成功 </dd></dl>
+
+<p>在文件 <a class="el" href="_o_s_s_client_8cpp_source.html">OSSClient.cpp</a> 第 <a class="el" href="_o_s_s_client_8cpp_source.html#l00289">289</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a59dd841cf5029dfe6577f7766bdb7677"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a> OSS::OSSClient::CopyObject </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_copy_object_request.html">CopyObjectRequest</a> &amp;&#160;</td>
+          <td class="paramname"><em>request</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_copy_object_result.html">CopyObjectResult</a> &amp;&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>同步方法，拷贝Object </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">request</td><td><a class="el" href="class_o_s_s_1_1_copy_object_request.html" title="拷贝Object请求类">CopyObjectRequest</a> </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td><a class="el" href="class_o_s_s_1_1_copy_object_result.html" title="拷贝Object请求结果类">CopyObjectResult</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OSS_RESULTCODE类型值，用来判断函数是否成功以及返回错误码 </dd></dl>
+
+<p>在文件 <a class="el" href="_o_s_s_client_8cpp_source.html">OSSClient.cpp</a> 第 <a class="el" href="_o_s_s_client_8cpp_source.html#l00197">197</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad8d7c06140aad5d7a8c053d5879f8da7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool OSS::OSSClient::CopyObject_Async </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_copy_object_request.html">CopyObjectRequest</a> &amp;&#160;</td>
+          <td class="paramname"><em>request</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>异步方法，拷贝Object </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">request</td><td><a class="el" href="class_o_s_s_1_1_copy_object_request.html" title="拷贝Object请求类">CopyObjectRequest</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>bool类型值，用来判断函数是否成功 </dd></dl>
+
+<p>在文件 <a class="el" href="_o_s_s_client_8cpp_source.html">OSSClient.cpp</a> 第 <a class="el" href="_o_s_s_client_8cpp_source.html#l00236">236</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3fb4fd781dad2d7017517fd87106c95e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a> OSS::OSSClient::CreateBucket </td>
+          <td>(</td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>bucketName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_bucket.html">Bucket</a> &amp;&#160;</td>
+          <td class="paramname"><em>bucket</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>同步方法，创建bucket </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">bucketName</td><td>string </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">bucket</td><td>string </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OSS_RESULTCODE类型值，用来判断函数是否成功以及返回错误码 </dd></dl>
+
+<p>在文件 <a class="el" href="_o_s_s_client_8cpp_source.html">OSSClient.cpp</a> 第 <a class="el" href="_o_s_s_client_8cpp_source.html#l00117">117</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac139496e2948ecc1e7dc4a437a12544e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool OSS::OSSClient::CreateBucket_Async </td>
+          <td>(</td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>bucketName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>同步方法，创建bucket </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">bucketName</td><td>string </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>bool类型值，用来判断函数是否成功 </dd></dl>
+
+<p>在文件 <a class="el" href="_o_s_s_client_8cpp_source.html">OSSClient.cpp</a> 第 <a class="el" href="_o_s_s_client_8cpp_source.html#l00145">145</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="aae1bf7e9326dd6284b7708347f838be0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a> OSS::OSSClient::DeleteBucket </td>
+          <td>(</td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>bucketName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>同步方法，删除bucket </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">bucketName</td><td>string </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OSS_RESULTCODE类型值，用来判断函数是否成功以及返回错误码 </dd></dl>
+
+<p>在文件 <a class="el" href="_o_s_s_client_8cpp_source.html">OSSClient.cpp</a> 第 <a class="el" href="_o_s_s_client_8cpp_source.html#l00121">121</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad74e552963aba3df801cda33264165b1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool OSS::OSSClient::DeleteBucket_Async </td>
+          <td>(</td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>bucketName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>异步方法，删除bucket </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">bucketName</td><td>string </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>bool类型值，用来判断函数是否成功 </dd></dl>
+
+<p>在文件 <a class="el" href="_o_s_s_client_8cpp_source.html">OSSClient.cpp</a> 第 <a class="el" href="_o_s_s_client_8cpp_source.html#l00149">149</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0f51320ebb6c39757fa31869196fb9ec"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a> OSS::OSSClient::DeleteMultipleObjects </td>
+          <td>(</td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>bucketName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector&lt; string &gt; &amp;&#160;</td>
+          <td class="paramname"><em>objNames</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isQuiet</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_delete_objects_result.html">DeleteObjectsResult</a> &amp;&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>同步方法，删除多个Object </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">bucketName</td><td>string </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">objNames</td><td>vector&lt;string&gt; Object名称数组 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">isQuiet</td><td>bool 是否静默删除，静默删除不返回任何相关信息，result为空 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td><a class="el" href="class_o_s_s_1_1_delete_objects_result.html" title="删除Objects结果类">DeleteObjectsResult</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OSS_RESULTCODE类型值，用来判断函数是否成功以及返回错误码 </dd></dl>
+
+<p>在文件 <a class="el" href="_o_s_s_client_8cpp_source.html">OSSClient.cpp</a> 第 <a class="el" href="_o_s_s_client_8cpp_source.html#l00206">206</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3b24a5eda21e71269209a20fab793f26"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool OSS::OSSClient::DeleteMultipleObjects_Async </td>
+          <td>(</td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>bucketName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector&lt; string &gt; &amp;&#160;</td>
+          <td class="paramname"><em>objNames</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isQuiet</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>异步方法，删除多个Object </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">bucketName</td><td>string </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">objNames</td><td>vector&lt;string&gt; Object名称数组 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">isQuiet</td><td>bool 是否静默删除，静默删除不返回任何相关信息，result为空 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>bool类型值，用来判断函数是否成功 </dd></dl>
+
+<p>在文件 <a class="el" href="_o_s_s_client_8cpp_source.html">OSSClient.cpp</a> 第 <a class="el" href="_o_s_s_client_8cpp_source.html#l00244">244</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a439f21fe0c40cf3a41861d1b77691dce"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a> OSS::OSSClient::DeleteObject </td>
+          <td>(</td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>bucketName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>key</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>同步方法，删除Object </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">bucketName</td><td>string </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>string Object名称 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OSS_RESULTCODE类型值，用来判断函数是否成功以及返回错误码 </dd></dl>
+
+<p>在文件 <a class="el" href="_o_s_s_client_8cpp_source.html">OSSClient.cpp</a> 第 <a class="el" href="_o_s_s_client_8cpp_source.html#l00201">201</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4c08eeb9ae184e888efc8d891da81db5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool OSS::OSSClient::DeleteObject_Async </td>
+          <td>(</td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>bucketName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>key</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>异步方法，删除Object </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">bucketName</td><td>string </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>string Object名称 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>bool类型值，用来判断函数是否成功 </dd></dl>
+
+<p>在文件 <a class="el" href="_o_s_s_client_8cpp_source.html">OSSClient.cpp</a> 第 <a class="el" href="_o_s_s_client_8cpp_source.html#l00240">240</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a83cfd1ec844a664d041f42c5afa3dfd5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a> OSS::OSSClient::DeleteObjectGroup </td>
+          <td>(</td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>bucketName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>key</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>同步方法，DeleteObjectGroup 没有实现，请使用 DeleteObject 方法 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">bucketName</td><td>string </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>string </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OSS_RESULTCODE类型值，用来判断函数是否成功以及返回错误码 </dd></dl>
+
+<p>在文件 <a class="el" href="_o_s_s_client_8cpp_source.html">OSSClient.cpp</a> 第 <a class="el" href="_o_s_s_client_8cpp_source.html#l00311">311</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0941cc8ddaadeefdcc6a39b9f00df175"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool OSS::OSSClient::DeleteObjectGroup_Async </td>
+          <td>(</td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>bucketName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>key</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>异步方法，DeleteObjectGroup_Async 没有实现，请使用 DeleteObject_Async 方法 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">bucketName</td><td>string </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>string </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>bool类型值，用来判断函数是否成功 </dd></dl>
+
+<p>在文件 <a class="el" href="_o_s_s_client_8cpp_source.html">OSSClient.cpp</a> 第 <a class="el" href="_o_s_s_client_8cpp_source.html#l00332">332</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9811ca3f0f87b6887799071e33aadf3c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a> OSS::OSSClient::FetchObject </td>
+          <td>(</td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>bucketName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_o_s_s_object.html">OSSObject</a> &amp;&#160;</td>
+          <td class="paramname"><em>object</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>同步方法，获取Object，适合小文件下载，大文件下载请使用FetchObject(string &amp;bucketName,string &amp;key,string &amp; filePath)方法 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">bucketName</td><td>string </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>string Object名称 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">object</td><td><a class="el" href="class_o_s_s_1_1_o_s_s_object.html" title="Object类">OSSObject</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OSS_RESULTCODE类型值，用来判断函数是否成功以及返回错误码 </dd></dl>
+
+<p>在文件 <a class="el" href="_o_s_s_client_8cpp_source.html">OSSClient.cpp</a> 第 <a class="el" href="_o_s_s_client_8cpp_source.html#l00181">181</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa8b59be183f3b7a16493c1d45ce38b9d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a> OSS::OSSClient::FetchObject </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_fetch_object_request.html">FetchObjectRequest</a> &amp;&#160;</td>
+          <td class="paramname"><em>request</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_o_s_s_object.html">OSSObject</a> &amp;&#160;</td>
+          <td class="paramname"><em>object</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>同步方法，获取Object，适合小文件下载，大文件下载请使用FetchObject(string &amp;bucketName,string &amp;key,string &amp; filePath)方法 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">request</td><td><a class="el" href="class_o_s_s_1_1_fetch_object_request.html" title="获取Object请求类">FetchObjectRequest</a> </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">object</td><td><a class="el" href="class_o_s_s_1_1_o_s_s_object.html" title="Object类">OSSObject</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OSS_RESULTCODE类型值，用来判断函数是否成功以及返回错误码 </dd></dl>
+
+<p>在文件 <a class="el" href="_o_s_s_client_8cpp_source.html">OSSClient.cpp</a> 第 <a class="el" href="_o_s_s_client_8cpp_source.html#l00177">177</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="af5cf3caebce71085d9db0f7a5c727a9e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a> OSS::OSSClient::FetchObject </td>
+          <td>(</td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>bucketName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>filePath</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>同步方法，获取Object并直接写到指定文件中，适合大文件下载，会分块写入，不会造成内存溢出 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">bucketName</td><td>string </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>string Object名称 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">filePath</td><td>string 写入的文件名称（需要全路径） </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OSS_RESULTCODE类型值，用来判断函数是否成功以及返回错误码 </dd></dl>
+
+<p>在文件 <a class="el" href="_o_s_s_client_8cpp_source.html">OSSClient.cpp</a> 第 <a class="el" href="_o_s_s_client_8cpp_source.html#l00185">185</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a314b644e2ba7f633c06941082a526b05"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a> OSS::OSSClient::FetchObject </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_fetch_object_request.html">FetchObjectRequest</a> &amp;&#160;</td>
+          <td class="paramname"><em>request</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>filePath</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>同步方法，获取Object并直接写到指定文件中，适合大文件下载，会分块写入，不会造成内存溢出 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">request</td><td><a class="el" href="class_o_s_s_1_1_fetch_object_request.html" title="获取Object请求类">FetchObjectRequest</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">filePath</td><td>string 写入的文件名称（需要全路径） </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OSS_RESULTCODE类型值，用来判断函数是否成功以及返回错误码 </dd></dl>
+
+<p>在文件 <a class="el" href="_o_s_s_client_8cpp_source.html">OSSClient.cpp</a> 第 <a class="el" href="_o_s_s_client_8cpp_source.html#l00189">189</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5f328031da324731683b018b2e952278"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool OSS::OSSClient::FetchObject_Async </td>
+          <td>(</td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>bucketName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>key</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>异步方法，获取Object，适合小文件下载，大文件下载请使用FetchObject(string &amp;bucketName,string &amp;key,string &amp; filePath)方法 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">bucketName</td><td>string </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>string Object名称 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>bool类型值，用来判断函数是否成功 </dd></dl>
+
+<p>在文件 <a class="el" href="_o_s_s_client_8cpp_source.html">OSSClient.cpp</a> 第 <a class="el" href="_o_s_s_client_8cpp_source.html#l00215">215</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a238b8240e162d25b527df8ec694538e3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool OSS::OSSClient::FetchObject_Async </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_fetch_object_request.html">FetchObjectRequest</a> &amp;&#160;</td>
+          <td class="paramname"><em>request</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>异步方法，获取Object，适合小文件下载，大文件下载请使用FetchObject(string &amp;bucketName,string &amp;key,string &amp; filePath)方法 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">request</td><td><a class="el" href="class_o_s_s_1_1_fetch_object_request.html" title="获取Object请求类">FetchObjectRequest</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>bool类型值，用来判断函数是否成功 </dd></dl>
+
+<p>在文件 <a class="el" href="_o_s_s_client_8cpp_source.html">OSSClient.cpp</a> 第 <a class="el" href="_o_s_s_client_8cpp_source.html#l00219">219</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5420f8b15ac402dd29c335efe604c9f2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool OSS::OSSClient::FetchObject_Async </td>
+          <td>(</td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>bucketName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>filePath</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>异步方法，获取Object并直接写到指定文件中，适合大文件下载，会分块写入，不会造成内存溢出 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">bucketName</td><td>string </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>string Object名称 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">filePath</td><td>string 写入的文件名称（需要全路径） </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>bool类型值，用来判断函数是否成功 </dd></dl>
+
+<p>在文件 <a class="el" href="_o_s_s_client_8cpp_source.html">OSSClient.cpp</a> 第 <a class="el" href="_o_s_s_client_8cpp_source.html#l00224">224</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a641b1c2a122b51c1e5c83f5648884630"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool OSS::OSSClient::FetchObject_Async </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_fetch_object_request.html">FetchObjectRequest</a> &amp;&#160;</td>
+          <td class="paramname"><em>request</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>filePath</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>异步方法，获取Object并直接写到指定文件中，适合大文件下载，会分块写入，不会造成内存溢出,如果filePath错误，则不会发送请求 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">request</td><td><a class="el" href="class_o_s_s_1_1_fetch_object_request.html" title="获取Object请求类">FetchObjectRequest</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">filePath</td><td>string 写入的文件名称（需要全路径） </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>bool类型值，用来判断函数是否成功 </dd></dl>
+
+<p>在文件 <a class="el" href="_o_s_s_client_8cpp_source.html">OSSClient.cpp</a> 第 <a class="el" href="_o_s_s_client_8cpp_source.html#l00228">228</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad03970a841ae0a811669c4d2ea535d61"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a> OSS::OSSClient::GetBucketACL </td>
+          <td>(</td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>bucketName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_canned_access_control_list.html">CannedAccessControlList</a> &amp;&#160;</td>
+          <td class="paramname"><em>aclList</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>同步方法，获得Bucket的访问控制权限 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">bucketName</td><td>string </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">aclList</td><td><a class="el" href="class_o_s_s_1_1_canned_access_control_list.html" title="Bucket对象CannedAccessControlList，控制权限列表">CannedAccessControlList</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OSS_RESULTCODE类型值，用来判断函数是否成功以及返回错误码 </dd></dl>
+
+<p>在文件 <a class="el" href="_o_s_s_client_8cpp_source.html">OSSClient.cpp</a> 第 <a class="el" href="_o_s_s_client_8cpp_source.html#l00133">133</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2f253aa8b475840dcc6a0c339a357b98"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool OSS::OSSClient::GetBucketACL_Async </td>
+          <td>(</td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>bucketName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>异步方法，获得Bucket的访问控制权限 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">bucketName</td><td>string </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>bool类型值，用来判断函数是否成功 </dd></dl>
+
+<p>在文件 <a class="el" href="_o_s_s_client_8cpp_source.html">OSSClient.cpp</a> 第 <a class="el" href="_o_s_s_client_8cpp_source.html#l00161">161</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a066a439db550bd0f3d90eee5d598d5ad"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a> OSS::OSSClient::GetObjectGroup </td>
+          <td>(</td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>bucketName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>key</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>同步方法，GetObjectGroup 没有实现，请使用 GetObject 方法 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">bucketName</td><td>string </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>string </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OSS_RESULTCODE类型值，用来判断函数是否成功以及返回错误码 </dd></dl>
+
+<p>在文件 <a class="el" href="_o_s_s_client_8cpp_source.html">OSSClient.cpp</a> 第 <a class="el" href="_o_s_s_client_8cpp_source.html#l00307">307</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a35c857ce18d953968a854cee04fabb5d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool OSS::OSSClient::GetObjectGroup_Async </td>
+          <td>(</td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>bucketName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>key</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>异步方法， GetObjectGroup_Async 没有实现，请使用 GetObject_Async 方法 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">bucketName</td><td>string </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>string </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>bool类型值，用来判断函数是否成功 </dd></dl>
+
+<p>在文件 <a class="el" href="_o_s_s_client_8cpp_source.html">OSSClient.cpp</a> 第 <a class="el" href="_o_s_s_client_8cpp_source.html#l00328">328</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9a000645707d48034ce4577b1814c5f8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a> OSS::OSSClient::GetObjectGroupIndex </td>
+          <td>(</td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>bucketName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_fetch_object_group_index_result.html">FetchObjectGroupIndexResult</a> &amp;&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>同步方法，获取ObjectGroup的索引信息 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">bucketName</td><td>string </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>string </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td><a class="el" href="class_o_s_s_1_1_fetch_object_group_index_result.html" title="获取ObjectGroupIndex结果类">FetchObjectGroupIndexResult</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OSS_RESULTCODE类型值，用来判断函数是否成功以及返回错误码 </dd></dl>
+
+<p>在文件 <a class="el" href="_o_s_s_client_8cpp_source.html">OSSClient.cpp</a> 第 <a class="el" href="_o_s_s_client_8cpp_source.html#l00302">302</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a97251e8d540ec322985d3f1243a2c80b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool OSS::OSSClient::GetObjectGroupIndex_Async </td>
+          <td>(</td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>bucketName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>key</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>异步方法，获取ObjectGroup的索引信息 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">bucketName</td><td>string </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>string </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>bool类型值，用来判断函数是否成功 </dd></dl>
+
+<p>在文件 <a class="el" href="_o_s_s_client_8cpp_source.html">OSSClient.cpp</a> 第 <a class="el" href="_o_s_s_client_8cpp_source.html#l00324">324</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a87b238d5ea18bae998de45d6bffbe12f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a> OSS::OSSClient::GetObjectGroupMetadata </td>
+          <td>(</td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>bucketName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_object_metadata.html">ObjectMetadata</a> &amp;&#160;</td>
+          <td class="paramname"><em>objectMetadata</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>同步方法，GetObjectGroupMetadata没有实现，请使用 GetObjectMetadata 方法 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">bucketName</td><td>string </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>string </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OSS_RESULTCODE类型值，用来判断函数是否成功以及返回错误码 </dd></dl>
+
+<p>在文件 <a class="el" href="_o_s_s_client_8cpp_source.html">OSSClient.cpp</a> 第 <a class="el" href="_o_s_s_client_8cpp_source.html#l00315">315</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="adefb958c51606f0fe9b510c4918e88fb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool OSS::OSSClient::GetObjectGroupMetadata_Async </td>
+          <td>(</td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>bucketName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>key</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>异步方法，GetObjectGroupMetadata_Async没有实现，请使用 GetObjectMetadata_Async 方法 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">bucketName</td><td>string </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>string </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>bool类型值，用来判断函数是否成功 </dd></dl>
+
+<p>在文件 <a class="el" href="_o_s_s_client_8cpp_source.html">OSSClient.cpp</a> 第 <a class="el" href="_o_s_s_client_8cpp_source.html#l00336">336</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac2edf2775ac09b9c91519a5f775e91a5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a> OSS::OSSClient::GetObjectMetadata </td>
+          <td>(</td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>bucketName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_object_metadata.html">ObjectMetadata</a> &amp;&#160;</td>
+          <td class="paramname"><em>objectMetadata</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>同步方法，获取Object元数据 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">bucketName</td><td>string </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>string Object名称 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">objectMetadata</td><td><a class="el" href="class_o_s_s_1_1_object_metadata.html" title="Object元数据对象类">ObjectMetadata</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OSS_RESULTCODE类型值，用来判断函数是否成功以及返回错误码 </dd></dl>
+
+<p>在文件 <a class="el" href="_o_s_s_client_8cpp_source.html">OSSClient.cpp</a> 第 <a class="el" href="_o_s_s_client_8cpp_source.html#l00193">193</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6e456f46b72d577a14f2b9c2920d8764"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool OSS::OSSClient::GetObjectMetadata_Async </td>
+          <td>(</td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>bucketName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>key</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>异步方法，获取Object元数据 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">bucketName</td><td>string </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>string Object名称 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>bool类型值，用来判断函数是否成功 </dd></dl>
+
+<p>在文件 <a class="el" href="_o_s_s_client_8cpp_source.html">OSSClient.cpp</a> 第 <a class="el" href="_o_s_s_client_8cpp_source.html#l00232">232</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae15bf58abbb805a36675e859e4bc31cd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a> OSS::OSSClient::InitiateMultipartUpload </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_initiate_multipart_upload_request.html">InitiateMultipartUploadRequest</a> &amp;&#160;</td>
+          <td class="paramname"><em>initiateMultipartUploadRequest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_initiate_multipart_upload_result.html">InitiateMultipartUploadResult</a> &amp;&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>同步方法，初始化上传请求 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">initiateMultipartUploadRequest</td><td><a class="el" href="class_o_s_s_1_1_initiate_multipart_upload_request.html" title="初始化多点上传请求类">InitiateMultipartUploadRequest</a> </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td><a class="el" href="class_o_s_s_1_1_initiate_multipart_upload_result.html" title="初始化多点上传请求结果类">InitiateMultipartUploadResult</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OSS_RESULTCODE类型值，用来判断函数是否成功以及返回错误码 </dd></dl>
+
+<p>在文件 <a class="el" href="_o_s_s_client_8cpp_source.html">OSSClient.cpp</a> 第 <a class="el" href="_o_s_s_client_8cpp_source.html#l00260">260</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7427a4f4146f54a69f74cfb5be9a5321"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool OSS::OSSClient::InitiateMultipartUpload_Async </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_initiate_multipart_upload_request.html">InitiateMultipartUploadRequest</a> &amp;&#160;</td>
+          <td class="paramname"><em>initiateMultipartUploadRequest</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>异步方法，初始化上传请求 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">initiateMultipartUploadRequest</td><td><a class="el" href="class_o_s_s_1_1_initiate_multipart_upload_request.html" title="初始化多点上传请求类">InitiateMultipartUploadRequest</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>bool类型值，用来判断函数是否成功 </dd></dl>
+
+<p>在文件 <a class="el" href="_o_s_s_client_8cpp_source.html">OSSClient.cpp</a> 第 <a class="el" href="_o_s_s_client_8cpp_source.html#l00285">285</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3f4f34a3948af5cad0ae5a31c38539cf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a> OSS::OSSClient::IsBucketExist </td>
+          <td>(</td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>bucketName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool &amp;&#160;</td>
+          <td class="paramname"><em>isExist</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>同步方法，判断指定的bucket是否存在 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">bucketName</td><td>string </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">isExist</td><td>bool </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OSS_RESULTCODE类型值，用来判断函数是否成功以及返回错误码 </dd></dl>
+
+<p>在文件 <a class="el" href="_o_s_s_client_8cpp_source.html">OSSClient.cpp</a> 第 <a class="el" href="_o_s_s_client_8cpp_source.html#l00137">137</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa4ea8e60e096aa656e9b4e8eadceac3a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool OSS::OSSClient::IsBucketExist_Async </td>
+          <td>(</td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>bucketName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>异步方法，判断指定的bucket是否存在 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">bucketName</td><td>string </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>bool类型值，用来判断函数是否成功 </dd></dl>
+
+<p>在文件 <a class="el" href="_o_s_s_client_8cpp_source.html">OSSClient.cpp</a> 第 <a class="el" href="_o_s_s_client_8cpp_source.html#l00165">165</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a733e1f0a076dd22f4efd789179b57173"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a> OSS::OSSClient::ListBuckets </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_buckets.html">Buckets</a> &amp;&#160;</td>
+          <td class="paramname"><em>buckets</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>同步方法，罗列所有的bucket </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">buckets</td><td><a class="el" href="class_o_s_s_1_1_buckets.html" title="Buckets，存储Bucket对象数组">Buckets</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OSS_RESULTCODE类型值，用来判断函数是否成功以及返回错误码 </dd></dl>
+
+<p>在文件 <a class="el" href="_o_s_s_client_8cpp_source.html">OSSClient.cpp</a> 第 <a class="el" href="_o_s_s_client_8cpp_source.html#l00125">125</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0e5a29db66812a34e64954d669ba4f9b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool OSS::OSSClient::ListBuckets_Async </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>异步方法，罗列所有的bucket </p>
+<dl class="section return"><dt>返回</dt><dd>bool类型值，用来判断函数是否成功 </dd></dl>
+
+<p>在文件 <a class="el" href="_o_s_s_client_8cpp_source.html">OSSClient.cpp</a> 第 <a class="el" href="_o_s_s_client_8cpp_source.html#l00153">153</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9f975355b98060eaa4c5bda1e0a864ac"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a> OSS::OSSClient::ListMultipartUploads </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_list_multipart_uploads_request.html">ListMultipartUploadsRequest</a> &amp;&#160;</td>
+          <td class="paramname"><em>listMultipartUploadsRequest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_multipart_upload_listing.html">MultipartUploadListing</a> &amp;&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>同步方法，罗列已经初始化的上传请求 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">listMultipartUploadsRequest</td><td><a class="el" href="class_o_s_s_1_1_list_multipart_uploads_request.html" title="罗列多点上传请求类">ListMultipartUploadsRequest</a> </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td><a class="el" href="class_o_s_s_1_1_multipart_upload_listing.html" title="罗列多点上请求传列表结果对象">MultipartUploadListing</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OSS_RESULTCODE类型值，用来判断函数是否成功以及返回错误码 </dd></dl>
+
+<p>在文件 <a class="el" href="_o_s_s_client_8cpp_source.html">OSSClient.cpp</a> 第 <a class="el" href="_o_s_s_client_8cpp_source.html#l00256">256</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a32cdee019df3c83ccab6cebbd21cc7ec"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool OSS::OSSClient::ListMultipartUploads_Async </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_list_multipart_uploads_request.html">ListMultipartUploadsRequest</a> &amp;&#160;</td>
+          <td class="paramname"><em>listMultipartUploadsRequest</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>异步方法，罗列已经初始化的上传请求 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">listMultipartUploadsRequest</td><td><a class="el" href="class_o_s_s_1_1_list_multipart_uploads_request.html" title="罗列多点上传请求类">ListMultipartUploadsRequest</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>bool类型值，用来判断函数是否成功 </dd></dl>
+
+<p>在文件 <a class="el" href="_o_s_s_client_8cpp_source.html">OSSClient.cpp</a> 第 <a class="el" href="_o_s_s_client_8cpp_source.html#l00281">281</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9ecb687ded217b68848b8751fdbb4d4d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a> OSS::OSSClient::ListObjects </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_list_objects_request.html">ListObjectsRequest</a> &amp;&#160;</td>
+          <td class="paramname"><em>reuqest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_object_listing.html">ObjectListing</a> &amp;&#160;</td>
+          <td class="paramname"><em>objectListing</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>同步方法，罗列Bucket中的Object </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">reuqest</td><td><a class="el" href="class_o_s_s_1_1_list_objects_request.html" title="罗列Objects对象类">ListObjectsRequest</a> </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">objectListing</td><td><a class="el" href="class_o_s_s_1_1_object_listing.html" title="罗列Object的结果对象">ObjectListing</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OSS_RESULTCODE类型值，用来判断函数是否成功以及返回错误码 </dd></dl>
+
+<p>在文件 <a class="el" href="_o_s_s_client_8cpp_source.html">OSSClient.cpp</a> 第 <a class="el" href="_o_s_s_client_8cpp_source.html#l00141">141</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="abf89a084a61bf106968ebbbb23300bc1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool OSS::OSSClient::ListObjects_Async </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_list_objects_request.html">ListObjectsRequest</a> &amp;&#160;</td>
+          <td class="paramname"><em>reuqest</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>异步方法，罗列Bucket中的Object </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">reuqest</td><td><a class="el" href="class_o_s_s_1_1_list_objects_request.html" title="罗列Objects对象类">ListObjectsRequest</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>bool类型值，用来判断函数是否成功 </dd></dl>
+
+<p>在文件 <a class="el" href="_o_s_s_client_8cpp_source.html">OSSClient.cpp</a> 第 <a class="el" href="_o_s_s_client_8cpp_source.html#l00169">169</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2bfeb9aa918020d1cf40265c64407c1c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a> OSS::OSSClient::ListParts </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_list_parts_request.html">ListPartsRequest</a> &amp;&#160;</td>
+          <td class="paramname"><em>listPartsRequest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_part_listing.html">PartListing</a> &amp;&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>同步方法，罗列上传的部分 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">listPartsRequest</td><td><a class="el" href="class_o_s_s_1_1_list_parts_request.html" title="罗列多点上传中part对象请求类">ListPartsRequest</a> </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td><a class="el" href="class_o_s_s_1_1_part_listing.html" title="多点上传中，罗列Part结果对象">PartListing</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OSS_RESULTCODE类型值，用来判断函数是否成功以及返回错误码 </dd></dl>
+
+<p>在文件 <a class="el" href="_o_s_s_client_8cpp_source.html">OSSClient.cpp</a> 第 <a class="el" href="_o_s_s_client_8cpp_source.html#l00252">252</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a058a8c97f37993aad48a298f33911a84"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool OSS::OSSClient::ListParts_Async </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_list_parts_request.html">ListPartsRequest</a> &amp;&#160;</td>
+          <td class="paramname"><em>listPartsRequest</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>异步方法，罗列上传的部分 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">listPartsRequest</td><td><a class="el" href="class_o_s_s_1_1_list_parts_request.html" title="罗列多点上传中part对象请求类">ListPartsRequest</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>bool类型值，用来判断函数是否成功 </dd></dl>
+
+<p>在文件 <a class="el" href="_o_s_s_client_8cpp_source.html">OSSClient.cpp</a> 第 <a class="el" href="_o_s_s_client_8cpp_source.html#l00277">277</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8bc28cc21b4b96993fd432b854402966"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a> OSS::OSSClient::PostObjectGroup </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_post_object_group_request.html">PostObjectGroupRequest</a> &amp;&#160;</td>
+          <td class="paramname"><em>postObjectGroupRequest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_post_object_group_result.html">PostObjectGroupResult</a> &amp;&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>同步方法，构造ObjectGroup </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">postObjectGroupRequest</td><td><a class="el" href="class_o_s_s_1_1_post_object_group_request.html" title="构造ObjectGroup对象请求类">PostObjectGroupRequest</a> </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td><a class="el" href="class_o_s_s_1_1_post_object_group_result.html" title="构造ObjectGroup对象请求结果对象">PostObjectGroupResult</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OSS_RESULTCODE类型值，用来判断函数是否成功以及返回错误码 </dd></dl>
+
+<p>在文件 <a class="el" href="_o_s_s_client_8cpp_source.html">OSSClient.cpp</a> 第 <a class="el" href="_o_s_s_client_8cpp_source.html#l00298">298</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="aed71f50f11b75aefcd53edbfbbbe9e56"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool OSS::OSSClient::PostObjectGroup_Async </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_post_object_group_request.html">PostObjectGroupRequest</a> &amp;&#160;</td>
+          <td class="paramname"><em>postObjectGroupRequest</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>异步方法，构造ObjectGroup </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">postObjectGroupRequest</td><td><a class="el" href="class_o_s_s_1_1_post_object_group_request.html" title="构造ObjectGroup对象请求类">PostObjectGroupRequest</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>bool类型值，用来判断函数是否成功 </dd></dl>
+
+<p>在文件 <a class="el" href="_o_s_s_client_8cpp_source.html">OSSClient.cpp</a> 第 <a class="el" href="_o_s_s_client_8cpp_source.html#l00320">320</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2e6a74a34d62f75eadb760fa56c246ec"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a> OSS::OSSClient::PutObject </td>
+          <td>(</td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>bucketName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>dataLength</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_object_metadata.html">ObjectMetadata</a> &amp;&#160;</td>
+          <td class="paramname"><em>objectMetadata</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_put_object_result.html">PutObjectResult</a> &amp;&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>同步方法，上传Object，适合小文件上传，大文件上传请使用MultiPart相关接口 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">bucketName</td><td>string </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>string Object名称 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>char * 数据块指针 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dataLength</td><td>long 数据块长度 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">objectMetadata</td><td><a class="el" href="class_o_s_s_1_1_object_metadata.html" title="Object元数据对象类">ObjectMetadata</a> Object元数据 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td><a class="el" href="class_o_s_s_1_1_put_object_result.html" title="上传Object对象结果">PutObjectResult</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OSS_RESULTCODE类型值，用来判断函数是否成功以及返回错误码 </dd></dl>
+
+<p>在文件 <a class="el" href="_o_s_s_client_8cpp_source.html">OSSClient.cpp</a> 第 <a class="el" href="_o_s_s_client_8cpp_source.html#l00173">173</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad8682a8c422ec4e943e8bb1ed602dbe0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool OSS::OSSClient::PutObject_Async </td>
+          <td>(</td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>bucketName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>dataLength</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_object_metadata.html">ObjectMetadata</a> &amp;&#160;</td>
+          <td class="paramname"><em>objectMetadata</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>异步方法，上传Object，适合小文件上传，大文件上传请使用MultiPart相关接口 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">bucketName</td><td>string </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>string Object名称 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>char * 数据块指针 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dataLength</td><td>long 数据块长度 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">objectMetadata</td><td><a class="el" href="class_o_s_s_1_1_object_metadata.html" title="Object元数据对象类">ObjectMetadata</a> Object元数据 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>bool类型值，用来判断函数是否成功 </dd></dl>
+
+<p>在文件 <a class="el" href="_o_s_s_client_8cpp_source.html">OSSClient.cpp</a> 第 <a class="el" href="_o_s_s_client_8cpp_source.html#l00211">211</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a49d01b156c3c51b5e86e2eb8eb34cdfa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a> OSS::OSSClient::SetBucketACL </td>
+          <td>(</td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>bucketName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_canned_access_control_list.html">CannedAccessControlList</a> &amp;&#160;</td>
+          <td class="paramname"><em>aclList</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>同步方法，设置Bucket的访问控制权限 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">bucketName</td><td>string </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aclList</td><td><a class="el" href="class_o_s_s_1_1_canned_access_control_list.html" title="Bucket对象CannedAccessControlList，控制权限列表">CannedAccessControlList</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OSS_RESULTCODE类型值，用来判断函数是否成功以及返回错误码 </dd></dl>
+
+<p>在文件 <a class="el" href="_o_s_s_client_8cpp_source.html">OSSClient.cpp</a> 第 <a class="el" href="_o_s_s_client_8cpp_source.html#l00129">129</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a83447b5d34076a7e3554b885f835d17f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool OSS::OSSClient::SetBucketACL_Async </td>
+          <td>(</td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>bucketName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_canned_access_control_list.html">CannedAccessControlList</a> &amp;&#160;</td>
+          <td class="paramname"><em>aclList</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>异步方法，设置Bucket的访问控制权限 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">bucketName</td><td>string </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aclList</td><td><a class="el" href="class_o_s_s_1_1_canned_access_control_list.html" title="Bucket对象CannedAccessControlList，控制权限列表">CannedAccessControlList</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>bool类型值，用来判断函数是否成功 </dd></dl>
+
+<p>在文件 <a class="el" href="_o_s_s_client_8cpp_source.html">OSSClient.cpp</a> 第 <a class="el" href="_o_s_s_client_8cpp_source.html#l00157">157</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a72979a7f14c1e620e591de5ee7502908"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a> OSS::OSSClient::UploadPart </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_upload_part_request.html">UploadPartRequest</a> &amp;&#160;</td>
+          <td class="paramname"><em>uploadPartRequest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_upload_part_result.html">UploadPartResult</a> &amp;&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>同步方法，多点上传之上传一部分 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">uploadPartRequest</td><td><a class="el" href="class_o_s_s_1_1_upload_part_request.html" title="多点上传中上传Part请求类">UploadPartRequest</a> </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td><a class="el" href="class_o_s_s_1_1_upload_part_result.html" title="多点上传中上传Part请求结果类">UploadPartResult</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>OSS_RESULTCODE类型值，用来判断函数是否成功以及返回错误码 </dd></dl>
+
+<p>在文件 <a class="el" href="_o_s_s_client_8cpp_source.html">OSSClient.cpp</a> 第 <a class="el" href="_o_s_s_client_8cpp_source.html#l00248">248</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a48bc57f35bc58850681540b1253258f4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool OSS::OSSClient::UploadPart_Async </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_upload_part_request.html">UploadPartRequest</a> &amp;&#160;</td>
+          <td class="paramname"><em>uploadPartRequest</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>异步方法，多点上传之上传一部分 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">uploadPartRequest</td><td><a class="el" href="class_o_s_s_1_1_upload_part_request.html" title="多点上传中上传Part请求类">UploadPartRequest</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>bool类型值，用来判断函数是否成功 </dd></dl>
+
+<p>在文件 <a class="el" href="_o_s_s_client_8cpp_source.html">OSSClient.cpp</a> 第 <a class="el" href="_o_s_s_client_8cpp_source.html#l00273">273</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="a53b7f5447bf8285b9a9e86715c01659c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_o_s_s_1_1_o_s_s_client_callback.html">OSSClientCallback</a>* OSS::OSSClient::delegate</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_o_s_s_client_8h_source.html">OSSClient.h</a> 第 <a class="el" href="_o_s_s_client_8h_source.html#l00586">586</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>project/libOSS/libOSS/<a class="el" href="_o_s_s_client_8h_source.html">OSSClient.h</a></li>
+<li>project/libOSS/libOSS/<a class="el" href="_o_s_s_client_8cpp_source.html">OSSClient.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2012年 九月 28日 星期五 14:56:23 , 为 libOSS使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.2
+</small></address>
+</body>
+</html>

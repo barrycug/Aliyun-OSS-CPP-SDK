@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libOSS", "libOSS\libOSS.vcxproj", "{CC13B3FD-B32D-4C5A-B757-340B2642E651}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OSSDemo", "..\OSSDemo\OSSDemo.vcxproj", "{5FE8C923-C856-47C9-AB6D-D44892DD7BD1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CC13B3FD-B32D-4C5A-B757-340B2642E651}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CC13B3FD-B32D-4C5A-B757-340B2642E651}.Debug|Win32.Build.0 = Debug|Win32
+		{CC13B3FD-B32D-4C5A-B757-340B2642E651}.Release|Win32.ActiveCfg = Release|Win32
+		{CC13B3FD-B32D-4C5A-B757-340B2642E651}.Release|Win32.Build.0 = Release|Win32
+		{5FE8C923-C856-47C9-AB6D-D44892DD7BD1}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5FE8C923-C856-47C9-AB6D-D44892DD7BD1}.Debug|Win32.Build.0 = Debug|Win32
+		{5FE8C923-C856-47C9-AB6D-D44892DD7BD1}.Release|Win32.ActiveCfg = Release|Win32
+		{5FE8C923-C856-47C9-AB6D-D44892DD7BD1}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(Performance) = preSolution
+		HasPerformanceSessions = true
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,839 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>libOSS: project/libOSS/libOSS/xmlParser.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">libOSS
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">igis.me</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.2 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_167790342fb55959539d550b874be046.html">project</a></li><li class="navelem"><a class="el" href="dir_3023ff01d1436e238124d7fcc5000422.html">libOSS</a></li><li class="navelem"><a class="el" href="dir_c2df5faff012d771a522b75d2c985cb4.html">libOSS</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#define-members">宏定义</a> &#124;
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#enum-members">枚举</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">xmlParser.h 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><a href="xml_parser_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_x_m_l_results.html">XMLResults</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure used to obtain error details if the parse fails.  <a href="struct_x_m_l_results.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_x_m_l_clear.html">XMLClear</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure for <a class="el" href="struct_x_m_l.html">XML</a> clear (unformatted) node (usually comments)  <a href="struct_x_m_l_clear.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_x_m_l_attribute.html">XMLAttribute</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure for <a class="el" href="struct_x_m_l.html">XML</a> attribute.  <a href="struct_x_m_l_attribute.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_x_m_l_node.html">XMLNode</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main Class representing a <a class="el" href="struct_x_m_l.html">XML</a> node.  <a href="struct_x_m_l_node.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_x_m_l_node_contents.html">XMLNodeContents</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This structure is given by the function <a class="el" href="struct_x_m_l_node.html#af56414ef38a13892afc4f22177a7760a" title="enumerate all the different contents (attribute,child,text, clear) of the current XMLNode...">XMLNode::enumContents</a>.  <a href="struct_x_m_l_node_contents.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_to_x_m_l_string_tool.html">ToXMLStringTool</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper class to create <a class="el" href="struct_x_m_l.html">XML</a> files using "printf", "fprintf", "cout",... functions.  <a href="struct_to_x_m_l_string_tool.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_x_m_l_parser_base64_tool.html">XMLParserBase64Tool</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper class to include binary data inside <a class="el" href="struct_x_m_l.html">XML</a> strings using "Base64 encoding".  <a href="struct_x_m_l_parser_base64_tool.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a990c86ec1cdbf675604a1a321d852063"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xml_parser_8h.html#a990c86ec1cdbf675604a1a321d852063">XMLDLLENTRY</a></td></tr>
+<tr class="separator:a990c86ec1cdbf675604a1a321d852063"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a990c86ec1cdbf675604a1a321d852063"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xml_parser_8h.html#a990c86ec1cdbf675604a1a321d852063">XMLDLLENTRY</a></td></tr>
+<tr class="separator:a990c86ec1cdbf675604a1a321d852063"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17b1f4694ce8bdeef4c07319c5f8f84d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xml_parser_8h.html#a17b1f4694ce8bdeef4c07319c5f8f84d">_CXML</a>(c)&#160;&#160;&#160;c</td></tr>
+<tr class="separator:a17b1f4694ce8bdeef4c07319c5f8f84d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdb0d6fd8dd596384b438d86cfb2b182"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xml_parser_8h.html#acdb0d6fd8dd596384b438d86cfb2b182">XMLCSTR</a>&#160;&#160;&#160;const char *</td></tr>
+<tr class="separator:acdb0d6fd8dd596384b438d86cfb2b182"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a849d96105aa0c8f64b5c10d9151a3cdc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xml_parser_8h.html#a849d96105aa0c8f64b5c10d9151a3cdc">XMLSTR</a>&#160;&#160;&#160;char *</td></tr>
+<tr class="separator:a849d96105aa0c8f64b5c10d9151a3cdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f587fbd233e721e8818a3bf8102838f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xml_parser_8h.html#a9f587fbd233e721e8818a3bf8102838f">XMLCHAR</a>&#160;&#160;&#160;char</td></tr>
+<tr class="separator:a9f587fbd233e721e8818a3bf8102838f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa93f0eb578d23995850d61f7d61c55c1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xml_parser_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:aa93f0eb578d23995850d61f7d61c55c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8cecfc5c5c054d2875c03e77b7be15d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xml_parser_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:aa8cecfc5c5c054d2875c03e77b7be15d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:a1b079e7e429bd933ca6b2134846689b6"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="xml_parser_8h.html#ac39bd07b1461aaa70afffe2d7162b4f5">XMLError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xml_parser_8h.html#a1b079e7e429bd933ca6b2134846689b6">XMLError</a></td></tr>
+<tr class="memdesc:a1b079e7e429bd933ca6b2134846689b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumeration for <a class="el" href="struct_x_m_l.html">XML</a> parse errors.  <a href="#a1b079e7e429bd933ca6b2134846689b6"></a><br/></td></tr>
+<tr class="separator:a1b079e7e429bd933ca6b2134846689b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e42cd83bc7037162ed779d78881bf20"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="xml_parser_8h.html#a100a496e2b573b37eb4e75f00a316851">XMLElementType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xml_parser_8h.html#a8e42cd83bc7037162ed779d78881bf20">XMLElementType</a></td></tr>
+<tr class="memdesc:a8e42cd83bc7037162ed779d78881bf20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumeration used to manage type of data. Use in conjunction with structure <a class="el" href="struct_x_m_l_node_contents.html" title="This structure is given by the function XMLNode::enumContents.">XMLNodeContents</a>.  <a href="#a8e42cd83bc7037162ed779d78881bf20"></a><br/></td></tr>
+<tr class="separator:a8e42cd83bc7037162ed779d78881bf20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafbd547d290f82864b1f840025e972bc"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_x_m_l_results.html">XMLResults</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xml_parser_8h.html#aafbd547d290f82864b1f840025e972bc">XMLResults</a></td></tr>
+<tr class="memdesc:aafbd547d290f82864b1f840025e972bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure used to obtain error details if the parse fails.  <a href="#aafbd547d290f82864b1f840025e972bc"></a><br/></td></tr>
+<tr class="separator:aafbd547d290f82864b1f840025e972bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac66e91f36b3c0c314c4fc8894820aee8"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_x_m_l_clear.html">XMLClear</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xml_parser_8h.html#ac66e91f36b3c0c314c4fc8894820aee8">XMLClear</a></td></tr>
+<tr class="memdesc:ac66e91f36b3c0c314c4fc8894820aee8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure for <a class="el" href="struct_x_m_l.html">XML</a> clear (unformatted) node (usually comments)  <a href="#ac66e91f36b3c0c314c4fc8894820aee8"></a><br/></td></tr>
+<tr class="separator:ac66e91f36b3c0c314c4fc8894820aee8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a11e7f02fa98cb7850c6d33e5eb9a77"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_x_m_l_attribute.html">XMLAttribute</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xml_parser_8h.html#a4a11e7f02fa98cb7850c6d33e5eb9a77">XMLAttribute</a></td></tr>
+<tr class="memdesc:a4a11e7f02fa98cb7850c6d33e5eb9a77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure for <a class="el" href="struct_x_m_l.html">XML</a> attribute.  <a href="#a4a11e7f02fa98cb7850c6d33e5eb9a77"></a><br/></td></tr>
+<tr class="separator:a4a11e7f02fa98cb7850c6d33e5eb9a77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab10d65aadeca1f026f6416becde7432"><td class="memItemLeft" align="right" valign="top">typedef int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xml_parser_8h.html#aab10d65aadeca1f026f6416becde7432">XMLElementPosition</a></td></tr>
+<tr class="memdesc:aab10d65aadeca1f026f6416becde7432"><td class="mdescLeft">&#160;</td><td class="mdescRight">XMLElementPosition are not interchangeable with simple indexes.  <a href="#aab10d65aadeca1f026f6416becde7432"></a><br/></td></tr>
+<tr class="separator:aab10d65aadeca1f026f6416becde7432"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40876d6c58776ec0adb69baea534b2de"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="xml_parser_8h.html#a990c86ec1cdbf675604a1a321d852063">XMLDLLENTRY</a> <a class="el" href="struct_x_m_l_node.html">XMLNode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xml_parser_8h.html#a40876d6c58776ec0adb69baea534b2de">XMLNode</a></td></tr>
+<tr class="memdesc:a40876d6c58776ec0adb69baea534b2de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main Class representing a <a class="el" href="struct_x_m_l.html">XML</a> node.  <a href="#a40876d6c58776ec0adb69baea534b2de"></a><br/></td></tr>
+<tr class="separator:a40876d6c58776ec0adb69baea534b2de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb1f38c236e48d32771c48b14ed627d1"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_x_m_l_node_contents.html">XMLNodeContents</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xml_parser_8h.html#adb1f38c236e48d32771c48b14ed627d1">XMLNodeContents</a></td></tr>
+<tr class="memdesc:adb1f38c236e48d32771c48b14ed627d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">This structure is given by the function <a class="el" href="struct_x_m_l_node.html#af56414ef38a13892afc4f22177a7760a" title="enumerate all the different contents (attribute,child,text, clear) of the current XMLNode...">XMLNode::enumContents</a>.  <a href="#adb1f38c236e48d32771c48b14ed627d1"></a><br/></td></tr>
+<tr class="separator:adb1f38c236e48d32771c48b14ed627d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0460d731addf12b0863d4fd857ca8281"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="xml_parser_8h.html#a990c86ec1cdbf675604a1a321d852063">XMLDLLENTRY</a> <br class="typebreak"/>
+<a class="el" href="struct_to_x_m_l_string_tool.html">ToXMLStringTool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xml_parser_8h.html#a0460d731addf12b0863d4fd857ca8281">ToXMLStringTool</a></td></tr>
+<tr class="memdesc:a0460d731addf12b0863d4fd857ca8281"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper class to create <a class="el" href="struct_x_m_l.html">XML</a> files using "printf", "fprintf", "cout",... functions.  <a href="#a0460d731addf12b0863d4fd857ca8281"></a><br/></td></tr>
+<tr class="separator:a0460d731addf12b0863d4fd857ca8281"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90d0646ff4a054f9d8ea0d29fb86f3a9"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="xml_parser_8h.html#a990c86ec1cdbf675604a1a321d852063">XMLDLLENTRY</a> <br class="typebreak"/>
+<a class="el" href="struct_x_m_l_parser_base64_tool.html">XMLParserBase64Tool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xml_parser_8h.html#a90d0646ff4a054f9d8ea0d29fb86f3a9">XMLParserBase64Tool</a></td></tr>
+<tr class="memdesc:a90d0646ff4a054f9d8ea0d29fb86f3a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper class to include binary data inside <a class="el" href="struct_x_m_l.html">XML</a> strings using "Base64 encoding".  <a href="#a90d0646ff4a054f9d8ea0d29fb86f3a9"></a><br/></td></tr>
+<tr class="separator:a90d0646ff4a054f9d8ea0d29fb86f3a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:ac39bd07b1461aaa70afffe2d7162b4f5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xml_parser_8h.html#ac39bd07b1461aaa70afffe2d7162b4f5">XMLError</a> { <br/>
+&#160;&#160;<a class="el" href="xml_parser_8h.html#ac39bd07b1461aaa70afffe2d7162b4f5a7cf226016a9a9ebc47ee5124e413b511">eXMLErrorNone</a> = 0, 
+<a class="el" href="xml_parser_8h.html#ac39bd07b1461aaa70afffe2d7162b4f5a26a80e15de947fae9fb44b67e1a3a263">eXMLErrorMissingEndTag</a>, 
+<a class="el" href="xml_parser_8h.html#ac39bd07b1461aaa70afffe2d7162b4f5a164e2a597f12c1b2e186519fc893cc58">eXMLErrorNoXMLTagFound</a>, 
+<a class="el" href="xml_parser_8h.html#ac39bd07b1461aaa70afffe2d7162b4f5a0961a8e0bbf11a91009adaf4b1c66e46">eXMLErrorEmpty</a>, 
+<br/>
+&#160;&#160;<a class="el" href="xml_parser_8h.html#ac39bd07b1461aaa70afffe2d7162b4f5a943343714a3946a264fa0bfa7a4fbe7d">eXMLErrorMissingTagName</a>, 
+<a class="el" href="xml_parser_8h.html#ac39bd07b1461aaa70afffe2d7162b4f5a489af43e5e1f882ed5c3dd9f59bbfde4">eXMLErrorMissingEndTagName</a>, 
+<a class="el" href="xml_parser_8h.html#ac39bd07b1461aaa70afffe2d7162b4f5a4eb9d0115e3d9fcfad342c7387c26c63">eXMLErrorUnmatchedEndTag</a>, 
+<a class="el" href="xml_parser_8h.html#ac39bd07b1461aaa70afffe2d7162b4f5a90b020017d16093c6ccff3ccf3d92ee8">eXMLErrorUnmatchedEndClearTag</a>, 
+<br/>
+&#160;&#160;<a class="el" href="xml_parser_8h.html#ac39bd07b1461aaa70afffe2d7162b4f5a26e2e2231f2d3941d4b4bbb96cd9ed2c">eXMLErrorUnexpectedToken</a>, 
+<a class="el" href="xml_parser_8h.html#ac39bd07b1461aaa70afffe2d7162b4f5ad0687f19145845937f24cecd9f5e9fa9">eXMLErrorNoElements</a>, 
+<a class="el" href="xml_parser_8h.html#ac39bd07b1461aaa70afffe2d7162b4f5a55441ddd2419acb3674a9068f5c3930f">eXMLErrorFileNotFound</a>, 
+<a class="el" href="xml_parser_8h.html#ac39bd07b1461aaa70afffe2d7162b4f5a750c78b6de79d89e2184fc7caff939e0">eXMLErrorFirstTagNotFound</a>, 
+<br/>
+&#160;&#160;<a class="el" href="xml_parser_8h.html#ac39bd07b1461aaa70afffe2d7162b4f5aeca604d14ec57d6dcfdc5e74dbc559dc">eXMLErrorUnknownCharacterEntity</a>, 
+<a class="el" href="xml_parser_8h.html#ac39bd07b1461aaa70afffe2d7162b4f5a4e9a09e10bdc0c9071a8b2c4442ecae9">eXMLErrorCharacterCodeAbove255</a>, 
+<a class="el" href="xml_parser_8h.html#ac39bd07b1461aaa70afffe2d7162b4f5a5e54f63f442005ae89fdf1fe4fb17725">eXMLErrorCharConversionError</a>, 
+<a class="el" href="xml_parser_8h.html#ac39bd07b1461aaa70afffe2d7162b4f5a8596c0bf247f549ff306b6889fe2cb5c">eXMLErrorCannotOpenWriteFile</a>, 
+<br/>
+&#160;&#160;<a class="el" href="xml_parser_8h.html#ac39bd07b1461aaa70afffe2d7162b4f5a1dad0c33ae33d61b2f5f6f7f72838209">eXMLErrorCannotWriteFile</a>, 
+<a class="el" href="xml_parser_8h.html#ac39bd07b1461aaa70afffe2d7162b4f5a85384d57e765bd52aaaa06096cb186d9">eXMLErrorBase64DataSizeIsNotMultipleOf4</a>, 
+<a class="el" href="xml_parser_8h.html#ac39bd07b1461aaa70afffe2d7162b4f5afc16bb8e15fab680665d3b8bedfc980b">eXMLErrorBase64DecodeIllegalCharacter</a>, 
+<a class="el" href="xml_parser_8h.html#ac39bd07b1461aaa70afffe2d7162b4f5af2d54f7b3a0299a7051a196a125bf62d">eXMLErrorBase64DecodeTruncatedData</a>, 
+<br/>
+&#160;&#160;<a class="el" href="xml_parser_8h.html#ac39bd07b1461aaa70afffe2d7162b4f5adcc1aaa78e2f45feb792585ab1d747bd">eXMLErrorBase64DecodeBufferTooSmall</a>
+<br/>
+ }</td></tr>
+<tr class="memdesc:ac39bd07b1461aaa70afffe2d7162b4f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumeration for <a class="el" href="struct_x_m_l.html">XML</a> parse errors.  <a href="xml_parser_8h.html#ac39bd07b1461aaa70afffe2d7162b4f5">更多...</a><br/></td></tr>
+<tr class="separator:ac39bd07b1461aaa70afffe2d7162b4f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a100a496e2b573b37eb4e75f00a316851"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xml_parser_8h.html#a100a496e2b573b37eb4e75f00a316851">XMLElementType</a> { <br/>
+&#160;&#160;<a class="el" href="xml_parser_8h.html#a100a496e2b573b37eb4e75f00a316851abef700648a317ca089d00a9285791f8f">eNodeChild</a> =0, 
+<a class="el" href="xml_parser_8h.html#a100a496e2b573b37eb4e75f00a316851a98e1935d617c2377530661c2d8905d46">eNodeAttribute</a> =1, 
+<a class="el" href="xml_parser_8h.html#a100a496e2b573b37eb4e75f00a316851a0d667f729ee0477d741d7939cf025201">eNodeText</a> =2, 
+<a class="el" href="xml_parser_8h.html#a100a496e2b573b37eb4e75f00a316851ae32d7d859f74292c7474f96804f0cf81">eNodeClear</a> =3, 
+<br/>
+&#160;&#160;<a class="el" href="xml_parser_8h.html#a100a496e2b573b37eb4e75f00a316851a1e67ba6c14f35fdc461da667721bff31">eNodeNULL</a> =4
+<br/>
+ }</td></tr>
+<tr class="memdesc:a100a496e2b573b37eb4e75f00a316851"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumeration used to manage type of data. Use in conjunction with structure <a class="el" href="struct_x_m_l_node_contents.html" title="This structure is given by the function XMLNode::enumContents.">XMLNodeContents</a>.  <a href="xml_parser_8h.html#a100a496e2b573b37eb4e75f00a316851">更多...</a><br/></td></tr>
+<tr class="separator:a100a496e2b573b37eb4e75f00a316851"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:ac35b3be05a320f835b3976179637fe76"><td class="memItemLeft" align="right" valign="top"><a class="el" href="xml_parser_8h.html#a990c86ec1cdbf675604a1a321d852063">XMLDLLENTRY</a> <a class="el" href="xml_parser_8h.html#a849d96105aa0c8f64b5c10d9151a3cdc">XMLSTR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xml_parser_8h.html#ac35b3be05a320f835b3976179637fe76">stringDup</a> (<a class="el" href="xml_parser_8h.html#acdb0d6fd8dd596384b438d86cfb2b182">XMLCSTR</a> source, int cbData=-1)</td></tr>
+<tr class="memdesc:ac35b3be05a320f835b3976179637fe76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Duplicate (copy in a new allocated buffer) the source string.  <a href="#ac35b3be05a320f835b3976179637fe76"></a><br/></td></tr>
+<tr class="separator:ac35b3be05a320f835b3976179637fe76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a510c9553d7fa49d0afdda1d7928669"><td class="memItemLeft" align="right" valign="top"><a class="el" href="xml_parser_8h.html#a990c86ec1cdbf675604a1a321d852063">XMLDLLENTRY</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xml_parser_8h.html#a6a510c9553d7fa49d0afdda1d7928669">freeXMLString</a> (<a class="el" href="xml_parser_8h.html#a849d96105aa0c8f64b5c10d9151a3cdc">XMLSTR</a> t)</td></tr>
+<tr class="memdesc:a6a510c9553d7fa49d0afdda1d7928669"><td class="mdescLeft">&#160;</td><td class="mdescRight">to free the string allocated inside the "stringDup" function or the "createXMLString" function.  <a href="#a6a510c9553d7fa49d0afdda1d7928669"></a><br/></td></tr>
+<tr class="separator:a6a510c9553d7fa49d0afdda1d7928669"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac93e613b4563072bf7b43f91d2696c75"><td class="memItemLeft" align="right" valign="top"><a class="el" href="xml_parser_8h.html#a990c86ec1cdbf675604a1a321d852063">XMLDLLENTRY</a> char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xml_parser_8h.html#ac93e613b4563072bf7b43f91d2696c75">xmltob</a> (<a class="el" href="xml_parser_8h.html#acdb0d6fd8dd596384b438d86cfb2b182">XMLCSTR</a> xmlString, char defautValue=0)</td></tr>
+<tr class="separator:ac93e613b4563072bf7b43f91d2696c75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17b00a11ddc49e8e253160cc56d6377f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="xml_parser_8h.html#a990c86ec1cdbf675604a1a321d852063">XMLDLLENTRY</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xml_parser_8h.html#a17b00a11ddc49e8e253160cc56d6377f">xmltoi</a> (<a class="el" href="xml_parser_8h.html#acdb0d6fd8dd596384b438d86cfb2b182">XMLCSTR</a> xmlString, int defautValue=0)</td></tr>
+<tr class="separator:a17b00a11ddc49e8e253160cc56d6377f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab69be88d6b554476470e7a1e6ec23589"><td class="memItemLeft" align="right" valign="top"><a class="el" href="xml_parser_8h.html#a990c86ec1cdbf675604a1a321d852063">XMLDLLENTRY</a> long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xml_parser_8h.html#ab69be88d6b554476470e7a1e6ec23589">xmltol</a> (<a class="el" href="xml_parser_8h.html#acdb0d6fd8dd596384b438d86cfb2b182">XMLCSTR</a> xmlString, long defautValue=0)</td></tr>
+<tr class="separator:ab69be88d6b554476470e7a1e6ec23589"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af820a1a0f8055c8e4a006a566be9500a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="xml_parser_8h.html#a990c86ec1cdbf675604a1a321d852063">XMLDLLENTRY</a> double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xml_parser_8h.html#af820a1a0f8055c8e4a006a566be9500a">xmltof</a> (<a class="el" href="xml_parser_8h.html#acdb0d6fd8dd596384b438d86cfb2b182">XMLCSTR</a> xmlString, double defautValue=.0)</td></tr>
+<tr class="separator:af820a1a0f8055c8e4a006a566be9500a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20998546f61a5d41ed3fe4553702473a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="xml_parser_8h.html#a990c86ec1cdbf675604a1a321d852063">XMLDLLENTRY</a> <a class="el" href="xml_parser_8h.html#acdb0d6fd8dd596384b438d86cfb2b182">XMLCSTR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xml_parser_8h.html#a20998546f61a5d41ed3fe4553702473a">xmltoa</a> (<a class="el" href="xml_parser_8h.html#acdb0d6fd8dd596384b438d86cfb2b182">XMLCSTR</a> xmlString, <a class="el" href="xml_parser_8h.html#acdb0d6fd8dd596384b438d86cfb2b182">XMLCSTR</a> defautValue=<a class="el" href="xml_parser_8h.html#a17b1f4694ce8bdeef4c07319c5f8f84d">_CXML</a>(&quot;&quot;))</td></tr>
+<tr class="separator:a20998546f61a5d41ed3fe4553702473a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa929f34f436c3466e66196e5e2091e73"><td class="memItemLeft" align="right" valign="top"><a class="el" href="xml_parser_8h.html#a990c86ec1cdbf675604a1a321d852063">XMLDLLENTRY</a> <a class="el" href="xml_parser_8h.html#a9f587fbd233e721e8818a3bf8102838f">XMLCHAR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xml_parser_8h.html#aa929f34f436c3466e66196e5e2091e73">xmltoc</a> (<a class="el" href="xml_parser_8h.html#acdb0d6fd8dd596384b438d86cfb2b182">XMLCSTR</a> xmlString, const <a class="el" href="xml_parser_8h.html#a9f587fbd233e721e8818a3bf8102838f">XMLCHAR</a> defautValue=<a class="el" href="xml_parser_8h.html#a17b1f4694ce8bdeef4c07319c5f8f84d">_CXML</a>('\0'))</td></tr>
+<tr class="separator:aa929f34f436c3466e66196e5e2091e73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">宏定义说明</h2>
+<a class="anchor" id="a17b1f4694ce8bdeef4c07319c5f8f84d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define _CXML</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">c</td><td>)</td>
+          <td>&#160;&#160;&#160;c</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="xml_parser_8h_source.html">xmlParser.h</a> 第 <a class="el" href="xml_parser_8h_source.html#l00143">143</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa93f0eb578d23995850d61f7d61c55c1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FALSE&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="xml_parser_8h_source.html">xmlParser.h</a> 第 <a class="el" href="xml_parser_8h_source.html#l00149">149</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa8cecfc5c5c054d2875c03e77b7be15d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TRUE&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="xml_parser_8h_source.html">xmlParser.h</a> 第 <a class="el" href="xml_parser_8h_source.html#l00152">152</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9f587fbd233e721e8818a3bf8102838f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define XMLCHAR&#160;&#160;&#160;char</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="xml_parser_8h_source.html">xmlParser.h</a> 第 <a class="el" href="xml_parser_8h_source.html#l00146">146</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="acdb0d6fd8dd596384b438d86cfb2b182"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define XMLCSTR&#160;&#160;&#160;const char *</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="xml_parser_8h_source.html">xmlParser.h</a> 第 <a class="el" href="xml_parser_8h_source.html#l00144">144</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a990c86ec1cdbf675604a1a321d852063"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define XMLDLLENTRY</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="xml_parser_8h_source.html">xmlParser.h</a> 第 <a class="el" href="xml_parser_8h_source.html#l00129">129</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a990c86ec1cdbf675604a1a321d852063"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define XMLDLLENTRY</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="xml_parser_8h_source.html">xmlParser.h</a> 第 <a class="el" href="xml_parser_8h_source.html#l00129">129</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a849d96105aa0c8f64b5c10d9151a3cdc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define XMLSTR&#160;&#160;&#160;char *</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="xml_parser_8h_source.html">xmlParser.h</a> 第 <a class="el" href="xml_parser_8h_source.html#l00145">145</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">类型定义说明</h2>
+<a class="anchor" id="a0460d731addf12b0863d4fd857ca8281"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="xml_parser_8h.html#a990c86ec1cdbf675604a1a321d852063">XMLDLLENTRY</a> <a class="el" href="struct_to_x_m_l_string_tool.html">ToXMLStringTool</a>  <a class="el" href="struct_to_x_m_l_string_tool.html">ToXMLStringTool</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Helper class to create <a class="el" href="struct_x_m_l.html">XML</a> files using "printf", "fprintf", "cout",... functions. </p>
+
+</div>
+</div>
+<a class="anchor" id="a4a11e7f02fa98cb7850c6d33e5eb9a77"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_x_m_l_attribute.html">XMLAttribute</a>  <a class="el" href="struct_x_m_l_attribute.html">XMLAttribute</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Structure for <a class="el" href="struct_x_m_l.html">XML</a> attribute. </p>
+
+</div>
+</div>
+<a class="anchor" id="ac66e91f36b3c0c314c4fc8894820aee8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_x_m_l_clear.html">XMLClear</a>  <a class="el" href="struct_x_m_l_clear.html">XMLClear</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Structure for <a class="el" href="struct_x_m_l.html">XML</a> clear (unformatted) node (usually comments) </p>
+
+</div>
+</div>
+<a class="anchor" id="aab10d65aadeca1f026f6416becde7432"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef int <a class="el" href="xml_parser_8h.html#aab10d65aadeca1f026f6416becde7432">XMLElementPosition</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>XMLElementPosition are not interchangeable with simple indexes. </p>
+
+<p>在文件 <a class="el" href="xml_parser_8h_source.html">xmlParser.h</a> 第 <a class="el" href="xml_parser_8h_source.html#l00212">212</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8e42cd83bc7037162ed779d78881bf20"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef enum <a class="el" href="xml_parser_8h.html#a100a496e2b573b37eb4e75f00a316851">XMLElementType</a>  <a class="el" href="xml_parser_8h.html#a100a496e2b573b37eb4e75f00a316851">XMLElementType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enumeration used to manage type of data. Use in conjunction with structure <a class="el" href="struct_x_m_l_node_contents.html" title="This structure is given by the function XMLNode::enumContents.">XMLNodeContents</a>. </p>
+
+</div>
+</div>
+<a class="anchor" id="a1b079e7e429bd933ca6b2134846689b6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef enum <a class="el" href="xml_parser_8h.html#ac39bd07b1461aaa70afffe2d7162b4f5">XMLError</a>  <a class="el" href="xml_parser_8h.html#ac39bd07b1461aaa70afffe2d7162b4f5">XMLError</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enumeration for <a class="el" href="struct_x_m_l.html">XML</a> parse errors. </p>
+
+</div>
+</div>
+<a class="anchor" id="a40876d6c58776ec0adb69baea534b2de"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="xml_parser_8h.html#a990c86ec1cdbf675604a1a321d852063">XMLDLLENTRY</a> <a class="el" href="struct_x_m_l_node.html">XMLNode</a>  <a class="el" href="struct_x_m_l_node.html">XMLNode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Main Class representing a <a class="el" href="struct_x_m_l.html">XML</a> node. </p>
+<p>All operations are performed using this class. </p>
+<dl class="section note"><dt>注解</dt><dd>The constructors of the <a class="el" href="struct_x_m_l_node.html" title="Main Class representing a XML node.">XMLNode</a> class are protected, so use instead one of these four methods to get your first instance of <a class="el" href="struct_x_m_l_node.html" title="Main Class representing a XML node.">XMLNode</a>: <ul>
+<li>
+<a class="el" href="struct_x_m_l_node.html#acb95f4f00e4cf3756aac0e3a53765248" title="Parse an XML string and return the root of a XMLNode tree representing the string.">XMLNode::parseString</a>  </li>
+<li>
+<a class="el" href="struct_x_m_l_node.html#a5e5968e052d58350918cd91e3535624b" title="Parse an XML file and return the root of a XMLNode tree representing the file.">XMLNode::parseFile</a>  </li>
+<li>
+<a class="el" href="struct_x_m_l_node.html#acc044148e2b9b8264a320b7b6e398158" title="Parse an XML file and return the root of a XMLNode tree representing the file. A very crude error che...">XMLNode::openFileHelper</a>  </li>
+<li>
+<a class="el" href="struct_x_m_l_node.html#a6fe7676c3f08c3dab3faec106264d50d" title="Create the top node of an XMLNode structure.">XMLNode::createXMLTopNode</a> (or <a class="el" href="struct_x_m_l_node.html#ab80f3739b26ae3f826f99769158e7bea" title="Create the top node of an XMLNode structure.">XMLNode::createXMLTopNode_WOSD</a>) </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="adb1f38c236e48d32771c48b14ed627d1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_x_m_l_node_contents.html">XMLNodeContents</a>  <a class="el" href="struct_x_m_l_node_contents.html">XMLNodeContents</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This structure is given by the function <a class="el" href="struct_x_m_l_node.html#af56414ef38a13892afc4f22177a7760a" title="enumerate all the different contents (attribute,child,text, clear) of the current XMLNode...">XMLNode::enumContents</a>. </p>
+
+</div>
+</div>
+<a class="anchor" id="a90d0646ff4a054f9d8ea0d29fb86f3a9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="xml_parser_8h.html#a990c86ec1cdbf675604a1a321d852063">XMLDLLENTRY</a> <a class="el" href="struct_x_m_l_parser_base64_tool.html">XMLParserBase64Tool</a> <a class="el" href="struct_x_m_l_parser_base64_tool.html">XMLParserBase64Tool</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Helper class to include binary data inside <a class="el" href="struct_x_m_l.html">XML</a> strings using "Base64 encoding". </p>
+<p>The "XMLParserBase64Tool" class allows you to include any binary data (images, sounds,...) into an <a class="el" href="struct_x_m_l.html">XML</a> document using "Base64 encoding". This class is completely separated from the rest of the xmlParser library and can be removed without any problem. To include some binary data into an <a class="el" href="struct_x_m_l.html">XML</a> file, you must convert the binary data into standard text (using "encode"). To retrieve the original binary data from the b64-encoded text included inside the <a class="el" href="struct_x_m_l.html">XML</a> file, use "decode". Alternatively, these functions can also be used to "encrypt/decrypt" some critical data contained inside the <a class="el" href="struct_x_m_l.html">XML</a> (it's not a strong encryption at all, but sometimes it can be useful). </p>
+
+</div>
+</div>
+<a class="anchor" id="aafbd547d290f82864b1f840025e972bc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_x_m_l_results.html">XMLResults</a>  <a class="el" href="struct_x_m_l_results.html">XMLResults</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Structure used to obtain error details if the parse fails. </p>
+
+</div>
+</div>
+<h2 class="groupheader">枚举类型说明</h2>
+<a class="anchor" id="a100a496e2b573b37eb4e75f00a316851"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="xml_parser_8h.html#a100a496e2b573b37eb4e75f00a316851">XMLElementType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enumeration used to manage type of data. Use in conjunction with structure <a class="el" href="struct_x_m_l_node_contents.html" title="This structure is given by the function XMLNode::enumContents.">XMLNodeContents</a>. </p>
+<dl><dt><b>枚举值: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" id="a100a496e2b573b37eb4e75f00a316851abef700648a317ca089d00a9285791f8f"></a>eNodeChild</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a100a496e2b573b37eb4e75f00a316851a98e1935d617c2377530661c2d8905d46"></a>eNodeAttribute</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a100a496e2b573b37eb4e75f00a316851a0d667f729ee0477d741d7939cf025201"></a>eNodeText</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a100a496e2b573b37eb4e75f00a316851ae32d7d859f74292c7474f96804f0cf81"></a>eNodeClear</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a100a496e2b573b37eb4e75f00a316851a1e67ba6c14f35fdc461da667721bff31"></a>eNodeNULL</em>&nbsp;</td><td>
+</td></tr>
+</table>
+</dd>
+</dl>
+
+<p>在文件 <a class="el" href="xml_parser_8h_source.html">xmlParser.h</a> 第 <a class="el" href="xml_parser_8h_source.html#l00185">185</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac39bd07b1461aaa70afffe2d7162b4f5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="xml_parser_8h.html#ac39bd07b1461aaa70afffe2d7162b4f5">XMLError</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enumeration for <a class="el" href="struct_x_m_l.html">XML</a> parse errors. </p>
+<dl><dt><b>枚举值: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" id="ac39bd07b1461aaa70afffe2d7162b4f5a7cf226016a9a9ebc47ee5124e413b511"></a>eXMLErrorNone</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="ac39bd07b1461aaa70afffe2d7162b4f5a26a80e15de947fae9fb44b67e1a3a263"></a>eXMLErrorMissingEndTag</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="ac39bd07b1461aaa70afffe2d7162b4f5a164e2a597f12c1b2e186519fc893cc58"></a>eXMLErrorNoXMLTagFound</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="ac39bd07b1461aaa70afffe2d7162b4f5a0961a8e0bbf11a91009adaf4b1c66e46"></a>eXMLErrorEmpty</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="ac39bd07b1461aaa70afffe2d7162b4f5a943343714a3946a264fa0bfa7a4fbe7d"></a>eXMLErrorMissingTagName</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="ac39bd07b1461aaa70afffe2d7162b4f5a489af43e5e1f882ed5c3dd9f59bbfde4"></a>eXMLErrorMissingEndTagName</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="ac39bd07b1461aaa70afffe2d7162b4f5a4eb9d0115e3d9fcfad342c7387c26c63"></a>eXMLErrorUnmatchedEndTag</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="ac39bd07b1461aaa70afffe2d7162b4f5a90b020017d16093c6ccff3ccf3d92ee8"></a>eXMLErrorUnmatchedEndClearTag</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="ac39bd07b1461aaa70afffe2d7162b4f5a26e2e2231f2d3941d4b4bbb96cd9ed2c"></a>eXMLErrorUnexpectedToken</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="ac39bd07b1461aaa70afffe2d7162b4f5ad0687f19145845937f24cecd9f5e9fa9"></a>eXMLErrorNoElements</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="ac39bd07b1461aaa70afffe2d7162b4f5a55441ddd2419acb3674a9068f5c3930f"></a>eXMLErrorFileNotFound</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="ac39bd07b1461aaa70afffe2d7162b4f5a750c78b6de79d89e2184fc7caff939e0"></a>eXMLErrorFirstTagNotFound</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="ac39bd07b1461aaa70afffe2d7162b4f5aeca604d14ec57d6dcfdc5e74dbc559dc"></a>eXMLErrorUnknownCharacterEntity</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="ac39bd07b1461aaa70afffe2d7162b4f5a4e9a09e10bdc0c9071a8b2c4442ecae9"></a>eXMLErrorCharacterCodeAbove255</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="ac39bd07b1461aaa70afffe2d7162b4f5a5e54f63f442005ae89fdf1fe4fb17725"></a>eXMLErrorCharConversionError</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="ac39bd07b1461aaa70afffe2d7162b4f5a8596c0bf247f549ff306b6889fe2cb5c"></a>eXMLErrorCannotOpenWriteFile</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="ac39bd07b1461aaa70afffe2d7162b4f5a1dad0c33ae33d61b2f5f6f7f72838209"></a>eXMLErrorCannotWriteFile</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="ac39bd07b1461aaa70afffe2d7162b4f5a85384d57e765bd52aaaa06096cb186d9"></a>eXMLErrorBase64DataSizeIsNotMultipleOf4</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="ac39bd07b1461aaa70afffe2d7162b4f5afc16bb8e15fab680665d3b8bedfc980b"></a>eXMLErrorBase64DecodeIllegalCharacter</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="ac39bd07b1461aaa70afffe2d7162b4f5af2d54f7b3a0299a7051a196a125bf62d"></a>eXMLErrorBase64DecodeTruncatedData</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="ac39bd07b1461aaa70afffe2d7162b4f5adcc1aaa78e2f45feb792585ab1d747bd"></a>eXMLErrorBase64DecodeBufferTooSmall</em>&nbsp;</td><td>
+</td></tr>
+</table>
+</dd>
+</dl>
+
+<p>在文件 <a class="el" href="xml_parser_8h_source.html">xmlParser.h</a> 第 <a class="el" href="xml_parser_8h_source.html#l00157">157</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a class="anchor" id="a6a510c9553d7fa49d0afdda1d7928669"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="xml_parser_8h.html#a990c86ec1cdbf675604a1a321d852063">XMLDLLENTRY</a> void freeXMLString </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="xml_parser_8h.html#a849d96105aa0c8f64b5c10d9151a3cdc">XMLSTR</a>&#160;</td>
+          <td class="paramname"><em>t</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>to free the string allocated inside the "stringDup" function or the "createXMLString" function. </p>
+
+<p>在文件 <a class="el" href="xml_parser_8cpp_source.html">xmlParser.cpp</a> 第 <a class="el" href="xml_parser_8cpp_source.html#l00074">74</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac35b3be05a320f835b3976179637fe76"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="xml_parser_8h.html#a990c86ec1cdbf675604a1a321d852063">XMLDLLENTRY</a> <a class="el" href="xml_parser_8h.html#a849d96105aa0c8f64b5c10d9151a3cdc">XMLSTR</a> stringDup </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="xml_parser_8h.html#acdb0d6fd8dd596384b438d86cfb2b182">XMLCSTR</a>&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>cbData</em> = <code>-1</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Duplicate (copy in a new allocated buffer) the source string. </p>
+
+<p>在文件 <a class="el" href="xml_parser_8cpp_source.html">xmlParser.cpp</a> 第 <a class="el" href="xml_parser_8cpp_source.html#l00668">668</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a20998546f61a5d41ed3fe4553702473a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="xml_parser_8h.html#a990c86ec1cdbf675604a1a321d852063">XMLDLLENTRY</a> <a class="el" href="xml_parser_8h.html#acdb0d6fd8dd596384b438d86cfb2b182">XMLCSTR</a> xmltoa </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="xml_parser_8h.html#acdb0d6fd8dd596384b438d86cfb2b182">XMLCSTR</a>&#160;</td>
+          <td class="paramname"><em>xmlString</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="xml_parser_8h.html#acdb0d6fd8dd596384b438d86cfb2b182">XMLCSTR</a>&#160;</td>
+          <td class="paramname"><em>defautValue</em> = <code><a class="el" href="xml_parser_8h.html#a17b1f4694ce8bdeef4c07319c5f8f84d">_CXML</a>(&quot;&quot;)</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="xml_parser_8cpp_source.html">xmlParser.cpp</a> 第 <a class="el" href="xml_parser_8cpp_source.html#l00384">384</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac93e613b4563072bf7b43f91d2696c75"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="xml_parser_8h.html#a990c86ec1cdbf675604a1a321d852063">XMLDLLENTRY</a> char xmltob </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="xml_parser_8h.html#acdb0d6fd8dd596384b438d86cfb2b182">XMLCSTR</a>&#160;</td>
+          <td class="paramname"><em>xmlString</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>defautValue</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="xml_parser_8cpp_source.html">xmlParser.cpp</a> 第 <a class="el" href="xml_parser_8cpp_source.html#l00379">379</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa929f34f436c3466e66196e5e2091e73"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="xml_parser_8h.html#a990c86ec1cdbf675604a1a321d852063">XMLDLLENTRY</a> <a class="el" href="xml_parser_8h.html#a9f587fbd233e721e8818a3bf8102838f">XMLCHAR</a> xmltoc </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="xml_parser_8h.html#acdb0d6fd8dd596384b438d86cfb2b182">XMLCSTR</a>&#160;</td>
+          <td class="paramname"><em>xmlString</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="xml_parser_8h.html#a9f587fbd233e721e8818a3bf8102838f">XMLCHAR</a>&#160;</td>
+          <td class="paramname"><em>defautValue</em> = <code><a class="el" href="xml_parser_8h.html#a17b1f4694ce8bdeef4c07319c5f8f84d">_CXML</a>('\0')</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="xml_parser_8cpp_source.html">xmlParser.cpp</a> 第 <a class="el" href="xml_parser_8cpp_source.html#l00385">385</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="af820a1a0f8055c8e4a006a566be9500a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="xml_parser_8h.html#a990c86ec1cdbf675604a1a321d852063">XMLDLLENTRY</a> double xmltof </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="xml_parser_8h.html#acdb0d6fd8dd596384b438d86cfb2b182">XMLCSTR</a>&#160;</td>
+          <td class="paramname"><em>xmlString</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>defautValue</em> = <code>.0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="xml_parser_8cpp_source.html">xmlParser.cpp</a> 第 <a class="el" href="xml_parser_8cpp_source.html#l00382">382</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a17b00a11ddc49e8e253160cc56d6377f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="xml_parser_8h.html#a990c86ec1cdbf675604a1a321d852063">XMLDLLENTRY</a> int xmltoi </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="xml_parser_8h.html#acdb0d6fd8dd596384b438d86cfb2b182">XMLCSTR</a>&#160;</td>
+          <td class="paramname"><em>xmlString</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>defautValue</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="xml_parser_8cpp_source.html">xmlParser.cpp</a> 第 <a class="el" href="xml_parser_8cpp_source.html#l00380">380</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab69be88d6b554476470e7a1e6ec23589"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="xml_parser_8h.html#a990c86ec1cdbf675604a1a321d852063">XMLDLLENTRY</a> long xmltol </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="xml_parser_8h.html#acdb0d6fd8dd596384b438d86cfb2b182">XMLCSTR</a>&#160;</td>
+          <td class="paramname"><em>xmlString</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>defautValue</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="xml_parser_8cpp_source.html">xmlParser.cpp</a> 第 <a class="el" href="xml_parser_8cpp_source.html#l00381">381</a> 行定义.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2012年 九月 28日 星期五 14:56:23 , 为 libOSS使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.2
+</small></address>
+</body>
+</html>

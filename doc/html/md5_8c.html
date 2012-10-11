@@ -1,0 +1,540 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>libOSS: project/libOSS/libOSS/md5.c 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">libOSS
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">igis.me</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.2 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_167790342fb55959539d550b874be046.html">project</a></li><li class="navelem"><a class="el" href="dir_3023ff01d1436e238124d7fcc5000422.html">libOSS</a></li><li class="navelem"><a class="el" href="dir_c2df5faff012d771a522b75d2c985cb4.html">libOSS</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">宏定义</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">md5.c 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><a href="md5_8c_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a544d14714aed6d150435336296c66061"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="md5_8c.html#a544d14714aed6d150435336296c66061">GET_UINT32</a>(n, b, i)</td></tr>
+<tr class="separator:a544d14714aed6d150435336296c66061"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f3a8299ffeba42ea7e2ec2459cb9995"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="md5_8c.html#a8f3a8299ffeba42ea7e2ec2459cb9995">PUT_UINT32</a>(n, b, i)</td></tr>
+<tr class="separator:a8f3a8299ffeba42ea7e2ec2459cb9995"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a9675d71aad8449f8e4112ce611fd93"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="md5_8c.html#a5a9675d71aad8449f8e4112ce611fd93">S</a>(x, n)&#160;&#160;&#160;((x &lt;&lt; n) | ((x &amp; 0xFFFFFFFF) &gt;&gt; (32 - n)))</td></tr>
+<tr class="separator:a5a9675d71aad8449f8e4112ce611fd93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e7cecea3d3b858cbfc46b77d5314c04"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="md5_8c.html#a3e7cecea3d3b858cbfc46b77d5314c04">P</a>(a, b, c, d, k, s, t)</td></tr>
+<tr class="separator:a3e7cecea3d3b858cbfc46b77d5314c04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96d73bbd7af15cb1fc38c3f4a3bd82e9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="md5_8c.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>(x, y, z)&#160;&#160;&#160;(z ^ (x &amp; (y ^ z)))</td></tr>
+<tr class="separator:a96d73bbd7af15cb1fc38c3f4a3bd82e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96d73bbd7af15cb1fc38c3f4a3bd82e9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="md5_8c.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>(x, y, z)&#160;&#160;&#160;(y ^ (z &amp; (x ^ y)))</td></tr>
+<tr class="separator:a96d73bbd7af15cb1fc38c3f4a3bd82e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96d73bbd7af15cb1fc38c3f4a3bd82e9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="md5_8c.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>(x, y, z)&#160;&#160;&#160;(x ^ y ^ z)</td></tr>
+<tr class="separator:a96d73bbd7af15cb1fc38c3f4a3bd82e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96d73bbd7af15cb1fc38c3f4a3bd82e9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="md5_8c.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>(x, y, z)&#160;&#160;&#160;(y ^ (x | ~z))</td></tr>
+<tr class="separator:a96d73bbd7af15cb1fc38c3f4a3bd82e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:ac6e9fda1d8fda7d51fd1c0c036f87cfe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="md5_8c.html#ac6e9fda1d8fda7d51fd1c0c036f87cfe">md5_starts</a> (<a class="el" href="md5_8h.html#a5fb717e1a161d1f32460c0179c288ffc">md5_context</a> *ctx)</td></tr>
+<tr class="separator:ac6e9fda1d8fda7d51fd1c0c036f87cfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8d0beb35a3cd6828ee2ede2f19d87a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="md5_8c.html#ac8d0beb35a3cd6828ee2ede2f19d87a9">md5_process</a> (<a class="el" href="md5_8h.html#a5fb717e1a161d1f32460c0179c288ffc">md5_context</a> *ctx, <a class="el" href="md5_8h.html#a2d25bcd37166cc98f0d823cdb8c553ef">uint8</a> data[64])</td></tr>
+<tr class="separator:ac8d0beb35a3cd6828ee2ede2f19d87a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b10388405325509389ea7b2d0ddfa34"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="md5_8c.html#a7b10388405325509389ea7b2d0ddfa34">md5_update</a> (<a class="el" href="md5_8h.html#a5fb717e1a161d1f32460c0179c288ffc">md5_context</a> *ctx, <a class="el" href="md5_8h.html#a2d25bcd37166cc98f0d823cdb8c553ef">uint8</a> *input, <a class="el" href="md5_8h.html#a9695cf1104606879c5d3f0221635a069">uint32</a> length)</td></tr>
+<tr class="separator:a7b10388405325509389ea7b2d0ddfa34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ab0d298634ade679428ed07b39fc505"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="md5_8c.html#a2ab0d298634ade679428ed07b39fc505">md5_finish</a> (<a class="el" href="md5_8h.html#a5fb717e1a161d1f32460c0179c288ffc">md5_context</a> *ctx, <a class="el" href="md5_8h.html#a2d25bcd37166cc98f0d823cdb8c553ef">uint8</a> digest[16])</td></tr>
+<tr class="separator:a2ab0d298634ade679428ed07b39fc505"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">宏定义说明</h2>
+<a class="anchor" id="a96d73bbd7af15cb1fc38c3f4a3bd82e9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define F</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">y, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">z&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;(z ^ (x &amp; (y ^ z)))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a96d73bbd7af15cb1fc38c3f4a3bd82e9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define F</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">y, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">z&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;(y ^ (z &amp; (x ^ y)))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a96d73bbd7af15cb1fc38c3f4a3bd82e9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define F</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">y, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">z&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;(x ^ y ^ z)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a96d73bbd7af15cb1fc38c3f4a3bd82e9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define F</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">y, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">z&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;(y ^ (x | ~z))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a544d14714aed6d150435336296c66061"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GET_UINT32</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">n, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">b, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">i&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">{                                               \</div>
+<div class="line">    (n) = ( (<a class="code" href="md5_8h.html#a9695cf1104606879c5d3f0221635a069">uint32</a>) (b)[(i)    ]       )       \</div>
+<div class="line">        | ( (<a class="code" href="md5_8h.html#a9695cf1104606879c5d3f0221635a069">uint32</a>) (b)[(i) + 1] &lt;&lt;  8 )       \</div>
+<div class="line">        | ( (<a class="code" href="md5_8h.html#a9695cf1104606879c5d3f0221635a069">uint32</a>) (b)[(i) + 2] &lt;&lt; 16 )       \</div>
+<div class="line">        | ( (<a class="code" href="md5_8h.html#a9695cf1104606879c5d3f0221635a069">uint32</a>) (b)[(i) + 3] &lt;&lt; 24 );      \</div>
+<div class="line">}</div>
+</div><!-- fragment -->
+<p>在文件 <a class="el" href="md5_8c_source.html">md5.c</a> 第 <a class="el" href="md5_8c_source.html#l00027">27</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3e7cecea3d3b858cbfc46b77d5314c04"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define P</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">a, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">b, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">c, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">d, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">k, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">s, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">t&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">{                                                       \</div>
+<div class="line">    a += <a class="code" href="md5_8c.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>(b,c,d) + X[k] + t; a = <a class="code" href="md5_8c.html#a5a9675d71aad8449f8e4112ce611fd93">S</a>(a,s) + b;           \</div>
+<div class="line">}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a8f3a8299ffeba42ea7e2ec2459cb9995"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PUT_UINT32</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">n, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">b, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">i&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">{                                               \</div>
+<div class="line">    (b)[(i)    ] = (<a class="code" href="md5_8h.html#a2d25bcd37166cc98f0d823cdb8c553ef">uint8</a>) ( (n)       );       \</div>
+<div class="line">    (b)[(i) + 1] = (<a class="code" href="md5_8h.html#a2d25bcd37166cc98f0d823cdb8c553ef">uint8</a>) ( (n) &gt;&gt;  8 );       \</div>
+<div class="line">    (b)[(i) + 2] = (<a class="code" href="md5_8h.html#a2d25bcd37166cc98f0d823cdb8c553ef">uint8</a>) ( (n) &gt;&gt; 16 );       \</div>
+<div class="line">    (b)[(i) + 3] = (<a class="code" href="md5_8h.html#a2d25bcd37166cc98f0d823cdb8c553ef">uint8</a>) ( (n) &gt;&gt; 24 );       \</div>
+<div class="line">}</div>
+</div><!-- fragment -->
+<p>在文件 <a class="el" href="md5_8c_source.html">md5.c</a> 第 <a class="el" href="md5_8c_source.html#l00035">35</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5a9675d71aad8449f8e4112ce611fd93"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define S</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">n&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;((x &lt;&lt; n) | ((x &amp; 0xFFFFFFFF) &gt;&gt; (32 - n)))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a class="anchor" id="a2ab0d298634ade679428ed07b39fc505"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void md5_finish </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="md5_8h.html#a5fb717e1a161d1f32460c0179c288ffc">md5_context</a> *&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="md5_8h.html#a2d25bcd37166cc98f0d823cdb8c553ef">uint8</a>&#160;</td>
+          <td class="paramname"><em>digest</em>[16]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="md5_8c_source.html">md5.c</a> 第 <a class="el" href="md5_8c_source.html#l00224">224</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac8d0beb35a3cd6828ee2ede2f19d87a9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void md5_process </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="md5_8h.html#a5fb717e1a161d1f32460c0179c288ffc">md5_context</a> *&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="md5_8h.html#a2d25bcd37166cc98f0d823cdb8c553ef">uint8</a>&#160;</td>
+          <td class="paramname"><em>data</em>[64]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="md5_8c_source.html">md5.c</a> 第 <a class="el" href="md5_8c_source.html#l00054">54</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac6e9fda1d8fda7d51fd1c0c036f87cfe"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void md5_starts </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="md5_8h.html#a5fb717e1a161d1f32460c0179c288ffc">md5_context</a> *&#160;</td>
+          <td class="paramname"><em>ctx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="md5_8c_source.html">md5.c</a> 第 <a class="el" href="md5_8c_source.html#l00043">43</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7b10388405325509389ea7b2d0ddfa34"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void md5_update </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="md5_8h.html#a5fb717e1a161d1f32460c0179c288ffc">md5_context</a> *&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="md5_8h.html#a2d25bcd37166cc98f0d823cdb8c553ef">uint8</a> *&#160;</td>
+          <td class="paramname"><em>input</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="md5_8h.html#a9695cf1104606879c5d3f0221635a069">uint32</a>&#160;</td>
+          <td class="paramname"><em>length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="md5_8c_source.html">md5.c</a> 第 <a class="el" href="md5_8c_source.html#l00177">177</a> 行定义.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2012年 九月 28日 星期五 14:56:22 , 为 libOSS使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.2
+</small></address>
+</body>
+</html>

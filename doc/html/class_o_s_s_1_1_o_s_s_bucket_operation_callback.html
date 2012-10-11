@@ -1,0 +1,653 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>libOSS: OSS::OSSBucketOperationCallback类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">libOSS
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">igis.me</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.2 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespace_o_s_s.html">OSS</a></li><li class="navelem"><a class="el" href="class_o_s_s_1_1_o_s_s_bucket_operation_callback.html">OSSBucketOperationCallback</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="class_o_s_s_1_1_o_s_s_bucket_operation_callback-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">OSS::OSSBucketOperationCallback类 参考<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>抽象基类，Bucket对象操作相关回调函数定义  
+ <a href="class_o_s_s_1_1_o_s_s_bucket_operation_callback.html#details">更多...</a></p>
+
+<p>被 <a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSS::OSSClient</a> 继承.</p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:ad053850fea62c816eeca5e7fd742debf"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_bucket_operation_callback.html#ad053850fea62c816eeca5e7fd742debf">OnCreateBucketComplete</a> (<a class="el" href="class_o_s_s_1_1_o_s_s_bucket_operation.html">OSSBucketOperation</a> *bucketOperation, <a class="el" href="class_o_s_s_1_1_bucket.html">Bucket</a> &amp;bucket)=0</td></tr>
+<tr class="separator:ad053850fea62c816eeca5e7fd742debf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25fe3bba0317009adfa85a77ee2a98dc"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_bucket_operation_callback.html#a25fe3bba0317009adfa85a77ee2a98dc">OnCreateBucketFailed</a> (<a class="el" href="class_o_s_s_1_1_o_s_s_bucket_operation.html">OSSBucketOperation</a> *bucketOperation, <a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a> code)=0</td></tr>
+<tr class="separator:a25fe3bba0317009adfa85a77ee2a98dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18f717502a6ad7f1a4ae61763debf0dc"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_bucket_operation_callback.html#a18f717502a6ad7f1a4ae61763debf0dc">OnDeleteBucketComplete</a> (<a class="el" href="class_o_s_s_1_1_o_s_s_bucket_operation.html">OSSBucketOperation</a> *bucketOperation, string &amp;bucketName)=0</td></tr>
+<tr class="separator:a18f717502a6ad7f1a4ae61763debf0dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9d6377b01e3b32cfec6679ccb911da8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_bucket_operation_callback.html#af9d6377b01e3b32cfec6679ccb911da8">OnDeleteBucketFailed</a> (<a class="el" href="class_o_s_s_1_1_o_s_s_bucket_operation.html">OSSBucketOperation</a> *bucketOperation, <a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a> code)=0</td></tr>
+<tr class="separator:af9d6377b01e3b32cfec6679ccb911da8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2c80940f1c89f1aa161a928d7ef8f0e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_bucket_operation_callback.html#af2c80940f1c89f1aa161a928d7ef8f0e">OnListBucketsComplete</a> (<a class="el" href="class_o_s_s_1_1_o_s_s_bucket_operation.html">OSSBucketOperation</a> *bucketOperation, <a class="el" href="class_o_s_s_1_1_buckets.html">Buckets</a> &amp;buckets)=0</td></tr>
+<tr class="separator:af2c80940f1c89f1aa161a928d7ef8f0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d0cefcc8d243047e6ce904aa50540df"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_bucket_operation_callback.html#a4d0cefcc8d243047e6ce904aa50540df">OnListBucketsFailed</a> (<a class="el" href="class_o_s_s_1_1_o_s_s_bucket_operation.html">OSSBucketOperation</a> *bucketOperation, <a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a> code)=0</td></tr>
+<tr class="separator:a4d0cefcc8d243047e6ce904aa50540df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bf9b31e51ae4071cd752b7f87a3f3c8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_bucket_operation_callback.html#a0bf9b31e51ae4071cd752b7f87a3f3c8">OnSetBucketACLComplete</a> (<a class="el" href="class_o_s_s_1_1_o_s_s_bucket_operation.html">OSSBucketOperation</a> *bucketOperation)=0</td></tr>
+<tr class="separator:a0bf9b31e51ae4071cd752b7f87a3f3c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55a308ac6f30f3de3c1a4c0e0df452bf"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_bucket_operation_callback.html#a55a308ac6f30f3de3c1a4c0e0df452bf">OnSetBucketACLFailed</a> (<a class="el" href="class_o_s_s_1_1_o_s_s_bucket_operation.html">OSSBucketOperation</a> *bucketOperation, <a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a> code)=0</td></tr>
+<tr class="separator:a55a308ac6f30f3de3c1a4c0e0df452bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ab3fc789ca2d786e3982412f08dd802"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_bucket_operation_callback.html#a6ab3fc789ca2d786e3982412f08dd802">OnGetBucketACLComplete</a> (<a class="el" href="class_o_s_s_1_1_o_s_s_bucket_operation.html">OSSBucketOperation</a> *bucketOperation, <a class="el" href="class_o_s_s_1_1_canned_access_control_list.html">CannedAccessControlList</a> &amp;aclList)=0</td></tr>
+<tr class="separator:a6ab3fc789ca2d786e3982412f08dd802"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae92e0b64502eb27df32b22d58233a713"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_bucket_operation_callback.html#ae92e0b64502eb27df32b22d58233a713">OnGetBucketACLFailed</a> (<a class="el" href="class_o_s_s_1_1_o_s_s_bucket_operation.html">OSSBucketOperation</a> *bucketOperation, <a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a> code)=0</td></tr>
+<tr class="separator:ae92e0b64502eb27df32b22d58233a713"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3970f150a6738ae07e4d02e1aecb8034"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_bucket_operation_callback.html#a3970f150a6738ae07e4d02e1aecb8034">OnIsBucketExistComplete</a> (<a class="el" href="class_o_s_s_1_1_o_s_s_bucket_operation.html">OSSBucketOperation</a> *bucketOperation, bool &amp;isExist)=0</td></tr>
+<tr class="separator:a3970f150a6738ae07e4d02e1aecb8034"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fe14c3793f26c212cd8d01631393c04"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_bucket_operation_callback.html#a5fe14c3793f26c212cd8d01631393c04">OnIsBucketExistFailed</a> (<a class="el" href="class_o_s_s_1_1_o_s_s_bucket_operation.html">OSSBucketOperation</a> *bucketOperation, <a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a> code)=0</td></tr>
+<tr class="separator:a5fe14c3793f26c212cd8d01631393c04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba3c50f1ccf6e8c8cc00c1a2f5842389"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_bucket_operation_callback.html#aba3c50f1ccf6e8c8cc00c1a2f5842389">OnListObjectsComplete</a> (<a class="el" href="class_o_s_s_1_1_o_s_s_bucket_operation.html">OSSBucketOperation</a> *bucketOperation, <a class="el" href="class_o_s_s_1_1_object_listing.html">ObjectListing</a> &amp;objectListing)=0</td></tr>
+<tr class="separator:aba3c50f1ccf6e8c8cc00c1a2f5842389"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab32d2483635b7b7cb8e5a588269cf35d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_bucket_operation_callback.html#ab32d2483635b7b7cb8e5a588269cf35d">OnListObjectsFailed</a> (<a class="el" href="class_o_s_s_1_1_o_s_s_bucket_operation.html">OSSBucketOperation</a> *bucketOperation, <a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a> code)=0</td></tr>
+<tr class="separator:ab32d2483635b7b7cb8e5a588269cf35d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a593f35cb6bc43b13d0cde6ed8d140906"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_bucket_operation_callback.html#a593f35cb6bc43b13d0cde6ed8d140906">OnNetworkFailed</a> (<a class="el" href="class_o_s_s_1_1_o_s_s_bucket_operation.html">OSSBucketOperation</a> *bucketOperation, <a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a> code)=0</td></tr>
+<tr class="separator:a593f35cb6bc43b13d0cde6ed8d140906"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>抽象基类，Bucket对象操作相关回调函数定义 </p>
+
+<p>在文件 <a class="el" href="_o_s_s_bucket_operation_callback_8h_source.html">OSSBucketOperationCallback.h</a> 第 <a class="el" href="_o_s_s_bucket_operation_callback_8h_source.html#l00042">42</a> 行定义.</p>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="ad053850fea62c816eeca5e7fd742debf"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void OSS::OSSBucketOperationCallback::OnCreateBucketComplete </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_o_s_s_bucket_operation.html">OSSBucketOperation</a> *&#160;</td>
+          <td class="paramname"><em>bucketOperation</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_bucket.html">Bucket</a> &amp;&#160;</td>
+          <td class="paramname"><em>bucket</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a25fe3bba0317009adfa85a77ee2a98dc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void OSS::OSSBucketOperationCallback::OnCreateBucketFailed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_o_s_s_bucket_operation.html">OSSBucketOperation</a> *&#160;</td>
+          <td class="paramname"><em>bucketOperation</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a>&#160;</td>
+          <td class="paramname"><em>code</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a18f717502a6ad7f1a4ae61763debf0dc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void OSS::OSSBucketOperationCallback::OnDeleteBucketComplete </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_o_s_s_bucket_operation.html">OSSBucketOperation</a> *&#160;</td>
+          <td class="paramname"><em>bucketOperation</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>bucketName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af9d6377b01e3b32cfec6679ccb911da8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void OSS::OSSBucketOperationCallback::OnDeleteBucketFailed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_o_s_s_bucket_operation.html">OSSBucketOperation</a> *&#160;</td>
+          <td class="paramname"><em>bucketOperation</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a>&#160;</td>
+          <td class="paramname"><em>code</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6ab3fc789ca2d786e3982412f08dd802"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void OSS::OSSBucketOperationCallback::OnGetBucketACLComplete </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_o_s_s_bucket_operation.html">OSSBucketOperation</a> *&#160;</td>
+          <td class="paramname"><em>bucketOperation</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_canned_access_control_list.html">CannedAccessControlList</a> &amp;&#160;</td>
+          <td class="paramname"><em>aclList</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae92e0b64502eb27df32b22d58233a713"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void OSS::OSSBucketOperationCallback::OnGetBucketACLFailed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_o_s_s_bucket_operation.html">OSSBucketOperation</a> *&#160;</td>
+          <td class="paramname"><em>bucketOperation</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a>&#160;</td>
+          <td class="paramname"><em>code</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3970f150a6738ae07e4d02e1aecb8034"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void OSS::OSSBucketOperationCallback::OnIsBucketExistComplete </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_o_s_s_bucket_operation.html">OSSBucketOperation</a> *&#160;</td>
+          <td class="paramname"><em>bucketOperation</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool &amp;&#160;</td>
+          <td class="paramname"><em>isExist</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5fe14c3793f26c212cd8d01631393c04"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void OSS::OSSBucketOperationCallback::OnIsBucketExistFailed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_o_s_s_bucket_operation.html">OSSBucketOperation</a> *&#160;</td>
+          <td class="paramname"><em>bucketOperation</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a>&#160;</td>
+          <td class="paramname"><em>code</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af2c80940f1c89f1aa161a928d7ef8f0e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void OSS::OSSBucketOperationCallback::OnListBucketsComplete </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_o_s_s_bucket_operation.html">OSSBucketOperation</a> *&#160;</td>
+          <td class="paramname"><em>bucketOperation</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_buckets.html">Buckets</a> &amp;&#160;</td>
+          <td class="paramname"><em>buckets</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4d0cefcc8d243047e6ce904aa50540df"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void OSS::OSSBucketOperationCallback::OnListBucketsFailed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_o_s_s_bucket_operation.html">OSSBucketOperation</a> *&#160;</td>
+          <td class="paramname"><em>bucketOperation</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a>&#160;</td>
+          <td class="paramname"><em>code</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aba3c50f1ccf6e8c8cc00c1a2f5842389"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void OSS::OSSBucketOperationCallback::OnListObjectsComplete </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_o_s_s_bucket_operation.html">OSSBucketOperation</a> *&#160;</td>
+          <td class="paramname"><em>bucketOperation</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_object_listing.html">ObjectListing</a> &amp;&#160;</td>
+          <td class="paramname"><em>objectListing</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab32d2483635b7b7cb8e5a588269cf35d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void OSS::OSSBucketOperationCallback::OnListObjectsFailed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_o_s_s_bucket_operation.html">OSSBucketOperation</a> *&#160;</td>
+          <td class="paramname"><em>bucketOperation</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a>&#160;</td>
+          <td class="paramname"><em>code</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a593f35cb6bc43b13d0cde6ed8d140906"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void OSS::OSSBucketOperationCallback::OnNetworkFailed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_o_s_s_bucket_operation.html">OSSBucketOperation</a> *&#160;</td>
+          <td class="paramname"><em>bucketOperation</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a>&#160;</td>
+          <td class="paramname"><em>code</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0bf9b31e51ae4071cd752b7f87a3f3c8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void OSS::OSSBucketOperationCallback::OnSetBucketACLComplete </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_o_s_s_bucket_operation.html">OSSBucketOperation</a> *&#160;</td>
+          <td class="paramname"><em>bucketOperation</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a55a308ac6f30f3de3c1a4c0e0df452bf"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void OSS::OSSBucketOperationCallback::OnSetBucketACLFailed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_o_s_s_bucket_operation.html">OSSBucketOperation</a> *&#160;</td>
+          <td class="paramname"><em>bucketOperation</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a>&#160;</td>
+          <td class="paramname"><em>code</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>project/libOSS/libOSS/<a class="el" href="_o_s_s_bucket_operation_callback_8h_source.html">OSSBucketOperationCallback.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2012年 九月 28日 星期五 14:56:23 , 为 libOSS使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.2
+</small></address>
+</body>
+</html>

@@ -1,0 +1,1721 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>libOSS: OSS::OSSClientCallback类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">libOSS
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">igis.me</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.2 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespace_o_s_s.html">OSS</a></li><li class="navelem"><a class="el" href="class_o_s_s_1_1_o_s_s_client_callback.html">OSSClientCallback</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="class_o_s_s_1_1_o_s_s_client_callback-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">OSS::OSSClientCallback类 参考<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>抽象基类，OSSClient对象操作相关回调函数定义  
+ <a href="class_o_s_s_1_1_o_s_s_client_callback.html#details">更多...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:ab6becfea23ecadbb860612b8430e2b97"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client_callback.html#ab6becfea23ecadbb860612b8430e2b97">OnCreateBucketComplete</a> (<a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *client, <a class="el" href="class_o_s_s_1_1_bucket.html">Bucket</a> &amp;bucket)=0</td></tr>
+<tr class="separator:ab6becfea23ecadbb860612b8430e2b97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae341f896dabfe9afba295e13cc4ebd70"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client_callback.html#ae341f896dabfe9afba295e13cc4ebd70">OnCreateBucketFailed</a> (<a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *client, <a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a> code)=0</td></tr>
+<tr class="separator:ae341f896dabfe9afba295e13cc4ebd70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe07dc2996c12c4566d1936a4c6a2b26"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client_callback.html#abe07dc2996c12c4566d1936a4c6a2b26">OnDeleteBucketComplete</a> (<a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *client, string &amp;bucketName)=0</td></tr>
+<tr class="separator:abe07dc2996c12c4566d1936a4c6a2b26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5301c7f2e7e96599d52b61b57ada16ad"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client_callback.html#a5301c7f2e7e96599d52b61b57ada16ad">OnDeleteBucketFailed</a> (<a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *client, <a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a> code)=0</td></tr>
+<tr class="separator:a5301c7f2e7e96599d52b61b57ada16ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a624911335b62c032dd61a837f00a0ebe"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client_callback.html#a624911335b62c032dd61a837f00a0ebe">OnListBucketsComplete</a> (<a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *client, <a class="el" href="class_o_s_s_1_1_buckets.html">Buckets</a> &amp;buckets)=0</td></tr>
+<tr class="separator:a624911335b62c032dd61a837f00a0ebe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d1a33c1f56d0de4025509204062861d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client_callback.html#a8d1a33c1f56d0de4025509204062861d">OnListBucketsFailed</a> (<a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *client, <a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a> code)=0</td></tr>
+<tr class="separator:a8d1a33c1f56d0de4025509204062861d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26b7331c0eff592b54bd89803b87f271"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client_callback.html#a26b7331c0eff592b54bd89803b87f271">OnSetBucketACLComplete</a> (<a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *client)=0</td></tr>
+<tr class="separator:a26b7331c0eff592b54bd89803b87f271"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b6722784c37416af9f38dac18fe89f4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client_callback.html#a0b6722784c37416af9f38dac18fe89f4">OnSetBucketACLFailed</a> (<a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *client, <a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a> code)=0</td></tr>
+<tr class="separator:a0b6722784c37416af9f38dac18fe89f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaee176c0ea6feef391f6975a17147924"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client_callback.html#aaee176c0ea6feef391f6975a17147924">OnGetBucketACLComplete</a> (<a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *client, <a class="el" href="class_o_s_s_1_1_canned_access_control_list.html">CannedAccessControlList</a> &amp;aclList)=0</td></tr>
+<tr class="separator:aaee176c0ea6feef391f6975a17147924"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a623a1302fa0478a323d7e13ba720b277"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client_callback.html#a623a1302fa0478a323d7e13ba720b277">OnGetBucketACLFailed</a> (<a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *client, <a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a> code)=0</td></tr>
+<tr class="separator:a623a1302fa0478a323d7e13ba720b277"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1a5a4bf22ee0fe236ce21d401c81c56"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client_callback.html#af1a5a4bf22ee0fe236ce21d401c81c56">OnIsBucketExistComplete</a> (<a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *client, bool &amp;isExist)=0</td></tr>
+<tr class="separator:af1a5a4bf22ee0fe236ce21d401c81c56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a130a289533fd4acc1e7f35889ecba76d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client_callback.html#a130a289533fd4acc1e7f35889ecba76d">OnIsBucketExistFailed</a> (<a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *client, <a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a> code)=0</td></tr>
+<tr class="separator:a130a289533fd4acc1e7f35889ecba76d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb887e51dc4ee4646f19a8f9943b80e3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client_callback.html#aeb887e51dc4ee4646f19a8f9943b80e3">OnListObjectsComplete</a> (<a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *client, <a class="el" href="class_o_s_s_1_1_object_listing.html">ObjectListing</a> &amp;objectListing)=0</td></tr>
+<tr class="separator:aeb887e51dc4ee4646f19a8f9943b80e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acafe4ed3ad3a640f375df11940d21007"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client_callback.html#acafe4ed3ad3a640f375df11940d21007">OnListObjectsFailed</a> (<a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *client, <a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a> code)=0</td></tr>
+<tr class="separator:acafe4ed3ad3a640f375df11940d21007"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade2c4093a76026d84ff252800c731ba8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client_callback.html#ade2c4093a76026d84ff252800c731ba8">OnPutObjectComplete</a> (<a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *client, <a class="el" href="class_o_s_s_1_1_put_object_result.html">PutObjectResult</a> &amp;result)=0</td></tr>
+<tr class="separator:ade2c4093a76026d84ff252800c731ba8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4374f26537fa248cec2842c7a34a73a7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client_callback.html#a4374f26537fa248cec2842c7a34a73a7">OnPutObjectFailed</a> (<a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *client, <a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a> code)=0</td></tr>
+<tr class="separator:a4374f26537fa248cec2842c7a34a73a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d8e28c6af9a9756a0990d37b7a00962"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client_callback.html#a1d8e28c6af9a9756a0990d37b7a00962">OnFetchObjectComplete</a> (<a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *client, <a class="el" href="class_o_s_s_1_1_o_s_s_object.html">OSSObject</a> &amp;object)=0</td></tr>
+<tr class="separator:a1d8e28c6af9a9756a0990d37b7a00962"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca9662946d9e99769f5b29120212c501"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client_callback.html#aca9662946d9e99769f5b29120212c501">OnFetchObjectFailed</a> (<a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *client, <a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a> code)=0</td></tr>
+<tr class="separator:aca9662946d9e99769f5b29120212c501"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb0b6d4f073884a5fa46e62605010b9d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client_callback.html#abb0b6d4f073884a5fa46e62605010b9d">OnFetchObjectToFileComplete</a> (<a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *client, string &amp;fileName)=0</td></tr>
+<tr class="separator:abb0b6d4f073884a5fa46e62605010b9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36979385e527221f74f6f6ca71225a5a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client_callback.html#a36979385e527221f74f6f6ca71225a5a">OnFetchObjectToFileFailed</a> (<a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *client, <a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a> code)=0</td></tr>
+<tr class="separator:a36979385e527221f74f6f6ca71225a5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a156e3d8ed6956c25b18c2ca0187fe4e8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client_callback.html#a156e3d8ed6956c25b18c2ca0187fe4e8">OnGetObjectMetadataComplete</a> (<a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *client, <a class="el" href="class_o_s_s_1_1_object_metadata.html">ObjectMetadata</a> &amp;objectMetadata)=0</td></tr>
+<tr class="separator:a156e3d8ed6956c25b18c2ca0187fe4e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6ec1160be460f16e8c3fc5055c3de48"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client_callback.html#ab6ec1160be460f16e8c3fc5055c3de48">OnGetObjectMetadataFailed</a> (<a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *client, <a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a> code)=0</td></tr>
+<tr class="separator:ab6ec1160be460f16e8c3fc5055c3de48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcc6709670d2d39bb558d2e211e0ae30"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client_callback.html#adcc6709670d2d39bb558d2e211e0ae30">OnCopyObjectComplete</a> (<a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *client, <a class="el" href="class_o_s_s_1_1_copy_object_result.html">CopyObjectResult</a> &amp;result)=0</td></tr>
+<tr class="separator:adcc6709670d2d39bb558d2e211e0ae30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6558fa5982539cd77b9b69959c540cf6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client_callback.html#a6558fa5982539cd77b9b69959c540cf6">OnCopyObjectFailed</a> (<a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *client, <a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a> code)=0</td></tr>
+<tr class="separator:a6558fa5982539cd77b9b69959c540cf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c7912dff58f237f5f8b24253dbf1989"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client_callback.html#a5c7912dff58f237f5f8b24253dbf1989">OnDeleteObjectComplete</a> (<a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *client)=0</td></tr>
+<tr class="separator:a5c7912dff58f237f5f8b24253dbf1989"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34d3fedda127dcf35d0680b6f7adf4a2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client_callback.html#a34d3fedda127dcf35d0680b6f7adf4a2">OnDeleteObjectFailed</a> (<a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *client, <a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a> code)=0</td></tr>
+<tr class="separator:a34d3fedda127dcf35d0680b6f7adf4a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3af43bbfee5ba0fe4680259119a42445"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client_callback.html#a3af43bbfee5ba0fe4680259119a42445">OnDeleteMultipleObjectsComplete</a> (<a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *client, <a class="el" href="class_o_s_s_1_1_delete_objects_result.html">DeleteObjectsResult</a> &amp;result)=0</td></tr>
+<tr class="separator:a3af43bbfee5ba0fe4680259119a42445"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73403a6122437b35173105113a720fff"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client_callback.html#a73403a6122437b35173105113a720fff">OnDeleteMultipleObjectsFailed</a> (<a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *client, <a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a> code)=0</td></tr>
+<tr class="separator:a73403a6122437b35173105113a720fff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8f4aa28bd325678b71905fe46dc3911"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client_callback.html#ac8f4aa28bd325678b71905fe46dc3911">OnPostObjectGroupComplete</a> (<a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *client, <a class="el" href="class_o_s_s_1_1_post_object_group_result.html">PostObjectGroupResult</a> &amp;result)=0</td></tr>
+<tr class="separator:ac8f4aa28bd325678b71905fe46dc3911"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59c063f83892ca80b6a4f13a268c5f32"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client_callback.html#a59c063f83892ca80b6a4f13a268c5f32">OnPostObjectGroupFailed</a> (<a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *client, <a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a> code)=0</td></tr>
+<tr class="separator:a59c063f83892ca80b6a4f13a268c5f32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf7248ffb26fe109c36ab289d35dc9b5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client_callback.html#adf7248ffb26fe109c36ab289d35dc9b5">OnGetObjectGroupIndexComplete</a> (<a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *client, <a class="el" href="class_o_s_s_1_1_fetch_object_group_index_result.html">FetchObjectGroupIndexResult</a> &amp;result)=0</td></tr>
+<tr class="separator:adf7248ffb26fe109c36ab289d35dc9b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc1aaffa04526192ff5b41246a8b63db"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client_callback.html#acc1aaffa04526192ff5b41246a8b63db">OnGetObjectGroupIndexFailed</a> (<a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *client, <a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a> code)=0</td></tr>
+<tr class="separator:acc1aaffa04526192ff5b41246a8b63db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73b76a21e3b804d15ad2d582ce2c4da2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client_callback.html#a73b76a21e3b804d15ad2d582ce2c4da2">OnUploadPartComplete</a> (<a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *client, <a class="el" href="class_o_s_s_1_1_upload_part_result.html">UploadPartResult</a> &amp;result)=0</td></tr>
+<tr class="separator:a73b76a21e3b804d15ad2d582ce2c4da2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab977921e8d318cb846f65869e4620a1f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client_callback.html#ab977921e8d318cb846f65869e4620a1f">OnUploadPartFailed</a> (<a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *client, <a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a> code)=0</td></tr>
+<tr class="separator:ab977921e8d318cb846f65869e4620a1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4506dfc2b5943aab64f0feb9b9918bcf"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client_callback.html#a4506dfc2b5943aab64f0feb9b9918bcf">OnListPartsComplete</a> (<a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *client, <a class="el" href="class_o_s_s_1_1_part_listing.html">PartListing</a> &amp;result)=0</td></tr>
+<tr class="separator:a4506dfc2b5943aab64f0feb9b9918bcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a229bf17f8f484f5f250e7bb23f84bbdb"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client_callback.html#a229bf17f8f484f5f250e7bb23f84bbdb">OnListPartsFailed</a> (<a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *client, <a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a> code)=0</td></tr>
+<tr class="separator:a229bf17f8f484f5f250e7bb23f84bbdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a66e694c062de39457cf6f4e17aa772"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client_callback.html#a4a66e694c062de39457cf6f4e17aa772">OnListMultipartUploadsComplete</a> (<a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *client, <a class="el" href="class_o_s_s_1_1_multipart_upload_listing.html">MultipartUploadListing</a> &amp;result)=0</td></tr>
+<tr class="separator:a4a66e694c062de39457cf6f4e17aa772"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff4a799b01ced3d7afbe1ca0f2b117d7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client_callback.html#aff4a799b01ced3d7afbe1ca0f2b117d7">OnListMultipartUploadsFailed</a> (<a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *client, <a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a> code)=0</td></tr>
+<tr class="separator:aff4a799b01ced3d7afbe1ca0f2b117d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae79c842f63793f2973b410f7ca622c73"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client_callback.html#ae79c842f63793f2973b410f7ca622c73">OnInitiateMultipartUploadComplete</a> (<a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *client, <a class="el" href="class_o_s_s_1_1_initiate_multipart_upload_result.html">InitiateMultipartUploadResult</a> &amp;result)=0</td></tr>
+<tr class="separator:ae79c842f63793f2973b410f7ca622c73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3ab6ec8cbd50074e8e95306cf9d0fb2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client_callback.html#af3ab6ec8cbd50074e8e95306cf9d0fb2">OnInitiateMultipartUploadFailed</a> (<a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *client, <a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a> code)=0</td></tr>
+<tr class="separator:af3ab6ec8cbd50074e8e95306cf9d0fb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a635f723a71465c2945ed854ffa7a3fe8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client_callback.html#a635f723a71465c2945ed854ffa7a3fe8">OnCompleteMultipartUploadComplete</a> (<a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *client, <a class="el" href="class_o_s_s_1_1_complete_multipart_upload_result.html">CompleteMultipartUploadResult</a> &amp;result)=0</td></tr>
+<tr class="separator:a635f723a71465c2945ed854ffa7a3fe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3391944dd8033b10a856207a89715396"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client_callback.html#a3391944dd8033b10a856207a89715396">OnCompleteMultipartUploadFailed</a> (<a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *client, <a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a> code)=0</td></tr>
+<tr class="separator:a3391944dd8033b10a856207a89715396"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9ec4663ce37ca5da2971947c75530c1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client_callback.html#af9ec4663ce37ca5da2971947c75530c1">OnAbortMultipartUploadComplete</a> (<a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *client, string &amp;puloadId)=0</td></tr>
+<tr class="separator:af9ec4663ce37ca5da2971947c75530c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44cc9557ba30e5489e53d346d9537e96"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client_callback.html#a44cc9557ba30e5489e53d346d9537e96">OnAbortMultipartUploadFailed</a> (<a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *client, <a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a> code)=0</td></tr>
+<tr class="separator:a44cc9557ba30e5489e53d346d9537e96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa549a852cf71c858baefb78de72f124a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_o_s_s_client_callback.html#aa549a852cf71c858baefb78de72f124a">OnNetworkFailed</a> (<a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *client, <a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a> code)=0</td></tr>
+<tr class="separator:aa549a852cf71c858baefb78de72f124a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>抽象基类，OSSClient对象操作相关回调函数定义 </p>
+
+<p>在文件 <a class="el" href="_o_s_s_client_callback_8h_source.html">OSSClientCallback.h</a> 第 <a class="el" href="_o_s_s_client_callback_8h_source.html#l00060">60</a> 行定义.</p>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="af9ec4663ce37ca5da2971947c75530c1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void OSS::OSSClientCallback::OnAbortMultipartUploadComplete </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *&#160;</td>
+          <td class="paramname"><em>client</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>puloadId</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a44cc9557ba30e5489e53d346d9537e96"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void OSS::OSSClientCallback::OnAbortMultipartUploadFailed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *&#160;</td>
+          <td class="paramname"><em>client</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a>&#160;</td>
+          <td class="paramname"><em>code</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a635f723a71465c2945ed854ffa7a3fe8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void OSS::OSSClientCallback::OnCompleteMultipartUploadComplete </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *&#160;</td>
+          <td class="paramname"><em>client</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_complete_multipart_upload_result.html">CompleteMultipartUploadResult</a> &amp;&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3391944dd8033b10a856207a89715396"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void OSS::OSSClientCallback::OnCompleteMultipartUploadFailed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *&#160;</td>
+          <td class="paramname"><em>client</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a>&#160;</td>
+          <td class="paramname"><em>code</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="adcc6709670d2d39bb558d2e211e0ae30"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void OSS::OSSClientCallback::OnCopyObjectComplete </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *&#160;</td>
+          <td class="paramname"><em>client</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_copy_object_result.html">CopyObjectResult</a> &amp;&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6558fa5982539cd77b9b69959c540cf6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void OSS::OSSClientCallback::OnCopyObjectFailed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *&#160;</td>
+          <td class="paramname"><em>client</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a>&#160;</td>
+          <td class="paramname"><em>code</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab6becfea23ecadbb860612b8430e2b97"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void OSS::OSSClientCallback::OnCreateBucketComplete </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *&#160;</td>
+          <td class="paramname"><em>client</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_bucket.html">Bucket</a> &amp;&#160;</td>
+          <td class="paramname"><em>bucket</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae341f896dabfe9afba295e13cc4ebd70"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void OSS::OSSClientCallback::OnCreateBucketFailed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *&#160;</td>
+          <td class="paramname"><em>client</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a>&#160;</td>
+          <td class="paramname"><em>code</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abe07dc2996c12c4566d1936a4c6a2b26"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void OSS::OSSClientCallback::OnDeleteBucketComplete </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *&#160;</td>
+          <td class="paramname"><em>client</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>bucketName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5301c7f2e7e96599d52b61b57ada16ad"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void OSS::OSSClientCallback::OnDeleteBucketFailed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *&#160;</td>
+          <td class="paramname"><em>client</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a>&#160;</td>
+          <td class="paramname"><em>code</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3af43bbfee5ba0fe4680259119a42445"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void OSS::OSSClientCallback::OnDeleteMultipleObjectsComplete </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *&#160;</td>
+          <td class="paramname"><em>client</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_delete_objects_result.html">DeleteObjectsResult</a> &amp;&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a73403a6122437b35173105113a720fff"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void OSS::OSSClientCallback::OnDeleteMultipleObjectsFailed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *&#160;</td>
+          <td class="paramname"><em>client</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a>&#160;</td>
+          <td class="paramname"><em>code</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5c7912dff58f237f5f8b24253dbf1989"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void OSS::OSSClientCallback::OnDeleteObjectComplete </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *&#160;</td>
+          <td class="paramname"><em>client</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a34d3fedda127dcf35d0680b6f7adf4a2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void OSS::OSSClientCallback::OnDeleteObjectFailed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *&#160;</td>
+          <td class="paramname"><em>client</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a>&#160;</td>
+          <td class="paramname"><em>code</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1d8e28c6af9a9756a0990d37b7a00962"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void OSS::OSSClientCallback::OnFetchObjectComplete </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *&#160;</td>
+          <td class="paramname"><em>client</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_o_s_s_object.html">OSSObject</a> &amp;&#160;</td>
+          <td class="paramname"><em>object</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aca9662946d9e99769f5b29120212c501"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void OSS::OSSClientCallback::OnFetchObjectFailed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *&#160;</td>
+          <td class="paramname"><em>client</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a>&#160;</td>
+          <td class="paramname"><em>code</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abb0b6d4f073884a5fa46e62605010b9d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void OSS::OSSClientCallback::OnFetchObjectToFileComplete </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *&#160;</td>
+          <td class="paramname"><em>client</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>fileName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a36979385e527221f74f6f6ca71225a5a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void OSS::OSSClientCallback::OnFetchObjectToFileFailed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *&#160;</td>
+          <td class="paramname"><em>client</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a>&#160;</td>
+          <td class="paramname"><em>code</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aaee176c0ea6feef391f6975a17147924"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void OSS::OSSClientCallback::OnGetBucketACLComplete </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *&#160;</td>
+          <td class="paramname"><em>client</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_canned_access_control_list.html">CannedAccessControlList</a> &amp;&#160;</td>
+          <td class="paramname"><em>aclList</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a623a1302fa0478a323d7e13ba720b277"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void OSS::OSSClientCallback::OnGetBucketACLFailed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *&#160;</td>
+          <td class="paramname"><em>client</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a>&#160;</td>
+          <td class="paramname"><em>code</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="adf7248ffb26fe109c36ab289d35dc9b5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void OSS::OSSClientCallback::OnGetObjectGroupIndexComplete </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *&#160;</td>
+          <td class="paramname"><em>client</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_fetch_object_group_index_result.html">FetchObjectGroupIndexResult</a> &amp;&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="acc1aaffa04526192ff5b41246a8b63db"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void OSS::OSSClientCallback::OnGetObjectGroupIndexFailed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *&#160;</td>
+          <td class="paramname"><em>client</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a>&#160;</td>
+          <td class="paramname"><em>code</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a156e3d8ed6956c25b18c2ca0187fe4e8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void OSS::OSSClientCallback::OnGetObjectMetadataComplete </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *&#160;</td>
+          <td class="paramname"><em>client</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_object_metadata.html">ObjectMetadata</a> &amp;&#160;</td>
+          <td class="paramname"><em>objectMetadata</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab6ec1160be460f16e8c3fc5055c3de48"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void OSS::OSSClientCallback::OnGetObjectMetadataFailed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *&#160;</td>
+          <td class="paramname"><em>client</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a>&#160;</td>
+          <td class="paramname"><em>code</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae79c842f63793f2973b410f7ca622c73"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void OSS::OSSClientCallback::OnInitiateMultipartUploadComplete </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *&#160;</td>
+          <td class="paramname"><em>client</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_initiate_multipart_upload_result.html">InitiateMultipartUploadResult</a> &amp;&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af3ab6ec8cbd50074e8e95306cf9d0fb2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void OSS::OSSClientCallback::OnInitiateMultipartUploadFailed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *&#160;</td>
+          <td class="paramname"><em>client</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a>&#160;</td>
+          <td class="paramname"><em>code</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af1a5a4bf22ee0fe236ce21d401c81c56"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void OSS::OSSClientCallback::OnIsBucketExistComplete </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *&#160;</td>
+          <td class="paramname"><em>client</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool &amp;&#160;</td>
+          <td class="paramname"><em>isExist</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a130a289533fd4acc1e7f35889ecba76d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void OSS::OSSClientCallback::OnIsBucketExistFailed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *&#160;</td>
+          <td class="paramname"><em>client</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a>&#160;</td>
+          <td class="paramname"><em>code</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a624911335b62c032dd61a837f00a0ebe"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void OSS::OSSClientCallback::OnListBucketsComplete </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *&#160;</td>
+          <td class="paramname"><em>client</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_buckets.html">Buckets</a> &amp;&#160;</td>
+          <td class="paramname"><em>buckets</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8d1a33c1f56d0de4025509204062861d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void OSS::OSSClientCallback::OnListBucketsFailed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *&#160;</td>
+          <td class="paramname"><em>client</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a>&#160;</td>
+          <td class="paramname"><em>code</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4a66e694c062de39457cf6f4e17aa772"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void OSS::OSSClientCallback::OnListMultipartUploadsComplete </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *&#160;</td>
+          <td class="paramname"><em>client</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_multipart_upload_listing.html">MultipartUploadListing</a> &amp;&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aff4a799b01ced3d7afbe1ca0f2b117d7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void OSS::OSSClientCallback::OnListMultipartUploadsFailed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *&#160;</td>
+          <td class="paramname"><em>client</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a>&#160;</td>
+          <td class="paramname"><em>code</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aeb887e51dc4ee4646f19a8f9943b80e3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void OSS::OSSClientCallback::OnListObjectsComplete </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *&#160;</td>
+          <td class="paramname"><em>client</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_object_listing.html">ObjectListing</a> &amp;&#160;</td>
+          <td class="paramname"><em>objectListing</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="acafe4ed3ad3a640f375df11940d21007"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void OSS::OSSClientCallback::OnListObjectsFailed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *&#160;</td>
+          <td class="paramname"><em>client</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a>&#160;</td>
+          <td class="paramname"><em>code</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4506dfc2b5943aab64f0feb9b9918bcf"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void OSS::OSSClientCallback::OnListPartsComplete </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *&#160;</td>
+          <td class="paramname"><em>client</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_part_listing.html">PartListing</a> &amp;&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a229bf17f8f484f5f250e7bb23f84bbdb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void OSS::OSSClientCallback::OnListPartsFailed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *&#160;</td>
+          <td class="paramname"><em>client</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a>&#160;</td>
+          <td class="paramname"><em>code</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa549a852cf71c858baefb78de72f124a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void OSS::OSSClientCallback::OnNetworkFailed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *&#160;</td>
+          <td class="paramname"><em>client</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a>&#160;</td>
+          <td class="paramname"><em>code</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac8f4aa28bd325678b71905fe46dc3911"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void OSS::OSSClientCallback::OnPostObjectGroupComplete </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *&#160;</td>
+          <td class="paramname"><em>client</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_post_object_group_result.html">PostObjectGroupResult</a> &amp;&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a59c063f83892ca80b6a4f13a268c5f32"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void OSS::OSSClientCallback::OnPostObjectGroupFailed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *&#160;</td>
+          <td class="paramname"><em>client</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a>&#160;</td>
+          <td class="paramname"><em>code</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ade2c4093a76026d84ff252800c731ba8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void OSS::OSSClientCallback::OnPutObjectComplete </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *&#160;</td>
+          <td class="paramname"><em>client</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_put_object_result.html">PutObjectResult</a> &amp;&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4374f26537fa248cec2842c7a34a73a7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void OSS::OSSClientCallback::OnPutObjectFailed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *&#160;</td>
+          <td class="paramname"><em>client</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a>&#160;</td>
+          <td class="paramname"><em>code</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a26b7331c0eff592b54bd89803b87f271"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void OSS::OSSClientCallback::OnSetBucketACLComplete </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *&#160;</td>
+          <td class="paramname"><em>client</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0b6722784c37416af9f38dac18fe89f4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void OSS::OSSClientCallback::OnSetBucketACLFailed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *&#160;</td>
+          <td class="paramname"><em>client</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a>&#160;</td>
+          <td class="paramname"><em>code</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a73b76a21e3b804d15ad2d582ce2c4da2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void OSS::OSSClientCallback::OnUploadPartComplete </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *&#160;</td>
+          <td class="paramname"><em>client</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_upload_part_result.html">UploadPartResult</a> &amp;&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab977921e8d318cb846f65869e4620a1f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void OSS::OSSClientCallback::OnUploadPartFailed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_o_s_s_1_1_o_s_s_client.html">OSSClient</a> *&#160;</td>
+          <td class="paramname"><em>client</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a>&#160;</td>
+          <td class="paramname"><em>code</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>project/libOSS/libOSS/<a class="el" href="_o_s_s_client_callback_8h_source.html">OSSClientCallback.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2012年 九月 28日 星期五 14:56:23 , 为 libOSS使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.2
+</small></address>
+</body>
+</html>

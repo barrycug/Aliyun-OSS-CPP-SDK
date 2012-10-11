@@ -1,0 +1,517 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>libOSS: OSS::HttpHeaders类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">libOSS
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">igis.me</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.2 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespace_o_s_s.html">OSS</a></li><li class="navelem"><a class="el" href="class_o_s_s_1_1_http_headers.html">HttpHeaders</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-attribs">静态 Public 属性</a> &#124;
+<a href="class_o_s_s_1_1_http_headers-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">OSS::HttpHeaders类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>对http头相关字符串的封装  
+ <a href="class_o_s_s_1_1_http_headers.html#details">更多...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a11a4e3350d8b853e765ce3c6b212be34"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_http_headers.html#a11a4e3350d8b853e765ce3c6b212be34">HttpHeaders</a> (void)</td></tr>
+<tr class="separator:a11a4e3350d8b853e765ce3c6b212be34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0fecfa87a50372f480e8e44a2cc298d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_http_headers.html#ae0fecfa87a50372f480e8e44a2cc298d">~HttpHeaders</a> (void)</td></tr>
+<tr class="separator:ae0fecfa87a50372f480e8e44a2cc298d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+静态 Public 属性</h2></td></tr>
+<tr class="memitem:af983d9f5a2d99b90045a64a905cfc118"><td class="memItemLeft" align="right" valign="top">static const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_http_headers.html#af983d9f5a2d99b90045a64a905cfc118">AUTHORIZATION</a> = &quot;Authorization&quot;</td></tr>
+<tr class="separator:af983d9f5a2d99b90045a64a905cfc118"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afea9cfc773806339e4ad91aa6158b6cc"><td class="memItemLeft" align="right" valign="top">static const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_http_headers.html#afea9cfc773806339e4ad91aa6158b6cc">CACHE_CONTROL</a> =&quot;Cache-Control&quot;</td></tr>
+<tr class="separator:afea9cfc773806339e4ad91aa6158b6cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac48ce7d632582cabddf57a11d6d8d735"><td class="memItemLeft" align="right" valign="top">static const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_http_headers.html#ac48ce7d632582cabddf57a11d6d8d735">CONTENT_DISPOSITION</a> = &quot;Content-Disposition&quot;</td></tr>
+<tr class="separator:ac48ce7d632582cabddf57a11d6d8d735"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adab4400b9dd9b6ff9cdfbd236d04d6c5"><td class="memItemLeft" align="right" valign="top">static const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_http_headers.html#adab4400b9dd9b6ff9cdfbd236d04d6c5">CONTENT_ENCODING</a> =&quot;Content-Encoding&quot;</td></tr>
+<tr class="separator:adab4400b9dd9b6ff9cdfbd236d04d6c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55a88b2a3fc1ad53228ff258dc2dc3ea"><td class="memItemLeft" align="right" valign="top">static const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_http_headers.html#a55a88b2a3fc1ad53228ff258dc2dc3ea">CONTENT_LENGTH</a> =&quot;Content-Length&quot;</td></tr>
+<tr class="separator:a55a88b2a3fc1ad53228ff258dc2dc3ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14493b94749b3e1d3ab79792289c7eeb"><td class="memItemLeft" align="right" valign="top">static const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_http_headers.html#a14493b94749b3e1d3ab79792289c7eeb">CONTENT_MD5</a> = &quot;Content-MD5&quot;</td></tr>
+<tr class="separator:a14493b94749b3e1d3ab79792289c7eeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d88557e826d3a7e0a6b49ecdc3d3288"><td class="memItemLeft" align="right" valign="top">static const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_http_headers.html#a1d88557e826d3a7e0a6b49ecdc3d3288">CONTENT_TYPE</a> = &quot;Content-Type&quot;</td></tr>
+<tr class="separator:a1d88557e826d3a7e0a6b49ecdc3d3288"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0e44a8d851cac01d8615073b0209033"><td class="memItemLeft" align="right" valign="top">static const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_http_headers.html#af0e44a8d851cac01d8615073b0209033">DATE</a> = &quot;Date&quot;</td></tr>
+<tr class="separator:af0e44a8d851cac01d8615073b0209033"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a038bd29c5c6cdb061ffbf2bd4e135725"><td class="memItemLeft" align="right" valign="top">static const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_http_headers.html#a038bd29c5c6cdb061ffbf2bd4e135725">ETAG</a> = &quot;ETag&quot;</td></tr>
+<tr class="separator:a038bd29c5c6cdb061ffbf2bd4e135725"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a699b59d61cb9980e638261c3c93b2593"><td class="memItemLeft" align="right" valign="top">static const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_http_headers.html#a699b59d61cb9980e638261c3c93b2593">EXPIRES</a> = &quot;Expires&quot;</td></tr>
+<tr class="separator:a699b59d61cb9980e638261c3c93b2593"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a130d3d668e901ea2ed1d101e2e36ce5e"><td class="memItemLeft" align="right" valign="top">static const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_http_headers.html#a130d3d668e901ea2ed1d101e2e36ce5e">HOST</a> =&quot;Host&quot;</td></tr>
+<tr class="separator:a130d3d668e901ea2ed1d101e2e36ce5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6662018d0a9c1178d7bedb46b9cb2d2"><td class="memItemLeft" align="right" valign="top">static const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_http_headers.html#ad6662018d0a9c1178d7bedb46b9cb2d2">LAST_MODIFIED</a> = &quot;Last-Modified&quot;</td></tr>
+<tr class="separator:ad6662018d0a9c1178d7bedb46b9cb2d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31533c93471f7a105e81624ab6ef115e"><td class="memItemLeft" align="right" valign="top">static const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_http_headers.html#a31533c93471f7a105e81624ab6ef115e">RANGE</a> = &quot;Range&quot;</td></tr>
+<tr class="separator:a31533c93471f7a105e81624ab6ef115e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2bfa94521d5f7df72ab98d111232b5d"><td class="memItemLeft" align="right" valign="top">static const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_http_headers.html#af2bfa94521d5f7df72ab98d111232b5d">LOCATION</a> = &quot;Location&quot;</td></tr>
+<tr class="separator:af2bfa94521d5f7df72ab98d111232b5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>对http头相关字符串的封装 </p>
+
+<p>在文件 <a class="el" href="_http_headers_8h_source.html">HttpHeaders.h</a> 第 <a class="el" href="_http_headers_8h_source.html#l00036">36</a> 行定义.</p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="a11a4e3350d8b853e765ce3c6b212be34"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OSS::HttpHeaders::HttpHeaders </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_http_headers_8cpp_source.html">HttpHeaders.cpp</a> 第 <a class="el" href="_http_headers_8cpp_source.html#l00040">40</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae0fecfa87a50372f480e8e44a2cc298d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OSS::HttpHeaders::~HttpHeaders </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_http_headers_8cpp_source.html">HttpHeaders.cpp</a> 第 <a class="el" href="_http_headers_8cpp_source.html#l00044">44</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="af983d9f5a2d99b90045a64a905cfc118"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string OSS::HttpHeaders::AUTHORIZATION = &quot;Authorization&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>AUTHORIZATION 字符串 </p>
+
+<p>在文件 <a class="el" href="_http_headers_8h_source.html">HttpHeaders.h</a> 第 <a class="el" href="_http_headers_8h_source.html#l00046">46</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="afea9cfc773806339e4ad91aa6158b6cc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string OSS::HttpHeaders::CACHE_CONTROL =&quot;Cache-Control&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>CACHE_CONTROL 字符串 </p>
+
+<p>在文件 <a class="el" href="_http_headers_8h_source.html">HttpHeaders.h</a> 第 <a class="el" href="_http_headers_8h_source.html#l00050">50</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac48ce7d632582cabddf57a11d6d8d735"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string OSS::HttpHeaders::CONTENT_DISPOSITION = &quot;Content-Disposition&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>CONTENT_DISPOSITION 字符串 </p>
+
+<p>在文件 <a class="el" href="_http_headers_8h_source.html">HttpHeaders.h</a> 第 <a class="el" href="_http_headers_8h_source.html#l00054">54</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="adab4400b9dd9b6ff9cdfbd236d04d6c5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string OSS::HttpHeaders::CONTENT_ENCODING =&quot;Content-Encoding&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>CONTENT_ENCODING 字符串 </p>
+
+<p>在文件 <a class="el" href="_http_headers_8h_source.html">HttpHeaders.h</a> 第 <a class="el" href="_http_headers_8h_source.html#l00058">58</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a55a88b2a3fc1ad53228ff258dc2dc3ea"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string OSS::HttpHeaders::CONTENT_LENGTH =&quot;Content-Length&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>CONTENT_LENGTH 字符串 </p>
+
+<p>在文件 <a class="el" href="_http_headers_8h_source.html">HttpHeaders.h</a> 第 <a class="el" href="_http_headers_8h_source.html#l00062">62</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a14493b94749b3e1d3ab79792289c7eeb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string OSS::HttpHeaders::CONTENT_MD5 = &quot;Content-MD5&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>CONTENT_MD5 字符串 </p>
+
+<p>在文件 <a class="el" href="_http_headers_8h_source.html">HttpHeaders.h</a> 第 <a class="el" href="_http_headers_8h_source.html#l00066">66</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1d88557e826d3a7e0a6b49ecdc3d3288"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string OSS::HttpHeaders::CONTENT_TYPE = &quot;Content-Type&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>CONTENT_TYPE 字符串 </p>
+
+<p>在文件 <a class="el" href="_http_headers_8h_source.html">HttpHeaders.h</a> 第 <a class="el" href="_http_headers_8h_source.html#l00070">70</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="af0e44a8d851cac01d8615073b0209033"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string OSS::HttpHeaders::DATE = &quot;Date&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>DATE 字符串 </p>
+
+<p>在文件 <a class="el" href="_http_headers_8h_source.html">HttpHeaders.h</a> 第 <a class="el" href="_http_headers_8h_source.html#l00074">74</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a038bd29c5c6cdb061ffbf2bd4e135725"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string OSS::HttpHeaders::ETAG = &quot;ETag&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>ETAG 字符串 </p>
+
+<p>在文件 <a class="el" href="_http_headers_8h_source.html">HttpHeaders.h</a> 第 <a class="el" href="_http_headers_8h_source.html#l00078">78</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a699b59d61cb9980e638261c3c93b2593"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string OSS::HttpHeaders::EXPIRES = &quot;Expires&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>EXPIRES 字符串 </p>
+
+<p>在文件 <a class="el" href="_http_headers_8h_source.html">HttpHeaders.h</a> 第 <a class="el" href="_http_headers_8h_source.html#l00082">82</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a130d3d668e901ea2ed1d101e2e36ce5e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string OSS::HttpHeaders::HOST =&quot;Host&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>HOST 字符串 </p>
+
+<p>在文件 <a class="el" href="_http_headers_8h_source.html">HttpHeaders.h</a> 第 <a class="el" href="_http_headers_8h_source.html#l00086">86</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad6662018d0a9c1178d7bedb46b9cb2d2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string OSS::HttpHeaders::LAST_MODIFIED = &quot;Last-Modified&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>LAST_MODIFIED 字符串 </p>
+
+<p>在文件 <a class="el" href="_http_headers_8h_source.html">HttpHeaders.h</a> 第 <a class="el" href="_http_headers_8h_source.html#l00090">90</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="af2bfa94521d5f7df72ab98d111232b5d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string OSS::HttpHeaders::LOCATION = &quot;Location&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>LOCATION 字符串 </p>
+
+<p>在文件 <a class="el" href="_http_headers_8h_source.html">HttpHeaders.h</a> 第 <a class="el" href="_http_headers_8h_source.html#l00098">98</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a31533c93471f7a105e81624ab6ef115e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string OSS::HttpHeaders::RANGE = &quot;Range&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>RANGE 字符串 </p>
+
+<p>在文件 <a class="el" href="_http_headers_8h_source.html">HttpHeaders.h</a> 第 <a class="el" href="_http_headers_8h_source.html#l00094">94</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>project/libOSS/libOSS/<a class="el" href="_http_headers_8h_source.html">HttpHeaders.h</a></li>
+<li>project/libOSS/libOSS/<a class="el" href="_http_headers_8cpp_source.html">HttpHeaders.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2012年 九月 28日 星期五 14:56:23 , 为 libOSS使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.2
+</small></address>
+</body>
+</html>

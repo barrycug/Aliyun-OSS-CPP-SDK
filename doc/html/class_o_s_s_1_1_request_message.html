@@ -1,0 +1,270 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>libOSS: OSS::RequestMessage类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">libOSS
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">igis.me</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.2 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespace_o_s_s.html">OSS</a></li><li class="navelem"><a class="el" href="class_o_s_s_1_1_request_message.html">RequestMessage</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="class_o_s_s_1_1_request_message-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">OSS::RequestMessage类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>请求消息对象  
+ <a href="class_o_s_s_1_1_request_message.html#details">更多...</a></p>
+
+<p>继承自 <a class="el" href="class_o_s_s_1_1_http_message.html">OSS::HttpMessage</a> .</p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:aff7b4737c560dfca338810069b9f8aae"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_request_message.html#aff7b4737c560dfca338810069b9f8aae">RequestMessage</a> (void)</td></tr>
+<tr class="separator:aff7b4737c560dfca338810069b9f8aae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af52f89fb2194ecfe7aa3359c64d4e9b8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_request_message.html#af52f89fb2194ecfe7aa3359c64d4e9b8">~RequestMessage</a> (void)</td></tr>
+<tr class="separator:af52f89fb2194ecfe7aa3359c64d4e9b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_o_s_s_1_1_http_message"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_o_s_s_1_1_http_message')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="class_o_s_s_1_1_http_message.html">OSS::HttpMessage</a></td></tr>
+<tr class="memitem:a68adff04ae162338e2bf13e54713afe7 inherit pub_methods_class_o_s_s_1_1_http_message"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_http_message.html#a68adff04ae162338e2bf13e54713afe7">HttpMessage</a> (void)</td></tr>
+<tr class="separator:a68adff04ae162338e2bf13e54713afe7 inherit pub_methods_class_o_s_s_1_1_http_message"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af243cb44502a712e1c903f2d238d2889 inherit pub_methods_class_o_s_s_1_1_http_message"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_http_message.html#af243cb44502a712e1c903f2d238d2889">HttpMessage</a> (<a class="el" href="class_o_s_s_1_1_http_message.html">HttpMessage</a> &amp;httpMessage)</td></tr>
+<tr class="separator:af243cb44502a712e1c903f2d238d2889 inherit pub_methods_class_o_s_s_1_1_http_message"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5c0becb682e9dad943d4cfa4fb6b4a3 inherit pub_methods_class_o_s_s_1_1_http_message"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_http_message.html#ad5c0becb682e9dad943d4cfa4fb6b4a3">~HttpMessage</a> (void)</td></tr>
+<tr class="separator:ad5c0becb682e9dad943d4cfa4fb6b4a3 inherit pub_methods_class_o_s_s_1_1_http_message"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91acd6f8a928f2074db855e1df84f6b6 inherit pub_methods_class_o_s_s_1_1_http_message"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_http_message.html#a91acd6f8a928f2074db855e1df84f6b6">addHeader</a> (string key, string value)</td></tr>
+<tr class="separator:a91acd6f8a928f2074db855e1df84f6b6 inherit pub_methods_class_o_s_s_1_1_http_message"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a998271bed238d9875cb8eee0830e0b0f inherit pub_methods_class_o_s_s_1_1_http_message"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_http_message.html#a998271bed238d9875cb8eee0830e0b0f">setData</a> (char *<a class="el" href="struct_o_s_s_1_1data.html">data</a>, long length)</td></tr>
+<tr class="separator:a998271bed238d9875cb8eee0830e0b0f inherit pub_methods_class_o_s_s_1_1_http_message"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7f952722f53fef99055a57de42357fb inherit pub_methods_class_o_s_s_1_1_http_message"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_http_message.html#ab7f952722f53fef99055a57de42357fb">getContent</a> () const </td></tr>
+<tr class="separator:ab7f952722f53fef99055a57de42357fb inherit pub_methods_class_o_s_s_1_1_http_message"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e32a13ba3ca97509f838d5f27418bea inherit pub_methods_class_o_s_s_1_1_http_message"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_http_message.html#a8e32a13ba3ca97509f838d5f27418bea">getContentLength</a> () const </td></tr>
+<tr class="separator:a8e32a13ba3ca97509f838d5f27418bea inherit pub_methods_class_o_s_s_1_1_http_message"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97358aef5ef8d6c5d3ad140e9b18d8de inherit pub_methods_class_o_s_s_1_1_http_message"><td class="memItemLeft" align="right" valign="top">map&lt; string, string &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_http_message.html#a97358aef5ef8d6c5d3ad140e9b18d8de">getHeaders</a> ()</td></tr>
+<tr class="separator:a97358aef5ef8d6c5d3ad140e9b18d8de inherit pub_methods_class_o_s_s_1_1_http_message"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa2841fa4423ff64b3d52b230e32c091 inherit pub_methods_class_o_s_s_1_1_http_message"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_http_message.html#aaa2841fa4423ff64b3d52b230e32c091">setHeaders</a> (map&lt; string, string &gt; headers)</td></tr>
+<tr class="separator:aaa2841fa4423ff64b3d52b230e32c091 inherit pub_methods_class_o_s_s_1_1_http_message"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a597b019f113d92a9e18d603eaa224e6d inherit pub_methods_class_o_s_s_1_1_http_message"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_o_s_s_1_1_http_message.html">HttpMessage</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_http_message.html#a597b019f113d92a9e18d603eaa224e6d">HttpMessage::operator=</a> (<a class="el" href="class_o_s_s_1_1_http_message.html">HttpMessage</a> &amp;x)</td></tr>
+<tr class="separator:a597b019f113d92a9e18d603eaa224e6d inherit pub_methods_class_o_s_s_1_1_http_message"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:ac10007c496a3158f4eb5afba4ef9aca3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_o_s_s_api_8h.html#a4353a75834bb35c4acd80b51434eef59">HttpMethod</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_request_message.html#ac10007c496a3158f4eb5afba4ef9aca3">method</a></td></tr>
+<tr class="separator:ac10007c496a3158f4eb5afba4ef9aca3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9efd611797ce0ae9fd1e265c95288d38"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_request_message.html#a9efd611797ce0ae9fd1e265c95288d38">endpoint</a></td></tr>
+<tr class="separator:a9efd611797ce0ae9fd1e265c95288d38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa23596d93b7f5e28af22f8340b65648"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_request_message.html#afa23596d93b7f5e28af22f8340b65648">resourcePath</a></td></tr>
+<tr class="separator:afa23596d93b7f5e28af22f8340b65648"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dda3b6ea056675fd91848b631c767a9"><td class="memItemLeft" align="right" valign="top">map&lt; string, string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_request_message.html#a0dda3b6ea056675fd91848b631c767a9">parameters</a></td></tr>
+<tr class="separator:a0dda3b6ea056675fd91848b631c767a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4640ae7e40c20def685a08a35ada57ea"><td class="memItemLeft" align="right" valign="top">map&lt; string, string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_s_1_1_request_message.html#a4640ae7e40c20def685a08a35ada57ea">userInfo</a></td></tr>
+<tr class="separator:a4640ae7e40c20def685a08a35ada57ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>请求消息对象 </p>
+
+<p>在文件 <a class="el" href="_request_message_8h_source.html">RequestMessage.h</a> 第 <a class="el" href="_request_message_8h_source.html#l00038">38</a> 行定义.</p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="aff7b4737c560dfca338810069b9f8aae"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OSS::RequestMessage::RequestMessage </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_request_message_8cpp_source.html">RequestMessage.cpp</a> 第 <a class="el" href="_request_message_8cpp_source.html#l00023">23</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="af52f89fb2194ecfe7aa3359c64d4e9b8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OSS::RequestMessage::~RequestMessage </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_request_message_8cpp_source.html">RequestMessage.cpp</a> 第 <a class="el" href="_request_message_8cpp_source.html#l00028">28</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="a9efd611797ce0ae9fd1e265c95288d38"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string OSS::RequestMessage::endpoint</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_request_message_8h_source.html">RequestMessage.h</a> 第 <a class="el" href="_request_message_8h_source.html#l00046">46</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac10007c496a3158f4eb5afba4ef9aca3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_o_s_s_api_8h.html#a4353a75834bb35c4acd80b51434eef59">HttpMethod</a> OSS::RequestMessage::method</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_request_message_8h_source.html">RequestMessage.h</a> 第 <a class="el" href="_request_message_8h_source.html#l00045">45</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0dda3b6ea056675fd91848b631c767a9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">map&lt;string,string&gt; OSS::RequestMessage::parameters</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_request_message_8h_source.html">RequestMessage.h</a> 第 <a class="el" href="_request_message_8h_source.html#l00048">48</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="afa23596d93b7f5e28af22f8340b65648"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string OSS::RequestMessage::resourcePath</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_request_message_8h_source.html">RequestMessage.h</a> 第 <a class="el" href="_request_message_8h_source.html#l00047">47</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4640ae7e40c20def685a08a35ada57ea"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">map&lt;string,string&gt; OSS::RequestMessage::userInfo</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="_request_message_8h_source.html">RequestMessage.h</a> 第 <a class="el" href="_request_message_8h_source.html#l00049">49</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>project/libOSS/libOSS/<a class="el" href="_request_message_8h_source.html">RequestMessage.h</a></li>
+<li>project/libOSS/libOSS/<a class="el" href="_request_message_8cpp_source.html">RequestMessage.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2012年 九月 28日 星期五 14:56:23 , 为 libOSS使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.2
+</small></address>
+</body>
+</html>

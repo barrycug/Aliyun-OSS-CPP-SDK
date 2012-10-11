@@ -1,0 +1,451 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>libOSS: 文件成员</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">libOSS
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">igis.me</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.2 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li class="current"><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow3" class="tabs2">
+    <ul class="tablist">
+      <li><a href="globals.html"><span>全部</span></a></li>
+      <li><a href="globals_func.html"><span>函数</span></a></li>
+      <li><a href="globals_vars.html"><span>变量</span></a></li>
+      <li><a href="globals_type.html"><span>类型定义</span></a></li>
+      <li><a href="globals_enum.html"><span>枚举</span></a></li>
+      <li><a href="globals_eval.html"><span>枚举值</span></a></li>
+      <li class="current"><a href="globals_defs.html"><span>宏定义</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow4" class="tabs3">
+    <ul class="tablist">
+      <li><a href="#index__"><span>_</span></a></li>
+      <li><a href="#index_a"><span>a</span></a></li>
+      <li><a href="#index_b"><span>b</span></a></li>
+      <li><a href="#index_e"><span>e</span></a></li>
+      <li><a href="#index_f"><span>f</span></a></li>
+      <li><a href="#index_g"><span>g</span></a></li>
+      <li><a href="#index_i"><span>i</span></a></li>
+      <li><a href="#index_l"><span>l</span></a></li>
+      <li><a href="#index_m"><span>m</span></a></li>
+      <li><a href="#index_o"><span>o</span></a></li>
+      <li><a href="#index_p"><span>p</span></a></li>
+      <li><a href="#index_r"><span>r</span></a></li>
+      <li><a href="#index_s"><span>s</span></a></li>
+      <li><a href="#index_t"><span>t</span></a></li>
+      <li><a href="#index_u"><span>u</span></a></li>
+      <li><a href="#index_x"><span>x</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="contents">
+&#160;
+
+<h3><a class="anchor" id="index__"></a>- _ -</h3><ul>
+<li>__LITTLE_ENDIAN
+: <a class="el" href="sha1_8h.html#aeccf3e279c16687d91cd28d0463cbde6">sha1.h</a>
+</li>
+<li>_CRT_SECURE_NO_DEPRECATE
+: <a class="el" href="xml_parser_8cpp.html#a411c46599e926f8cdf49c63957255359">xmlParser.cpp</a>
+</li>
+<li>_CXML
+: <a class="el" href="xml_parser_8h.html#a17b1f4694ce8bdeef4c07319c5f8f84d">xmlParser.h</a>
+</li>
+<li>_DEBUG
+: <a class="el" href="_h_t_t_p_request_8cpp.html#a152fc5203b90b1cff03b7b78579b8f52">HTTPRequest.cpp</a>
+</li>
+<li>_MD5_H
+: <a class="el" href="md5_8h.html#a9b665b394b050dba7f88a694f2e20994">md5.h</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_a"></a>- a -</h3><ul>
+<li>ALT_E
+: <a class="el" href="strptime_8h.html#a8e999fed03257eac484b5d62f8fd443f">strptime.h</a>
+</li>
+<li>ALT_O
+: <a class="el" href="strptime_8h.html#af5bedd1ae446cdf6de7204caa7ee4c1d">strptime.h</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_b"></a>- b -</h3><ul>
+<li>BASE64DECODE_READ_NEXT_CHAR
+: <a class="el" href="xml_parser_8cpp.html#a02d5dd6a1d6f4d83b6bc775a1fcc9b34">xmlParser.cpp</a>
+</li>
+<li>blk
+: <a class="el" href="sha1_8h.html#abd06ff24e9f6f5f0a9c32a1cba4b0f9c">sha1.h</a>
+</li>
+<li>blk0
+: <a class="el" href="sha1_8h.html#a1a75de24d0277c5319098c218efaef2d">sha1.h</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_e"></a>- e -</h3><ul>
+<li>EXPIMP_TEMPLATE
+: <a class="el" href="_abort_multipart_upload_request_8h.html#a8a7334d9203619113a0a6d03004b3bc0">AbortMultipartUploadRequest.h</a>
+, <a class="el" href="_upload_part_result_8h.html#a8a7334d9203619113a0a6d03004b3bc0">UploadPartResult.h</a>
+, <a class="el" href="_upload_part_request_8h.html#a8a7334d9203619113a0a6d03004b3bc0">UploadPartRequest.h</a>
+, <a class="el" href="_string_util_8h.html#a8a7334d9203619113a0a6d03004b3bc0">StringUtil.h</a>
+, <a class="el" href="_sign_util_8h.html#a8a7334d9203619113a0a6d03004b3bc0">SignUtil.h</a>
+, <a class="el" href="_service_signature_8h.html#a8a7334d9203619113a0a6d03004b3bc0">ServiceSignature.h</a>
+, <a class="el" href="_service_credentials_8h.html#a8a7334d9203619113a0a6d03004b3bc0">ServiceCredentials.h</a>
+, <a class="el" href="_service_client_callback_8h.html#a8a7334d9203619113a0a6d03004b3bc0">ServiceClientCallback.h</a>
+, <a class="el" href="_response_message_8h.html#a8a7334d9203619113a0a6d03004b3bc0">ResponseMessage.h</a>
+, <a class="el" href="_response_header_overrides_8h.html#a8a7334d9203619113a0a6d03004b3bc0">ResponseHeaderOverrides.h</a>
+, <a class="el" href="_request_signer_8h.html#a8a7334d9203619113a0a6d03004b3bc0">RequestSigner.h</a>
+, <a class="el" href="_request_message_8h.html#a8a7334d9203619113a0a6d03004b3bc0">RequestMessage.h</a>
+, <a class="el" href="_request_8h.html#a8a7334d9203619113a0a6d03004b3bc0">Request.h</a>
+, <a class="el" href="_put_object_result_8h.html#a8a7334d9203619113a0a6d03004b3bc0">PutObjectResult.h</a>
+, <a class="el" href="_post_object_group_result_8h.html#a8a7334d9203619113a0a6d03004b3bc0">PostObjectGroupResult.h</a>
+, <a class="el" href="_post_object_group_request_8h.html#a8a7334d9203619113a0a6d03004b3bc0">PostObjectGroupRequest.h</a>
+, <a class="el" href="_part_summary_8h.html#a8a7334d9203619113a0a6d03004b3bc0">PartSummary.h</a>
+, <a class="el" href="_part_listing_8h.html#a8a7334d9203619113a0a6d03004b3bc0">PartListing.h</a>
+, <a class="el" href="_part_e_tag_8h.html#a8a7334d9203619113a0a6d03004b3bc0">PartETag.h</a>
+, <a class="el" href="_owner_8h.html#a8a7334d9203619113a0a6d03004b3bc0">Owner.h</a>
+, <a class="el" href="_o_s_s_util_8h.html#a8a7334d9203619113a0a6d03004b3bc0">OSSUtil.h</a>
+, <a class="el" href="_o_s_s_request_signer_8h.html#a8a7334d9203619113a0a6d03004b3bc0">OSSRequestSigner.h</a>
+, <a class="el" href="_o_s_s_operation_8h.html#a8a7334d9203619113a0a6d03004b3bc0">OSSOperation.h</a>
+, <a class="el" href="_o_s_s_object_summary_8h.html#a8a7334d9203619113a0a6d03004b3bc0">OSSObjectSummary.h</a>
+, <a class="el" href="_o_s_s_object_operation_callback_8h.html#a8a7334d9203619113a0a6d03004b3bc0">OSSObjectOperationCallback.h</a>
+, <a class="el" href="_o_s_s_object_operation_8h.html#a8a7334d9203619113a0a6d03004b3bc0">OSSObjectOperation.h</a>
+, <a class="el" href="_o_s_s_object_group_operation_callback_8h.html#a8a7334d9203619113a0a6d03004b3bc0">OSSObjectGroupOperationCallback.h</a>
+, <a class="el" href="_o_s_s_object_group_operation_8h.html#a8a7334d9203619113a0a6d03004b3bc0">OSSObjectGroupOperation.h</a>
+, <a class="el" href="_o_s_s_object_8h.html#a8a7334d9203619113a0a6d03004b3bc0">OSSObject.h</a>
+, <a class="el" href="_o_s_s_multipart_operation_callback_8h.html#a8a7334d9203619113a0a6d03004b3bc0">OSSMultipartOperationCallback.h</a>
+, <a class="el" href="_o_s_s_multipart_operation_8h.html#a8a7334d9203619113a0a6d03004b3bc0">OSSMultipartOperation.h</a>
+, <a class="el" href="_o_s_s_error_8h.html#a8a7334d9203619113a0a6d03004b3bc0">OSSError.h</a>
+, <a class="el" href="_o_s_s_client_callback_8h.html#a8a7334d9203619113a0a6d03004b3bc0">OSSClientCallback.h</a>
+, <a class="el" href="_o_s_s_client_8h.html#a8a7334d9203619113a0a6d03004b3bc0">OSSClient.h</a>
+, <a class="el" href="_o_s_s_bucket_operation_callback_8h.html#a8a7334d9203619113a0a6d03004b3bc0">OSSBucketOperationCallback.h</a>
+, <a class="el" href="_o_s_s_bucket_operation_8h.html#a8a7334d9203619113a0a6d03004b3bc0">OSSBucketOperation.h</a>
+, <a class="el" href="_object_metadata_8h.html#a8a7334d9203619113a0a6d03004b3bc0">ObjectMetadata.h</a>
+, <a class="el" href="_object_listing_8h.html#a8a7334d9203619113a0a6d03004b3bc0">ObjectListing.h</a>
+, <a class="el" href="_object_group_part_e_tag_8h.html#a8a7334d9203619113a0a6d03004b3bc0">ObjectGroupPartETag.h</a>
+, <a class="el" href="_multipart_upload_listing_8h.html#a8a7334d9203619113a0a6d03004b3bc0">MultipartUploadListing.h</a>
+, <a class="el" href="_multipart_upload_8h.html#a8a7334d9203619113a0a6d03004b3bc0">MultipartUpload.h</a>
+, <a class="el" href="_list_parts_request_8h.html#a8a7334d9203619113a0a6d03004b3bc0">ListPartsRequest.h</a>
+, <a class="el" href="_list_objects_request_8h.html#a8a7334d9203619113a0a6d03004b3bc0">ListObjectsRequest.h</a>
+, <a class="el" href="_list_multipart_uploads_request_8h.html#a8a7334d9203619113a0a6d03004b3bc0">ListMultipartUploadsRequest.h</a>
+, <a class="el" href="_initiate_multipart_upload_result_8h.html#a8a7334d9203619113a0a6d03004b3bc0">InitiateMultipartUploadResult.h</a>
+, <a class="el" href="_initiate_multipart_upload_request_8h.html#a8a7334d9203619113a0a6d03004b3bc0">InitiateMultipartUploadRequest.h</a>
+, <a class="el" href="_http_util_8h.html#a8a7334d9203619113a0a6d03004b3bc0">HttpUtil.h</a>
+, <a class="el" href="_h_t_t_p_request_8h.html#a8a7334d9203619113a0a6d03004b3bc0">HTTPRequest.h</a>
+, <a class="el" href="_http_message_8h.html#a8a7334d9203619113a0a6d03004b3bc0">HttpMessage.h</a>
+, <a class="el" href="_http_headers_8h.html#a8a7334d9203619113a0a6d03004b3bc0">HttpHeaders.h</a>
+, <a class="el" href="_http_client_callback_8h.html#a8a7334d9203619113a0a6d03004b3bc0">HttpClientCallback.h</a>
+, <a class="el" href="_http_client_8h.html#a8a7334d9203619113a0a6d03004b3bc0">HttpClient.h</a>
+, <a class="el" href="_http_callback_8h.html#a8a7334d9203619113a0a6d03004b3bc0">HttpCallback.h</a>
+, <a class="el" href="_hmac_s_h_a1_signature_8h.html#a8a7334d9203619113a0a6d03004b3bc0">HmacSHA1Signature.h</a>
+, <a class="el" href="_file_part_8h.html#a8a7334d9203619113a0a6d03004b3bc0">FilePart.h</a>
+, <a class="el" href="_fetch_object_request_8h.html#a8a7334d9203619113a0a6d03004b3bc0">FetchObjectRequest.h</a>
+, <a class="el" href="_fetch_object_group_index_result_8h.html#a8a7334d9203619113a0a6d03004b3bc0">FetchObjectGroupIndexResult.h</a>
+, <a class="el" href="_execution_content_8h.html#a8a7334d9203619113a0a6d03004b3bc0">ExecutionContent.h</a>
+, <a class="el" href="_delete_objects_result_8h.html#a8a7334d9203619113a0a6d03004b3bc0">DeleteObjectsResult.h</a>
+, <a class="el" href="_default_service_client_8h.html#a8a7334d9203619113a0a6d03004b3bc0">DefaultServiceClient.h</a>
+, <a class="el" href="_date_util_8h.html#a8a7334d9203619113a0a6d03004b3bc0">DateUtil.h</a>
+, <a class="el" href="_copy_object_result_8h.html#a8a7334d9203619113a0a6d03004b3bc0">CopyObjectResult.h</a>
+, <a class="el" href="_copy_object_request_8h.html#a8a7334d9203619113a0a6d03004b3bc0">CopyObjectRequest.h</a>
+, <a class="el" href="_complete_multipart_upload_result_8h.html#a8a7334d9203619113a0a6d03004b3bc0">CompleteMultipartUploadResult.h</a>
+, <a class="el" href="_complete_multipart_upload_request_8h.html#a8a7334d9203619113a0a6d03004b3bc0">CompleteMultipartUploadRequest.h</a>
+, <a class="el" href="_client_configuration_8h.html#a8a7334d9203619113a0a6d03004b3bc0">ClientConfiguration.h</a>
+, <a class="el" href="_canned_access_control_list_8h.html#a8a7334d9203619113a0a6d03004b3bc0">CannedAccessControlList.h</a>
+, <a class="el" href="_buckets_8h.html#a8a7334d9203619113a0a6d03004b3bc0">Buckets.h</a>
+, <a class="el" href="_bucket_8h.html#a8a7334d9203619113a0a6d03004b3bc0">Bucket.h</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_f"></a>- f -</h3><ul>
+<li>F
+: <a class="el" href="md5_8c.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">md5.c</a>
+</li>
+<li>FALSE
+: <a class="el" href="xml_parser_8h.html#aa93f0eb578d23995850d61f7d61c55c1">xmlParser.h</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_g"></a>- g -</h3><ul>
+<li>GET_UINT32
+: <a class="el" href="md5_8c.html#a544d14714aed6d150435336296c66061">md5.c</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_i"></a>- i -</h3><ul>
+<li>INDENTCHAR
+: <a class="el" href="xml_parser_8cpp.html#af6833486d48fe4346cdefb5c93e317ec">xmlParser.cpp</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_l"></a>- l -</h3><ul>
+<li>LEGAL_ALT
+: <a class="el" href="strptime_8h.html#a96e322f2a4f6f20edc867e27bf8aa7ef">strptime.h</a>
+</li>
+<li>LENSTR
+: <a class="el" href="xml_parser_8cpp.html#a183cfe5a3825f1e0bc691ab934d79323">xmlParser.cpp</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_m"></a>- m -</h3><ul>
+<li>MAX_RECVDATA_LEN
+: <a class="el" href="_h_t_t_p_request_8cpp.html#a7bd3bf5fbb9b6275f9a4038ea934a45e">HTTPRequest.cpp</a>
+</li>
+<li>MEMORYINCREASE
+: <a class="el" href="xml_parser_8cpp.html#a963702fb4d0e1133d5d6fa779f3b5e40">xmlParser.cpp</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_o"></a>- o -</h3><ul>
+<li>OSSDLL_API
+: <a class="el" href="_abort_multipart_upload_request_8h.html#adebe98eebec040f5be5b84a332e1f097">AbortMultipartUploadRequest.h</a>
+, <a class="el" href="_upload_part_result_8h.html#adebe98eebec040f5be5b84a332e1f097">UploadPartResult.h</a>
+, <a class="el" href="_upload_part_request_8h.html#adebe98eebec040f5be5b84a332e1f097">UploadPartRequest.h</a>
+, <a class="el" href="_string_util_8h.html#adebe98eebec040f5be5b84a332e1f097">StringUtil.h</a>
+, <a class="el" href="_sign_util_8h.html#adebe98eebec040f5be5b84a332e1f097">SignUtil.h</a>
+, <a class="el" href="_service_signature_8h.html#adebe98eebec040f5be5b84a332e1f097">ServiceSignature.h</a>
+, <a class="el" href="_service_credentials_8h.html#adebe98eebec040f5be5b84a332e1f097">ServiceCredentials.h</a>
+, <a class="el" href="_service_client_callback_8h.html#adebe98eebec040f5be5b84a332e1f097">ServiceClientCallback.h</a>
+, <a class="el" href="_response_message_8h.html#adebe98eebec040f5be5b84a332e1f097">ResponseMessage.h</a>
+, <a class="el" href="_response_header_overrides_8h.html#adebe98eebec040f5be5b84a332e1f097">ResponseHeaderOverrides.h</a>
+, <a class="el" href="_request_signer_8h.html#adebe98eebec040f5be5b84a332e1f097">RequestSigner.h</a>
+, <a class="el" href="_request_message_8h.html#adebe98eebec040f5be5b84a332e1f097">RequestMessage.h</a>
+, <a class="el" href="_request_8h.html#adebe98eebec040f5be5b84a332e1f097">Request.h</a>
+, <a class="el" href="_put_object_result_8h.html#adebe98eebec040f5be5b84a332e1f097">PutObjectResult.h</a>
+, <a class="el" href="_post_object_group_result_8h.html#adebe98eebec040f5be5b84a332e1f097">PostObjectGroupResult.h</a>
+, <a class="el" href="_post_object_group_request_8h.html#adebe98eebec040f5be5b84a332e1f097">PostObjectGroupRequest.h</a>
+, <a class="el" href="_part_summary_8h.html#adebe98eebec040f5be5b84a332e1f097">PartSummary.h</a>
+, <a class="el" href="_part_listing_8h.html#adebe98eebec040f5be5b84a332e1f097">PartListing.h</a>
+, <a class="el" href="_part_e_tag_8h.html#adebe98eebec040f5be5b84a332e1f097">PartETag.h</a>
+, <a class="el" href="_owner_8h.html#adebe98eebec040f5be5b84a332e1f097">Owner.h</a>
+, <a class="el" href="_o_s_s_util_8h.html#adebe98eebec040f5be5b84a332e1f097">OSSUtil.h</a>
+, <a class="el" href="_o_s_s_request_signer_8h.html#adebe98eebec040f5be5b84a332e1f097">OSSRequestSigner.h</a>
+, <a class="el" href="_o_s_s_operation_8h.html#adebe98eebec040f5be5b84a332e1f097">OSSOperation.h</a>
+, <a class="el" href="_o_s_s_object_summary_8h.html#adebe98eebec040f5be5b84a332e1f097">OSSObjectSummary.h</a>
+, <a class="el" href="_o_s_s_object_operation_callback_8h.html#adebe98eebec040f5be5b84a332e1f097">OSSObjectOperationCallback.h</a>
+, <a class="el" href="_o_s_s_object_operation_8h.html#adebe98eebec040f5be5b84a332e1f097">OSSObjectOperation.h</a>
+, <a class="el" href="_o_s_s_object_group_operation_callback_8h.html#adebe98eebec040f5be5b84a332e1f097">OSSObjectGroupOperationCallback.h</a>
+, <a class="el" href="_o_s_s_object_group_operation_8h.html#adebe98eebec040f5be5b84a332e1f097">OSSObjectGroupOperation.h</a>
+, <a class="el" href="_o_s_s_object_8h.html#adebe98eebec040f5be5b84a332e1f097">OSSObject.h</a>
+, <a class="el" href="_o_s_s_multipart_operation_callback_8h.html#adebe98eebec040f5be5b84a332e1f097">OSSMultipartOperationCallback.h</a>
+, <a class="el" href="_o_s_s_multipart_operation_8h.html#adebe98eebec040f5be5b84a332e1f097">OSSMultipartOperation.h</a>
+, <a class="el" href="_o_s_s_error_8h.html#adebe98eebec040f5be5b84a332e1f097">OSSError.h</a>
+, <a class="el" href="_o_s_s_client_callback_8h.html#adebe98eebec040f5be5b84a332e1f097">OSSClientCallback.h</a>
+, <a class="el" href="_o_s_s_client_8h.html#adebe98eebec040f5be5b84a332e1f097">OSSClient.h</a>
+, <a class="el" href="_o_s_s_bucket_operation_callback_8h.html#adebe98eebec040f5be5b84a332e1f097">OSSBucketOperationCallback.h</a>
+, <a class="el" href="_o_s_s_bucket_operation_8h.html#adebe98eebec040f5be5b84a332e1f097">OSSBucketOperation.h</a>
+, <a class="el" href="_object_metadata_8h.html#adebe98eebec040f5be5b84a332e1f097">ObjectMetadata.h</a>
+, <a class="el" href="_object_listing_8h.html#adebe98eebec040f5be5b84a332e1f097">ObjectListing.h</a>
+, <a class="el" href="_object_group_part_e_tag_8h.html#adebe98eebec040f5be5b84a332e1f097">ObjectGroupPartETag.h</a>
+, <a class="el" href="_multipart_upload_listing_8h.html#adebe98eebec040f5be5b84a332e1f097">MultipartUploadListing.h</a>
+, <a class="el" href="_multipart_upload_8h.html#adebe98eebec040f5be5b84a332e1f097">MultipartUpload.h</a>
+, <a class="el" href="md5_8h.html#adebe98eebec040f5be5b84a332e1f097">md5.h</a>
+, <a class="el" href="_list_parts_request_8h.html#adebe98eebec040f5be5b84a332e1f097">ListPartsRequest.h</a>
+, <a class="el" href="_list_objects_request_8h.html#adebe98eebec040f5be5b84a332e1f097">ListObjectsRequest.h</a>
+, <a class="el" href="_list_multipart_uploads_request_8h.html#adebe98eebec040f5be5b84a332e1f097">ListMultipartUploadsRequest.h</a>
+, <a class="el" href="_initiate_multipart_upload_result_8h.html#adebe98eebec040f5be5b84a332e1f097">InitiateMultipartUploadResult.h</a>
+, <a class="el" href="_initiate_multipart_upload_request_8h.html#adebe98eebec040f5be5b84a332e1f097">InitiateMultipartUploadRequest.h</a>
+, <a class="el" href="_http_util_8h.html#adebe98eebec040f5be5b84a332e1f097">HttpUtil.h</a>
+, <a class="el" href="_h_t_t_p_request_8h.html#adebe98eebec040f5be5b84a332e1f097">HTTPRequest.h</a>
+, <a class="el" href="_http_message_8h.html#adebe98eebec040f5be5b84a332e1f097">HttpMessage.h</a>
+, <a class="el" href="_http_headers_8h.html#adebe98eebec040f5be5b84a332e1f097">HttpHeaders.h</a>
+, <a class="el" href="_http_client_callback_8h.html#adebe98eebec040f5be5b84a332e1f097">HttpClientCallback.h</a>
+, <a class="el" href="_http_client_8h.html#adebe98eebec040f5be5b84a332e1f097">HttpClient.h</a>
+, <a class="el" href="_http_callback_8h.html#adebe98eebec040f5be5b84a332e1f097">HttpCallback.h</a>
+, <a class="el" href="_hmac_s_h_a1_signature_8h.html#adebe98eebec040f5be5b84a332e1f097">HmacSHA1Signature.h</a>
+, <a class="el" href="_file_part_8h.html#adebe98eebec040f5be5b84a332e1f097">FilePart.h</a>
+, <a class="el" href="_fetch_object_request_8h.html#adebe98eebec040f5be5b84a332e1f097">FetchObjectRequest.h</a>
+, <a class="el" href="_fetch_object_group_index_result_8h.html#adebe98eebec040f5be5b84a332e1f097">FetchObjectGroupIndexResult.h</a>
+, <a class="el" href="_execution_content_8h.html#adebe98eebec040f5be5b84a332e1f097">ExecutionContent.h</a>
+, <a class="el" href="_delete_objects_result_8h.html#adebe98eebec040f5be5b84a332e1f097">DeleteObjectsResult.h</a>
+, <a class="el" href="_default_service_client_8h.html#adebe98eebec040f5be5b84a332e1f097">DefaultServiceClient.h</a>
+, <a class="el" href="_date_util_8h.html#adebe98eebec040f5be5b84a332e1f097">DateUtil.h</a>
+, <a class="el" href="_copy_object_result_8h.html#adebe98eebec040f5be5b84a332e1f097">CopyObjectResult.h</a>
+, <a class="el" href="_copy_object_request_8h.html#adebe98eebec040f5be5b84a332e1f097">CopyObjectRequest.h</a>
+, <a class="el" href="_complete_multipart_upload_result_8h.html#adebe98eebec040f5be5b84a332e1f097">CompleteMultipartUploadResult.h</a>
+, <a class="el" href="_complete_multipart_upload_request_8h.html#adebe98eebec040f5be5b84a332e1f097">CompleteMultipartUploadRequest.h</a>
+, <a class="el" href="_client_configuration_8h.html#adebe98eebec040f5be5b84a332e1f097">ClientConfiguration.h</a>
+, <a class="el" href="_canned_access_control_list_8h.html#adebe98eebec040f5be5b84a332e1f097">CannedAccessControlList.h</a>
+, <a class="el" href="_buckets_8h.html#adebe98eebec040f5be5b84a332e1f097">Buckets.h</a>
+, <a class="el" href="_bucket_8h.html#adebe98eebec040f5be5b84a332e1f097">Bucket.h</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_p"></a>- p -</h3><ul>
+<li>P
+: <a class="el" href="md5_8c.html#a3e7cecea3d3b858cbfc46b77d5314c04">md5.c</a>
+</li>
+<li>PUT_UINT32
+: <a class="el" href="md5_8c.html#a8f3a8299ffeba42ea7e2ec2459cb9995">md5.c</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_r"></a>- r -</h3><ul>
+<li>R0
+: <a class="el" href="sha1_8h.html#a8ac24a09e1273548828d3cc9436f9bc7">sha1.h</a>
+</li>
+<li>R1
+: <a class="el" href="sha1_8h.html#a2628f8af7bf67ca052200537279f855a">sha1.h</a>
+</li>
+<li>R2
+: <a class="el" href="sha1_8h.html#a774229b80509be0e9e0a1d9819580224">sha1.h</a>
+</li>
+<li>R3
+: <a class="el" href="sha1_8h.html#ac0b8b342432d17717ff1020d10cf0eea">sha1.h</a>
+</li>
+<li>R4
+: <a class="el" href="sha1_8h.html#af77ddc8894422d2af2adbd4e71e55d1f">sha1.h</a>
+</li>
+<li>RESULTDATA_INCREASE_LEN
+: <a class="el" href="_h_t_t_p_request_8cpp.html#a19a924136a657211e6d6dfb7b2eac147">HTTPRequest.cpp</a>
+</li>
+<li>rol
+: <a class="el" href="sha1_8h.html#af1373930110e4f86cb1f4bc6d44a66ee">sha1.h</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_s"></a>- s -</h3><ul>
+<li>S
+: <a class="el" href="md5_8c.html#a5a9675d71aad8449f8e4112ce611fd93">md5.c</a>
+</li>
+<li>SHA1HANDSOFF
+: <a class="el" href="sha1_8h.html#a9e2c8862606a4549edef298248089783">sha1.h</a>
+</li>
+<li>SHA_BLOCKSIZE
+: <a class="el" href="_h_m_a_c_s_h_a1_8c.html#aea2817b20aed3383184f696e59657398">HMACSHA1.c</a>
+</li>
+<li>SHA_DIGESTSIZE
+: <a class="el" href="_h_m_a_c_s_h_a1_8c.html#ab16d5cf6b0d7317dd54b7448c40ad0e4">HMACSHA1.c</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_t"></a>- t -</h3><ul>
+<li>TM_YEAR_BASE
+: <a class="el" href="strptime_8h.html#a0b24352233a7c91b5e627d2a26ffefb3">strptime.h</a>
+</li>
+<li>TRUE
+: <a class="el" href="xml_parser_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">xmlParser.h</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_u"></a>- u -</h3><ul>
+<li>uint32
+: <a class="el" href="md5_8h.html#a9695cf1104606879c5d3f0221635a069">md5.h</a>
+</li>
+<li>uint8
+: <a class="el" href="md5_8h.html#a2d25bcd37166cc98f0d823cdb8c553ef">md5.h</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_x"></a>- x -</h3><ul>
+<li>XML_isSPACECHAR
+: <a class="el" href="xml_parser_8cpp.html#a191879a1c25a6c31e1b4141c1047c8a2">xmlParser.cpp</a>
+</li>
+<li>XMLCHAR
+: <a class="el" href="xml_parser_8h.html#a9f587fbd233e721e8818a3bf8102838f">xmlParser.h</a>
+</li>
+<li>XMLCSTR
+: <a class="el" href="xml_parser_8h.html#acdb0d6fd8dd596384b438d86cfb2b182">xmlParser.h</a>
+</li>
+<li>XMLDLLENTRY
+: <a class="el" href="xml_parser_8h.html#a990c86ec1cdbf675604a1a321d852063">xmlParser.h</a>
+</li>
+<li>XMLSTR
+: <a class="el" href="xml_parser_8h.html#a849d96105aa0c8f64b5c10d9151a3cdc">xmlParser.h</a>
+</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2012年 九月 28日 星期五 14:56:24 , 为 libOSS使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.2
+</small></address>
+</body>
+</html>

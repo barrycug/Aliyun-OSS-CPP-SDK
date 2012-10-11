@@ -1,0 +1,185 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>libOSS: OSS library</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">libOSS
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">igis.me</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.2 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li class="current"><a href="index.html"><span>首页</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title"><a class="el" href="namespace_o_s_s.html">OSS</a> library </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><h1><a class="anchor" id="intro_sec"></a>
+Introduction</h1>
+<p><a class="el" href="namespace_o_s_s.html">OSS</a> SDK for C++ 使用说明 <br/>
+ 1 简介 <br/>
+ Aliyun <a class="el" href="namespace_o_s_s.html">OSS</a> C++ SDK使用c++实现了Aliyun OSS提供的功能，主要包括Bucket的创建、删除、浏览。Object的创建、删除浏览以及多点上传等功能，关于OSS提供的服务请参考OSS API说明文档。<br/>
+ 2 主要内容<br/>
+ Aliyun <a class="el" href="namespace_o_s_s.html">OSS</a> C++ SDK主要包括源代码（BSD协议开源）、说明文档、示例工程、帮助文档等。<br/>
+ 该SDK开发环境为vs2012，提供了vs2012的工程文件，目前只支持windows平台，暂不支持跨平台使用。<br/>
+ 该SDK提供头文件和动态库和lib文件用于开发。<br/>
+ 3 第三方库<br/>
+ 本SDK使用到的第三方类库包括以下部分：<br/>
+ Libcurl<br/>
+ Xmlparser<br/>
+ 4 使用步骤<br/>
+ 4.1 新建vs2012 工程，将vc include目录设为SDK目录下的include目录，Library目录设为SDK目录下的bin目录。<br/>
+ 4.2 工程Output目录设为SDK目录下的bin目录。<br/>
+ 4.3 在Linker属性下Input中添加libcurl.lib和libOSS.lib<br/>
+ 4.4 在代码中包含头文件OSSClient.h<br/>
+ #include "OSSClient.h"<br/>
+ 4.5 定义OSSClient对象，并使用accessID和accessKey初始化。<br/>
+ <a class="el" href="class_o_s_s_1_1_o_s_s_client.html" title="OSS 类库主要操作类，提供了同步和异步的方式对OSS对象进行操作 同步的方式会直接返回结果 异步的方式需要使用者继承并实现OSSClientCallback类中的相关回调方法，并讲delegate设置...">OSS::OSSClient</a> *_ptClient = new OSSClient(aID,akey,config);<br/>
+ 4.6 使用OSSClient对OSS对象操作，OSS对象提供了四类对象的操作函数，包括Bucket，Object，MultiPart和ObjectGroup。OSSClient 还分别提供了同步和异步的方式进行调用。<br/>
+ 4.6.1 同步方式调用<br/>
+ 直接使用OSSClient对象调用即可。<br/>
+ _ptClient-&gt;ListBuckets(buckets);<br/>
+ 4.6.2 异步方式调用<br/>
+ 异步方式是web请求的主流请求方式，当请求返回的时候响应相关消息。<br/>
+ 1）使用异步方式首先要实现代理类，该代理类必须继承OSS::OSSClientCallback 这个抽象基类，并实现抽象基类中定义的回调方法。<br/>
+ class OSSClientTest: <a class="el" href="class_o_s_s_1_1_o_s_s_client_callback.html" title="抽象基类，OSSClient对象操作相关回调函数定义">OSS::OSSClientCallback</a><br/>
+ {<br/>
+ public:<br/>
+ OSSClientTest(void);<br/>
+ ~OSSClientTest(void);<br/>
+ public:<br/>
+ //Bucket Op<br/>
+ virtual void OnCreateBucketComplete(OSSClient *client,Bucket &amp;bucket);<br/>
+ virtual void OnCreateBucketFailed(OSSClient *client,OSS_RESULTCODE code);<br/>
+ virtual void OnDeleteBucketComplete(OSSClient *client,string &amp;bucketName);<br/>
+ virtual void OnDeleteBucketFailed(OSSClient *client,OSS_RESULTCODE code);<br/>
+ virtual void OnListBucketsComplete(OSSClient *client,Buckets &amp;buckets);<br/>
+ virtual void OnListBucketsFailed(OSSClient *client,OSS_RESULTCODE code);<br/>
+ virtual void OnSetBucketACLComplete(OSSClient *client);<br/>
+ virtual void OnSetBucketACLFailed(OSSClient *client,OSS_RESULTCODE code);<br/>
+ virtual void OnGetBucketACLComplete(OSSClient *client,CannedAccessControlList &amp;aclList);<br/>
+ virtual void OnGetBucketACLFailed(OSSClient *client,OSS_RESULTCODE code);<br/>
+ virtual void OnIsBucketExistComplete(OSSClient *client,bool &amp;isExist);<br/>
+ virtual void OnIsBucketExistFailed(OSSClient *client,OSS_RESULTCODE code);<br/>
+ virtual void OnListObjectsComplete(OSSClient *client,ObjectListing &amp;objectListing);<br/>
+ virtual void OnListObjectsFailed(OSSClient *client,OSS_RESULTCODE code);<br/>
+ //Object Op<br/>
+ virtual void OnPutObjectComplete(OSSClient *client,PutObjectResult &amp;result);<br/>
+ virtual void OnPutObjectFailed(OSSClient *client,OSS_RESULTCODE code);<br/>
+ virtual void OnFetchObjectComplete(OSSClient *client,OSSObject &amp;object);<br/>
+ virtual void OnFetchObjectFailed(OSSClient *client,OSS_RESULTCODE code);<br/>
+ virtual void OnFetchObjectToFileComplete(OSSClient *client,string &amp;fileName);<br/>
+ virtual void OnFetchObjectToFileFailed(OSSClient *client,OSS_RESULTCODE code);<br/>
+ virtual void OnGetObjectMetadataComplete(OSSClient *client,ObjectMetadata &amp;objectMetadata);<br/>
+ virtual void OnGetObjectMetadataFailed(OSSClient *client,OSS_RESULTCODE code);<br/>
+ virtual void OnCopyObjectComplete(OSSClient *client,CopyObjectResult &amp;result);<br/>
+ virtual void OnCopyObjectFailed(OSSClient *client,OSS_RESULTCODE code);<br/>
+ virtual void OnDeleteObjectComplete(OSSClient *client);<br/>
+ virtual void OnDeleteObjectFailed(OSSClient *client,OSS_RESULTCODE code);<br/>
+ virtual void OnDeleteMultipleObjectsComplete(OSSClient *client,DeleteObjectsResult &amp;result);<br/>
+ virtual void OnDeleteMultipleObjectsFailed(OSSClient *client,OSS_RESULTCODE code);<br/>
+ //ObjectGroup Op<br/>
+ virtual void OnPostObjectGroupComplete(OSSClient *client,PostObjectGroupResult &amp;result);<br/>
+ virtual void OnPostObjectGroupFailed(OSSClient *client,OSS_RESULTCODE code);<br/>
+ virtual void OnGetObjectGroupIndexComplete(OSSClient *client,FetchObjectGroupIndexResult &amp;result);<br/>
+ virtual void OnGetObjectGroupIndexFailed(OSSClient *client,OSS_RESULTCODE code);<br/>
+ //multipart Op<br/>
+ virtual void OnUploadPartComplete(OSSClient *client,UploadPartResult &amp;result);<br/>
+ virtual void OnUploadPartFailed(OSSClient *client,OSS_RESULTCODE code);<br/>
+ virtual void OnListPartsComplete(OSSClient *client,PartListing &amp;result);<br/>
+ virtual void OnListPartsFailed(OSSClient *client,OSS_RESULTCODE code);<br/>
+ virtual void OnListMultipartUploadsComplete(OSSClient *client,MultipartUploadListing &amp;result);<br/>
+ virtual void OnListMultipartUploadsFailed(OSSClient *client,OSS_RESULTCODE code);<br/>
+ virtual void OnInitiateMultipartUploadComplete(OSSClient *client,InitiateMultipartUploadResult &amp;result);<br/>
+ virtual void OnInitiateMultipartUploadFailed(OSSClient *client,OSS_RESULTCODE code);<br/>
+ virtual void OnCompleteMultipartUploadComplete(OSSClient *client,CompleteMultipartUploadResult &amp;result);<br/>
+ virtual void OnCompleteMultipartUploadFailed(OSSClient *client,OSS_RESULTCODE code);<br/>
+ virtual void OnAbortMultipartUploadComplete(OSSClient *client,string &amp;puloadId);<br/>
+ virtual void OnAbortMultipartUploadFailed(OSSClient *client,OSS_RESULTCODE code);<br/>
+ virtual void OnNetworkFailed(OSSClient *client,OSS_RESULTCODE code);<br/>
+ };<br/>
+ 2） 定义回调代理类<br/>
+ OSSClientTest *ptOSSClientTest = new OSSClientTest();<br/>
+ 3）将代理类的指针赋给OSSClient 的delegate对象<br/>
+ _ptClient-&gt;delegate =(OSSClientCallback *)ptOSSClientTest;<br/>
+ 4） 调用以_Async结尾的相关方法对OSS对象操作<br/>
+ _ptClient-&gt;ListBuckets_Async();<br/>
+ <br/>
+</p>
+<dl class="section version"><dt>版本</dt><dd>V1.0 </dd></dl>
+<dl class="section author"><dt>作者</dt><dd>baocai zhang </dd></dl>
+</div></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2012年 九月 28日 星期五 14:56:23 , 为 libOSS使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.2
+</small></address>
+</body>
+</html>

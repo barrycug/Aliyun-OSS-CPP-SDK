@@ -1,0 +1,10 @@
+digraph "project" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_167790342fb55959539d550b874be046 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_167790342fb55959539d550b874be046.html"];
+    dir_167790342fb55959539d550b874be046 [shape=plaintext label="project"];
+    dir_3023ff01d1436e238124d7fcc5000422 [shape=box label="libOSS" color="red" fillcolor="white" style="filled" URL="dir_3023ff01d1436e238124d7fcc5000422.html"];
+  }
+}

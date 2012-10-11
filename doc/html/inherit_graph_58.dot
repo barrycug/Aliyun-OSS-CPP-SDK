@@ -1,0 +1,7 @@
+digraph "类继承关系图"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="ToXMLStringTool",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_to_x_m_l_string_tool.html",tooltip="Helper class to create XML files using &quot;printf&quot;, &quot;fprintf&quot;, &quot;cout&quot;,... functions."];
+}

@@ -1,0 +1,13 @@
+digraph "project/libOSS" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_167790342fb55959539d550b874be046 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="project" fontname="Helvetica", fontsize="10", URL="dir_167790342fb55959539d550b874be046.html"]
+  subgraph clusterdir_3023ff01d1436e238124d7fcc5000422 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_3023ff01d1436e238124d7fcc5000422.html"];
+    dir_3023ff01d1436e238124d7fcc5000422 [shape=plaintext label="libOSS"];
+    dir_c2df5faff012d771a522b75d2c985cb4 [shape=box label="libOSS" color="black" fillcolor="white" style="filled" URL="dir_c2df5faff012d771a522b75d2c985cb4.html"];
+  }
+  }
+}

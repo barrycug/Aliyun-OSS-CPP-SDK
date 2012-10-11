@@ -1,0 +1,20 @@
+digraph "project/libOSS/libOSS/MultipartUpload.h"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="project/libOSS/libOSS\l/MultipartUpload.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="project/libOSS/libOSS\l/MultipartUpload.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_multipart_upload_8cpp.html"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="project/libOSS/libOSS\l/MultipartUploadListing.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_multipart_upload_listing_8h.html"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="project/libOSS/libOSS\l/MultipartUploadListing.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_multipart_upload_listing_8cpp.html"];
+  Node3 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="project/libOSS/libOSS\l/OSSMultipartOperation.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_o_s_s_multipart_operation_8h.html"];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="project/libOSS/libOSS\l/OSSClient.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_o_s_s_client_8h.html"];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="project/libOSS/libOSS\l/OSSClient.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_o_s_s_client_8cpp.html"];
+  Node5 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="project/libOSS/libOSS\l/OSSMultipartOperation.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_o_s_s_multipart_operation_8cpp.html"];
+}

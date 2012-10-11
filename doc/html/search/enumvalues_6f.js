@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['oss_5fresultcode_5faccess_5fdenied',['OSS_RESULTCODE_ACCESS_DENIED',['../_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356a6390894aa1f248f69100b28a05c7ce09',1,'OSSApi.h']]],
+  ['oss_5fresultcode_5fbuckes_5falready_5fexists',['OSS_RESULTCODE_BUCKES_ALREADY_EXISTS',['../_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356a186ec0545f8f13a91de6cfd9150bd577',1,'OSSApi.h']]],
+  ['oss_5fresultcode_5fbuckets_5fnot_5fempty',['OSS_RESULTCODE_BUCKETS_NOT_EMPTY',['../_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356acc6168f17b544a44e057f416e30c8dec',1,'OSSApi.h']]],
+  ['oss_5fresultcode_5ffile_5fgroup_5ftoo_5flarge',['OSS_RESULTCODE_FILE_GROUP_TOO_LARGE',['../_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356abcd8359ff639232dbda94225377b1f56',1,'OSSApi.h']]],
+  ['oss_5fresultcode_5ffile_5fpart_5fstale',['OSS_RESULTCODE_FILE_PART_STALE',['../_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356af1584c1e99c117bafb3dc0571ead2523',1,'OSSApi.h']]],
+  ['oss_5fresultcode_5finternal_5ferror',['OSS_RESULTCODE_INTERNAL_ERROR',['../_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356aa353bb12d45b298acf4177419a937b8a',1,'OSSApi.h']]],
+  ['oss_5fresultcode_5finvalid',['OSS_RESULTCODE_INVALID',['../_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356acbcb8448d29370e41071aa6899ffa2d5',1,'OSSApi.h']]],
+  ['oss_5fresultcode_5finvalid_5faccess_5fkey_5fid',['OSS_RESULTCODE_INVALID_ACCESS_KEY_ID',['../_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356aead34a1afa4e92ec05e7502e7cf70546',1,'OSSApi.h']]],
+  ['oss_5fresultcode_5finvalid_5fargument',['OSS_RESULTCODE_INVALID_ARGUMENT',['../_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356af4ba535e2e8e8215c8ef6fe018c8a4ab',1,'OSSApi.h']]],
+  ['oss_5fresultcode_5finvalid_5fbucket_5fname',['OSS_RESULTCODE_INVALID_BUCKET_NAME',['../_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356aeb2834867143da9141c6aa370497764f',1,'OSSApi.h']]],
+  ['oss_5fresultcode_5finvalid_5fobject_5fname',['OSS_RESULTCODE_INVALID_OBJECT_NAME',['../_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356aac55720c0a1f3e6179e86ea27147a67c',1,'OSSApi.h']]],
+  ['oss_5fresultcode_5finvalid_5fpart',['OSS_RESULTCODE_INVALID_PART',['../_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356a680f9c38c304401f0e738083a8ceb49b',1,'OSSApi.h']]],
+  ['oss_5fresultcode_5finvalid_5fpart_5forder',['OSS_RESULTCODE_INVALID_PART_ORDER',['../_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356a2b04196c0e7b40feb41a75dfdb86f485',1,'OSSApi.h']]],
+  ['oss_5fresultcode_5fmissing_5fcontent_5flength',['OSS_RESULTCODE_MISSING_CONTENT_LENGTH',['../_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356ab72ea2f1674b10126e56690fd71e6fad',1,'OSSApi.h']]],
+  ['oss_5fresultcode_5fno_5fsuch_5fbucket',['OSS_RESULTCODE_NO_SUCH_BUCKET',['../_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356a87dacac6309fd2e277be3c615883af07',1,'OSSApi.h']]],
+  ['oss_5fresultcode_5fno_5fsuch_5fkey',['OSS_RESULTCODE_NO_SUCH_KEY',['../_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356ad7c113ef473fa2eef60d2ec63ce9d6d7',1,'OSSApi.h']]],
+  ['oss_5fresultcode_5fnot_5fimplemented',['OSS_RESULTCODE_NOT_IMPLEMENTED',['../_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356aa75cd17e1c2e613fd61003c559e2cb24',1,'OSSApi.h']]],
+  ['oss_5fresultcode_5fok',['OSS_RESULTCODE_OK',['../_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356a3359fcba4c631ed42b9d973fd0174ab4',1,'OSSApi.h']]],
+  ['oss_5fresultcode_5fprecondition_5ffailed',['OSS_RESULTCODE_PRECONDITION_FAILED',['../_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356a7dec5e462e058c425a8a722c3c36ed3d',1,'OSSApi.h']]],
+  ['oss_5fresultcode_5frequest_5ftime_5ftoo_5fskewed',['OSS_RESULTCODE_REQUEST_TIME_TOO_SKEWED',['../_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356aa11e1efc5137fe2d34b6b3edf3d756b3',1,'OSSApi.h']]],
+  ['oss_5fresultcode_5frequest_5ftimeout',['OSS_RESULTCODE_REQUEST_TIMEOUT',['../_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356a251346918de269fca3c9c25efd321860',1,'OSSApi.h']]],
+  ['oss_5fresultcode_5fsignature_5fdoes_5fnot_5fmatch',['OSS_RESULTCODE_SIGNATURE_DOES_NOT_MATCH',['../_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356ae5031f6befb7bb9e6b787321d50032d1',1,'OSSApi.h']]],
+  ['oss_5fresultcode_5ftoo_5fmany_5fbuckets',['OSS_RESULTCODE_TOO_MANY_BUCKETS',['../_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356a96d9e63bfad64b793cbb74f10a1012a6',1,'OSSApi.h']]]
+];

@@ -1,0 +1,503 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>libOSS: Parsing XML files/strings to an XMLNode structure and Rendering XMLNode&#39;s to files/string.</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">libOSS
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">igis.me</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.2 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">Parsing XML files/strings to an XMLNode structure and Rendering XMLNode's to files/string.</div>  </div>
+<div class="ingroups"><a class="el" href="group___x_m_l_parser_general.html">The XML parser</a></div></div><!--header-->
+<div class="contents">
+<div class="dynheader">
+Parsing XML files/strings to an XMLNode structure and Rendering XMLNode's to files/string. 的协作图:</div>
+<div class="dyncontent">
+<center><table><tr><td><img src="group__conversions.png" border="0" alt="" usemap="#group____conversions"/>
+<map name="group____conversions" id="group____conversions">
+</map>
+</td></tr></table></center>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:gacb95f4f00e4cf3756aac0e3a53765248"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_x_m_l_node.html">XMLNode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__conversions.html#gacb95f4f00e4cf3756aac0e3a53765248">XMLNode::parseString</a> (<a class="el" href="xml_parser_8h.html#acdb0d6fd8dd596384b438d86cfb2b182">XMLCSTR</a> lpXMLString, <a class="el" href="xml_parser_8h.html#acdb0d6fd8dd596384b438d86cfb2b182">XMLCSTR</a> tag=NULL, <a class="el" href="struct_x_m_l_results.html">XMLResults</a> *pResults=NULL)</td></tr>
+<tr class="memdesc:gacb95f4f00e4cf3756aac0e3a53765248"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse an <a class="el" href="struct_x_m_l.html">XML</a> string and return the root of a <a class="el" href="struct_x_m_l_node.html" title="Main Class representing a XML node.">XMLNode</a> tree representing the string.  <a href="#gacb95f4f00e4cf3756aac0e3a53765248"></a><br/></td></tr>
+<tr class="separator:gacb95f4f00e4cf3756aac0e3a53765248"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5e5968e052d58350918cd91e3535624b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_x_m_l_node.html">XMLNode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__conversions.html#ga5e5968e052d58350918cd91e3535624b">XMLNode::parseFile</a> (<a class="el" href="xml_parser_8h.html#acdb0d6fd8dd596384b438d86cfb2b182">XMLCSTR</a> filename, <a class="el" href="xml_parser_8h.html#acdb0d6fd8dd596384b438d86cfb2b182">XMLCSTR</a> tag=NULL, <a class="el" href="struct_x_m_l_results.html">XMLResults</a> *pResults=NULL)</td></tr>
+<tr class="memdesc:ga5e5968e052d58350918cd91e3535624b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse an <a class="el" href="struct_x_m_l.html">XML</a> file and return the root of a <a class="el" href="struct_x_m_l_node.html" title="Main Class representing a XML node.">XMLNode</a> tree representing the file.  <a href="#ga5e5968e052d58350918cd91e3535624b"></a><br/></td></tr>
+<tr class="separator:ga5e5968e052d58350918cd91e3535624b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacc044148e2b9b8264a320b7b6e398158"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_x_m_l_node.html">XMLNode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__conversions.html#gacc044148e2b9b8264a320b7b6e398158">XMLNode::openFileHelper</a> (<a class="el" href="xml_parser_8h.html#acdb0d6fd8dd596384b438d86cfb2b182">XMLCSTR</a> filename, <a class="el" href="xml_parser_8h.html#acdb0d6fd8dd596384b438d86cfb2b182">XMLCSTR</a> tag=NULL)</td></tr>
+<tr class="memdesc:gacc044148e2b9b8264a320b7b6e398158"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse an <a class="el" href="struct_x_m_l.html">XML</a> file and return the root of a <a class="el" href="struct_x_m_l_node.html" title="Main Class representing a XML node.">XMLNode</a> tree representing the file. A very crude error checking is made. An attempt to guess the Char Encoding used in the file is made.  <a href="#gacc044148e2b9b8264a320b7b6e398158"></a><br/></td></tr>
+<tr class="separator:gacc044148e2b9b8264a320b7b6e398158"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4496629c7a268db5435946c7bdd4eb28"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="xml_parser_8h.html#acdb0d6fd8dd596384b438d86cfb2b182">XMLCSTR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__conversions.html#ga4496629c7a268db5435946c7bdd4eb28">XMLNode::getError</a> (<a class="el" href="xml_parser_8h.html#ac39bd07b1461aaa70afffe2d7162b4f5">XMLError</a> error)</td></tr>
+<tr class="memdesc:ga4496629c7a268db5435946c7bdd4eb28"><td class="mdescLeft">&#160;</td><td class="mdescRight">this gives you a user-friendly explanation of the parsing error  <a href="#ga4496629c7a268db5435946c7bdd4eb28"></a><br/></td></tr>
+<tr class="separator:ga4496629c7a268db5435946c7bdd4eb28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac8710ba5e7ff6e62a222445501ef9972"><td class="memItemLeft" align="right" valign="top"><a class="el" href="xml_parser_8h.html#a849d96105aa0c8f64b5c10d9151a3cdc">XMLSTR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__conversions.html#gac8710ba5e7ff6e62a222445501ef9972">XMLNode::createXMLString</a> (int nFormat=1, int *pnSize=NULL) const </td></tr>
+<tr class="memdesc:gac8710ba5e7ff6e62a222445501ef9972"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an <a class="el" href="struct_x_m_l.html">XML</a> string starting from the current <a class="el" href="struct_x_m_l_node.html" title="Main Class representing a XML node.">XMLNode</a>.  <a href="#gac8710ba5e7ff6e62a222445501ef9972"></a><br/></td></tr>
+<tr class="separator:gac8710ba5e7ff6e62a222445501ef9972"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab8d92d057c0072cc195b1935b2f53d80"><td class="memItemLeft" align="right" valign="top"><a class="el" href="xml_parser_8h.html#ac39bd07b1461aaa70afffe2d7162b4f5">XMLError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__conversions.html#gab8d92d057c0072cc195b1935b2f53d80">XMLNode::writeToFile</a> (<a class="el" href="xml_parser_8h.html#acdb0d6fd8dd596384b438d86cfb2b182">XMLCSTR</a> filename, const char *encoding=NULL, char nFormat=1) const </td></tr>
+<tr class="memdesc:gab8d92d057c0072cc195b1935b2f53d80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save the content of an xmlNode inside a file.  <a href="#gab8d92d057c0072cc195b1935b2f53d80"></a><br/></td></tr>
+<tr class="separator:gab8d92d057c0072cc195b1935b2f53d80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2fcc1637751a4788cfc5690b1c80842b"><td class="memItemLeft" align="right" valign="top">static char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__conversions.html#ga2fcc1637751a4788cfc5690b1c80842b">XMLNode::setGlobalOptions</a> (XMLCharEncoding characterEncoding=<a class="el" href="struct_x_m_l_node.html#a81bcd09f9c752b65633c1ca28ea025f2a0b35b4d55aae2d232400578ab1123d5a">XMLNode::char_encoding_UTF8</a>, char guessWideCharChars=1, char dropWhiteSpace=1, char removeCommentsInMiddleOfText=1)</td></tr>
+<tr class="memdesc:ga2fcc1637751a4788cfc5690b1c80842b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the global options for the conversions.  <a href="#ga2fcc1637751a4788cfc5690b1c80842b"></a><br/></td></tr>
+<tr class="separator:ga2fcc1637751a4788cfc5690b1c80842b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac7af7e3bab8d21722dd4f191a4aa7c1d"><td class="memItemLeft" align="right" valign="top">static XMLCharEncoding&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__conversions.html#gac7af7e3bab8d21722dd4f191a4aa7c1d">XMLNode::guessCharEncoding</a> (void *buffer, int bufLen, char useXMLEncodingAttribute=1)</td></tr>
+<tr class="memdesc:gac7af7e3bab8d21722dd4f191a4aa7c1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Guess the character encoding of the string (ascii, utf8 or shift-JIS)  <a href="#gac7af7e3bab8d21722dd4f191a4aa7c1d"></a><br/></td></tr>
+<tr class="separator:gac7af7e3bab8d21722dd4f191a4aa7c1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<h2 class="groupheader">函数说明</h2>
+<a class="anchor" id="gac8710ba5e7ff6e62a222445501ef9972"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="xml_parser_8h.html#a849d96105aa0c8f64b5c10d9151a3cdc">XMLSTR</a> XMLNode::createXMLString </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nFormat</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>pnSize</em> = <code>NULL</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create an <a class="el" href="struct_x_m_l.html">XML</a> string starting from the current <a class="el" href="struct_x_m_l_node.html" title="Main Class representing a XML node.">XMLNode</a>. </p>
+<p>The returned string should be free'd using the "freeXMLString" function. </p>
+<pre class="fragment">    If nFormat==0, no formatting is required otherwise this returns an user friendly XML string from a given element
+    with appropriate white spaces and carriage returns. if pnSize is given it returns the size in character of the string.  </pre> 
+<p>在文件 <a class="el" href="xml_parser_8cpp_source.html">xmlParser.cpp</a> 第 <a class="el" href="xml_parser_8cpp_source.html#l02135">2135</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga4496629c7a268db5435946c7bdd4eb28"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="xml_parser_8h.html#acdb0d6fd8dd596384b438d86cfb2b182">XMLCSTR</a> XMLNode::getError </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="xml_parser_8h.html#ac39bd07b1461aaa70afffe2d7162b4f5">XMLError</a>&#160;</td>
+          <td class="paramname"><em>error</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>this gives you a user-friendly explanation of the parsing error </p>
+
+<p>在文件 <a class="el" href="xml_parser_8cpp_source.html">xmlParser.cpp</a> 第 <a class="el" href="xml_parser_8cpp_source.html#l00121">121</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="gac7af7e3bab8d21722dd4f191a4aa7c1d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_x_m_l_node.html#a81bcd09f9c752b65633c1ca28ea025f2">XMLNode::XMLCharEncoding</a> XMLNode::guessCharEncoding </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>bufLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>useXMLEncodingAttribute</em> = <code>1</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Guess the character encoding of the string (ascii, utf8 or shift-JIS) </p>
+<p>The "guessCharEncoding" function try to guess the character encoding. You most-probably will never have to use this function. It then returns the appropriate value of the global parameter "characterEncoding" described in the <a class="el" href="group__conversions.html#ga2fcc1637751a4788cfc5690b1c80842b" title="Sets the global options for the conversions.">XMLNode::setGlobalOptions</a>. The guess is based on the content of a buffer of length "bufLen" bytes that contains the first bytes (minimum 25 bytes; 200 bytes is a good value) of the file to be parsed. The <a class="el" href="group__conversions.html#gacc044148e2b9b8264a320b7b6e398158" title="Parse an XML file and return the root of a XMLNode tree representing the file. A very crude error che...">XMLNode::openFileHelper</a> function is using this function to automatically compute the value of the "characterEncoding" global parameter. There are several heuristics used to do the guess. One of the heuristic is based on the "encoding" attribute. The original <a class="el" href="struct_x_m_l.html">XML</a> specifications forbids to use this attribute to do the guess but you can still use it if you set "useXMLEncodingAttribute" to 1 (this is the default behavior and the behavior of most parsers). If an inconsistency in the encoding is detected, then the return value is "0". </p>
+
+<p>在文件 <a class="el" href="xml_parser_8cpp_source.html">xmlParser.cpp</a> 第 <a class="el" href="xml_parser_8cpp_source.html#l02716">2716</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="gacc044148e2b9b8264a320b7b6e398158"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_x_m_l_node.html">XMLNode</a> XMLNode::openFileHelper </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="xml_parser_8h.html#acdb0d6fd8dd596384b438d86cfb2b182">XMLCSTR</a>&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="xml_parser_8h.html#acdb0d6fd8dd596384b438d86cfb2b182">XMLCSTR</a>&#160;</td>
+          <td class="paramname"><em>tag</em> = <code>NULL</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Parse an <a class="el" href="struct_x_m_l.html">XML</a> file and return the root of a <a class="el" href="struct_x_m_l_node.html" title="Main Class representing a XML node.">XMLNode</a> tree representing the file. A very crude error checking is made. An attempt to guess the Char Encoding used in the file is made. </p>
+<p>The "openFileHelper" function reports to the screen all the warnings and errors that occurred during parsing of the <a class="el" href="struct_x_m_l.html">XML</a> file. This function also tries to guess char Encoding (UTF-8, ASCII or SHIT-JIS) based on the first 200 bytes of the file. Since each application has its own way to report and deal with errors, you should rather use the "parseFile" function to parse <a class="el" href="struct_x_m_l.html">XML</a> files and program yourself thereafter an "error reporting" tailored for your needs (instead of using the very crude "error reporting" mechanism included inside the "openFileHelper" function).</p>
+<p>If the <a class="el" href="struct_x_m_l.html">XML</a> document is corrupted, the "openFileHelper" method will:</p>
+<ul>
+<li>display an error message on the console (or inside a messageBox for windows).</li>
+<li>stop execution (exit).</li>
+</ul>
+<p>I strongly suggest that you write your own "openFileHelper" method tailored to your needs. If you still want to parse the file, you can use the APPROXIMATE_PARSING option as explained inside the note at the beginning of the "xmlParser.cpp" file.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>the path of the <a class="el" href="struct_x_m_l.html">XML</a> file to parse. </td></tr>
+    <tr><td class="paramname">tag</td><td>the name of the first tag inside the <a class="el" href="struct_x_m_l.html">XML</a> file. If the tag parameter is omitted, this function returns a node that represents the head of the xml document including the declaration term (&lt;? ... ?&gt;). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="xml_parser_8cpp_source.html">xmlParser.cpp</a> 第 <a class="el" href="xml_parser_8cpp_source.html#l00393">393</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga5e5968e052d58350918cd91e3535624b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_x_m_l_node.html">XMLNode</a> XMLNode::parseFile </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="xml_parser_8h.html#acdb0d6fd8dd596384b438d86cfb2b182">XMLCSTR</a>&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="xml_parser_8h.html#acdb0d6fd8dd596384b438d86cfb2b182">XMLCSTR</a>&#160;</td>
+          <td class="paramname"><em>tag</em> = <code>NULL</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_x_m_l_results.html">XMLResults</a> *&#160;</td>
+          <td class="paramname"><em>pResults</em> = <code>NULL</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Parse an <a class="el" href="struct_x_m_l.html">XML</a> file and return the root of a <a class="el" href="struct_x_m_l_node.html" title="Main Class representing a XML node.">XMLNode</a> tree representing the file. </p>
+<p>The "parseFile" function parse an <a class="el" href="struct_x_m_l.html">XML</a> file and return the root of a <a class="el" href="struct_x_m_l_node.html" title="Main Class representing a XML node.">XMLNode</a> tree. The "opposite" of this function is the function "writeToFile" that re-creates an <a class="el" href="struct_x_m_l.html">XML</a> file from an <a class="el" href="struct_x_m_l_node.html" title="Main Class representing a XML node.">XMLNode</a> tree. If the <a class="el" href="struct_x_m_l.html">XML</a> document is corrupted, the "parseFile" method will initialize the "pResults" variable with some information that can be used to trace the error. If you still want to parse the file, you can use the APPROXIMATE_PARSING option as explained inside the note at the beginning of the "xmlParser.cpp" file.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>the path to the <a class="el" href="struct_x_m_l.html">XML</a> file to parse </td></tr>
+    <tr><td class="paramname">tag</td><td>the name of the first tag inside the <a class="el" href="struct_x_m_l.html">XML</a> file. If the tag parameter is omitted, this function returns a node that represents the head of the xml document including the declaration term (&lt;? ... ?&gt;). </td></tr>
+    <tr><td class="paramname">pResults</td><td>a pointer to a <a class="el" href="struct_x_m_l_results.html" title="Structure used to obtain error details if the parse fails.">XMLResults</a> variable that will contain some information that can be used to trace the <a class="el" href="struct_x_m_l.html">XML</a> parsing error. You can have a user-friendly explanation of the parsing error with the "getError" function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="xml_parser_8cpp_source.html">xmlParser.cpp</a> 第 <a class="el" href="xml_parser_8cpp_source.html#l01813">1813</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="gacb95f4f00e4cf3756aac0e3a53765248"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_x_m_l_node.html">XMLNode</a> XMLNode::parseString </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="xml_parser_8h.html#acdb0d6fd8dd596384b438d86cfb2b182">XMLCSTR</a>&#160;</td>
+          <td class="paramname"><em>lpXMLString</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="xml_parser_8h.html#acdb0d6fd8dd596384b438d86cfb2b182">XMLCSTR</a>&#160;</td>
+          <td class="paramname"><em>tag</em> = <code>NULL</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_x_m_l_results.html">XMLResults</a> *&#160;</td>
+          <td class="paramname"><em>pResults</em> = <code>NULL</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Parse an <a class="el" href="struct_x_m_l.html">XML</a> string and return the root of a <a class="el" href="struct_x_m_l_node.html" title="Main Class representing a XML node.">XMLNode</a> tree representing the string. </p>
+<p>The "parseString" function parse an <a class="el" href="struct_x_m_l.html">XML</a> string and return the root of a <a class="el" href="struct_x_m_l_node.html" title="Main Class representing a XML node.">XMLNode</a> tree. The "opposite" of this function is the function "createXMLString" that re-creates an <a class="el" href="struct_x_m_l.html">XML</a> string from an <a class="el" href="struct_x_m_l_node.html" title="Main Class representing a XML node.">XMLNode</a> tree. If the <a class="el" href="struct_x_m_l.html">XML</a> document is corrupted, the "parseString" method will initialize the "pResults" variable with some information that can be used to trace the error. If you still want to parse the file, you can use the APPROXIMATE_PARSING option as explained inside the note at the beginning of the "xmlParser.cpp" file.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lpXMLString</td><td>the <a class="el" href="struct_x_m_l.html">XML</a> string to parse </td></tr>
+    <tr><td class="paramname">tag</td><td>the name of the first tag inside the <a class="el" href="struct_x_m_l.html">XML</a> file. If the tag parameter is omitted, this function returns a node that represents the head of the xml document including the declaration term (&lt;? ... ?&gt;). </td></tr>
+    <tr><td class="paramname">pResults</td><td>a pointer to a <a class="el" href="struct_x_m_l_results.html" title="Structure used to obtain error details if the parse fails.">XMLResults</a> variable that will contain some information that can be used to trace the <a class="el" href="struct_x_m_l.html">XML</a> parsing error. You can have a user-friendly explanation of the parsing error with the "getError" function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="xml_parser_8cpp_source.html">xmlParser.cpp</a> 第 <a class="el" href="xml_parser_8cpp_source.html#l01750">1750</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga2fcc1637751a4788cfc5690b1c80842b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">char XMLNode::setGlobalOptions </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_x_m_l_node.html#a81bcd09f9c752b65633c1ca28ea025f2">XMLCharEncoding</a>&#160;</td>
+          <td class="paramname"><em>characterEncoding</em> = <code><a class="el" href="struct_x_m_l_node.html#a81bcd09f9c752b65633c1ca28ea025f2a0b35b4d55aae2d232400578ab1123d5a">XMLNode::char_encoding_UTF8</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>guessWideCharChars</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>dropWhiteSpace</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>removeCommentsInMiddleOfText</em> = <code>1</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the global options for the conversions. </p>
+<p>The "setGlobalOptions" function allows you to change four global parameters that affect string &amp; file parsing. First of all, you most-probably will never have to change these 3 global parameters.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">guessWideCharChars</td><td>If "guessWideCharChars"=1 and if this library is compiled in WideChar mode, then the <a class="el" href="group__conversions.html#ga5e5968e052d58350918cd91e3535624b" title="Parse an XML file and return the root of a XMLNode tree representing the file.">XMLNode::parseFile</a> and <a class="el" href="group__conversions.html#gacc044148e2b9b8264a320b7b6e398158" title="Parse an XML file and return the root of a XMLNode tree representing the file. A very crude error che...">XMLNode::openFileHelper</a> functions will test if the file contains ASCII characters. If this is the case, then the file will be loaded and converted in memory to WideChar before being parsed. If 0, no conversion will be performed.</td></tr>
+    <tr><td class="paramname">guessWideCharChars</td><td>If "guessWideCharChars"=1 and if this library is compiled in ASCII/UTF8/char* mode, then the <a class="el" href="group__conversions.html#ga5e5968e052d58350918cd91e3535624b" title="Parse an XML file and return the root of a XMLNode tree representing the file.">XMLNode::parseFile</a> and <a class="el" href="group__conversions.html#gacc044148e2b9b8264a320b7b6e398158" title="Parse an XML file and return the root of a XMLNode tree representing the file. A very crude error che...">XMLNode::openFileHelper</a> functions will test if the file contains WideChar characters. If this is the case, then the file will be loaded and converted in memory to ASCII/UTF8/char* before being parsed. If 0, no conversion will be performed.</td></tr>
+    <tr><td class="paramname">characterEncoding</td><td>This parameter is only meaningful when compiling in char* mode (multibyte character mode). In wchar_t* (wide char mode), this parameter is ignored. This parameter should be one of the three currently recognized encodings: XMLNode::encoding_UTF8, XMLNode::encoding_ascii, XMLNode::encoding_ShiftJIS.</td></tr>
+    <tr><td class="paramname">dropWhiteSpace</td><td>In most situations, text fields containing only white spaces (and carriage returns) are useless. Even more, these "empty" text fields are annoying because they increase the complexity of the user's code for parsing. So, 99% of the time, it's better to drop the "empty" text fields. However The <a class="el" href="struct_x_m_l.html">XML</a> specification indicates that no white spaces should be lost when parsing the file. So to be perfectly XML-compliant, you should set dropWhiteSpace=0. A note of caution: if you set "dropWhiteSpace=0", the parser will be slower and your code will be more complex.</td></tr>
+    <tr><td class="paramname">removeCommentsInMiddleOfText</td><td>To explain this parameter, let's consider this code: <div class="fragment"><div class="line"><a class="code" href="struct_x_m_l_node.html" title="Main Class representing a XML node.">XMLNode</a> x=<a class="code" href="group__conversions.html#gacb95f4f00e4cf3756aac0e3a53765248" title="Parse an XML string and return the root of a XMLNode tree representing the string.">XMLNode::parseString</a>(<span class="stringliteral">&quot;&lt;a&gt;foo&lt;!-- hello --&gt;bar&lt;!DOCTYPE world &gt;chu&lt;/a&gt;&quot;</span>,<span class="stringliteral">&quot;a&quot;</span>);</div>
+</div><!-- fragment --> If removeCommentsInMiddleOfText=0, then we will have: <div class="fragment"><div class="line">x.<a class="code" href="group__navigate.html#gaeb607292b18d4615b7c169c7c08c0a8b" title="return ith text field">getText</a>(0) -&gt; <span class="stringliteral">&quot;foo&quot;</span></div>
+<div class="line">x.<a class="code" href="group__navigate.html#gaeb607292b18d4615b7c169c7c08c0a8b" title="return ith text field">getText</a>(1) -&gt; <span class="stringliteral">&quot;bar&quot;</span></div>
+<div class="line">x.<a class="code" href="group__navigate.html#gaeb607292b18d4615b7c169c7c08c0a8b" title="return ith text field">getText</a>(2) -&gt; <span class="stringliteral">&quot;chu&quot;</span></div>
+<div class="line">x.<a class="code" href="group__navigate.html#gab99fbcb5534ab2194889c4802e290354" title="return ith clear field (comments)">getClear</a>(0) --&gt; <span class="stringliteral">&quot;&lt;!-- hello --&gt;&quot;</span></div>
+<div class="line">x.<a class="code" href="group__navigate.html#gab99fbcb5534ab2194889c4802e290354" title="return ith clear field (comments)">getClear</a>(1) --&gt; <span class="stringliteral">&quot;&lt;!DOCTYPE world &gt;&quot;</span></div>
+</div><!-- fragment --> If removeCommentsInMiddleOfText=1, then we will have: <div class="fragment"><div class="line">x.<a class="code" href="group__navigate.html#gaeb607292b18d4615b7c169c7c08c0a8b" title="return ith text field">getText</a>(0) -&gt; <span class="stringliteral">&quot;foobar&quot;</span></div>
+<div class="line">x.<a class="code" href="group__navigate.html#gaeb607292b18d4615b7c169c7c08c0a8b" title="return ith text field">getText</a>(1) -&gt; <span class="stringliteral">&quot;chu&quot;</span></div>
+<div class="line">x.<a class="code" href="group__navigate.html#gab99fbcb5534ab2194889c4802e290354" title="return ith clear field (comments)">getClear</a>(0) --&gt; <span class="stringliteral">&quot;&lt;!DOCTYPE world &gt;&quot;</span></div>
+</div><!-- fragment --></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>"0" when there are no errors. If you try to set an unrecognized encoding then the return value will be "1" to signal an error.</dd></dl>
+<dl class="section note"><dt>注解</dt><dd>Sometime, it's useful to set "guessWideCharChars=0" to disable any conversion because the test to detect the file-type (ASCII/UTF8/char* or WideChar) may fail (rarely). </dd></dl>
+
+<p>在文件 <a class="el" href="xml_parser_8cpp_source.html">xmlParser.cpp</a> 第 <a class="el" href="xml_parser_8cpp_source.html#l02695">2695</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="gab8d92d057c0072cc195b1935b2f53d80"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="xml_parser_8h.html#ac39bd07b1461aaa70afffe2d7162b4f5">XMLError</a> XMLNode::writeToFile </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="xml_parser_8h.html#acdb0d6fd8dd596384b438d86cfb2b182">XMLCSTR</a>&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>encoding</em> = <code>NULL</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>nFormat</em> = <code>1</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Save the content of an xmlNode inside a file. </p>
+<p>If nFormat==0, no formatting is required otherwise this returns an user friendly <a class="el" href="struct_x_m_l.html">XML</a> string from a given element with appropriate white spaces and carriage returns. If the global parameter "characterEncoding==encoding_UTF8", then the "encoding" parameter is ignored and always set to "utf-8". If the global parameter "characterEncoding==encoding_ShiftJIS", then the "encoding" parameter is ignored and always set to "SHIFT-JIS". If "_XMLWIDECHAR=1", then the "encoding" parameter is ignored and always set to "utf-16". If no "encoding" parameter is given the "ISO-8859-1" encoding is used. </p>
+
+<p>在文件 <a class="el" href="xml_parser_8cpp_source.html">xmlParser.cpp</a> 第 <a class="el" href="xml_parser_8cpp_source.html#l00596">596</a> 行定义.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2012年 九月 27日 星期四 19:45:38 , 为 libOSS使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.2
+</small></address>
+</body>
+</html>

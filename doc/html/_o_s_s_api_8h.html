@@ -1,0 +1,357 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>libOSS: project/libOSS/libOSS/OSSApi.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">libOSS
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">igis.me</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.2 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_167790342fb55959539d550b874be046.html">project</a></li><li class="navelem"><a class="el" href="dir_3023ff01d1436e238124d7fcc5000422.html">libOSS</a></li><li class="navelem"><a class="el" href="dir_c2df5faff012d771a522b75d2c985cb4.html">libOSS</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#enum-members">枚举</a>  </div>
+  <div class="headertitle">
+<div class="title">OSSApi.h 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><a href="_o_s_s_api_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:a4353a75834bb35c4acd80b51434eef59"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_o_s_s_api_8h.html#a4353a75834bb35c4acd80b51434eef59">HttpMethod</a> { <br/>
+&#160;&#160;<a class="el" href="_o_s_s_api_8h.html#a4353a75834bb35c4acd80b51434eef59a15157b100d9d3b6616eb9db7b40159c3">HttpMethod_GET</a>, 
+<a class="el" href="_o_s_s_api_8h.html#a4353a75834bb35c4acd80b51434eef59a3b15a5236f67cfa20f5ee092442c340c">HttpMethod_POST</a>, 
+<a class="el" href="_o_s_s_api_8h.html#a4353a75834bb35c4acd80b51434eef59a2d15595e95dcd80e98be57c4c943c24a">HttpMethod_HEAD</a>, 
+<a class="el" href="_o_s_s_api_8h.html#a4353a75834bb35c4acd80b51434eef59abd8434eec4b19c00cc3bc91ad73b6d8d">HttpMethod_PUT</a>, 
+<br/>
+&#160;&#160;<a class="el" href="_o_s_s_api_8h.html#a4353a75834bb35c4acd80b51434eef59a02bd892fecfaa22a33926fa24054efda">HttpMethod_DELETE</a>
+<br/>
+ }</td></tr>
+<tr class="separator:a4353a75834bb35c4acd80b51434eef59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4b089c92291ec7e6d91aa9dfedbdeba"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_o_s_s_api_8h.html#aa4b089c92291ec7e6d91aa9dfedbdeba">Chartset</a> { <a class="el" href="_o_s_s_api_8h.html#aa4b089c92291ec7e6d91aa9dfedbdebaa062778002043fe34c6c2d642b98a2ed3">Chartset_ASCII</a>, 
+<a class="el" href="_o_s_s_api_8h.html#aa4b089c92291ec7e6d91aa9dfedbdebaab705342ee4c27b5254150be35576581a">Chartset_UTF8</a>, 
+<a class="el" href="_o_s_s_api_8h.html#aa4b089c92291ec7e6d91aa9dfedbdebaa2094150c53337250be75611811313210">Chartset_ISO_8859_1</a>
+ }</td></tr>
+<tr class="separator:aa4b089c92291ec7e6d91aa9dfedbdeba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cfe8bb854494b6024442614b372ee35"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_o_s_s_api_8h.html#a9cfe8bb854494b6024442614b372ee35">CannedAclType</a> { <a class="el" href="_o_s_s_api_8h.html#a9cfe8bb854494b6024442614b372ee35a29c96f02c8d5bae2a806155cea423a41">CannedAclType_Private</a>, 
+<a class="el" href="_o_s_s_api_8h.html#a9cfe8bb854494b6024442614b372ee35a25afeee3eabeabf7381010adbb5495e8">CannedAclType_PublicRead</a>, 
+<a class="el" href="_o_s_s_api_8h.html#a9cfe8bb854494b6024442614b372ee35a00034bdf752d6ed743b90b3beffbbf1e">CannedAclType_PublicReadWrite</a>
+ }</td></tr>
+<tr class="separator:a9cfe8bb854494b6024442614b372ee35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5801c37ead7e55ab7b64caa594bda3de"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_o_s_s_api_8h.html#a5801c37ead7e55ab7b64caa594bda3de">HTTP_RESULTCODE</a> { <br/>
+&#160;&#160;<a class="el" href="_o_s_s_api_8h.html#a5801c37ead7e55ab7b64caa594bda3deadfd9a08e42e7bb6caa3b777e20afde9d">HTTPRESULT_OK</a> = 0, 
+<a class="el" href="_o_s_s_api_8h.html#a5801c37ead7e55ab7b64caa594bda3deac91ca24f177479750e61477bfea9770f">HTTPRESULT_TIMEOUT</a>, 
+<a class="el" href="_o_s_s_api_8h.html#a5801c37ead7e55ab7b64caa594bda3dea6f6cdca9c049d8fa6c1a4fac5339076d">HTTPRESULT_CANTRESOLVE</a>, 
+<a class="el" href="_o_s_s_api_8h.html#a5801c37ead7e55ab7b64caa594bda3deaa3ec44a3933cb9828df6e0419b6aa5d7">HTTPRESULT_CANTCONNECT</a>, 
+<br/>
+&#160;&#160;<a class="el" href="_o_s_s_api_8h.html#a5801c37ead7e55ab7b64caa594bda3dea669ef1c7148bc53d88c3de49ed202023">HTTPRESULT_ERROR</a>, 
+<a class="el" href="_o_s_s_api_8h.html#a5801c37ead7e55ab7b64caa594bda3deae891b179fc8fd3d5c5cda6710500c79a">HTTPRESULT_TOOLAGRE</a>, 
+<a class="el" href="_o_s_s_api_8h.html#a5801c37ead7e55ab7b64caa594bda3deac20aa32be03f3d80de4f517fa55ae3fb">HTTPRESULT_FAIL</a>, 
+<a class="el" href="_o_s_s_api_8h.html#a5801c37ead7e55ab7b64caa594bda3deaa3cc507ff7e3d8774fe81fc8707a8330">HTTPRESULT_OPITON_ERR</a>
+<br/>
+ }</td></tr>
+<tr class="separator:a5801c37ead7e55ab7b64caa594bda3de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afad70044f7e0276cf1a71f4944acf356"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a> { <br/>
+&#160;&#160;<a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356a3359fcba4c631ed42b9d973fd0174ab4">OSS_RESULTCODE_OK</a> = 0, 
+<a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356acbcb8448d29370e41071aa6899ffa2d5">OSS_RESULTCODE_INVALID</a> =4999, 
+<a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356a6390894aa1f248f69100b28a05c7ce09">OSS_RESULTCODE_ACCESS_DENIED</a> = 5000, 
+<a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356a186ec0545f8f13a91de6cfd9150bd577">OSS_RESULTCODE_BUCKES_ALREADY_EXISTS</a> =5001, 
+<br/>
+&#160;&#160;<a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356acc6168f17b544a44e057f416e30c8dec">OSS_RESULTCODE_BUCKETS_NOT_EMPTY</a> = 5002, 
+<a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356abcd8359ff639232dbda94225377b1f56">OSS_RESULTCODE_FILE_GROUP_TOO_LARGE</a> =5003, 
+<a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356af1584c1e99c117bafb3dc0571ead2523">OSS_RESULTCODE_FILE_PART_STALE</a> =5004, 
+<a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356af4ba535e2e8e8215c8ef6fe018c8a4ab">OSS_RESULTCODE_INVALID_ARGUMENT</a> = 5005, 
+<br/>
+&#160;&#160;<a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356aead34a1afa4e92ec05e7502e7cf70546">OSS_RESULTCODE_INVALID_ACCESS_KEY_ID</a> = 5006, 
+<a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356aeb2834867143da9141c6aa370497764f">OSS_RESULTCODE_INVALID_BUCKET_NAME</a> =5007, 
+<a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356aac55720c0a1f3e6179e86ea27147a67c">OSS_RESULTCODE_INVALID_OBJECT_NAME</a> =5008, 
+<a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356a680f9c38c304401f0e738083a8ceb49b">OSS_RESULTCODE_INVALID_PART</a> = 5009, 
+<br/>
+&#160;&#160;<a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356a2b04196c0e7b40feb41a75dfdb86f485">OSS_RESULTCODE_INVALID_PART_ORDER</a> = 5010, 
+<a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356aa353bb12d45b298acf4177419a937b8a">OSS_RESULTCODE_INTERNAL_ERROR</a> = 50011, 
+<a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356ab72ea2f1674b10126e56690fd71e6fad">OSS_RESULTCODE_MISSING_CONTENT_LENGTH</a> = 5012, 
+<a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356a87dacac6309fd2e277be3c615883af07">OSS_RESULTCODE_NO_SUCH_BUCKET</a> = 5013, 
+<br/>
+&#160;&#160;<a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356ad7c113ef473fa2eef60d2ec63ce9d6d7">OSS_RESULTCODE_NO_SUCH_KEY</a> = 5014, 
+<a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356aa75cd17e1c2e613fd61003c559e2cb24">OSS_RESULTCODE_NOT_IMPLEMENTED</a> = 5015, 
+<a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356a7dec5e462e058c425a8a722c3c36ed3d">OSS_RESULTCODE_PRECONDITION_FAILED</a> = 5016, 
+<a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356aa11e1efc5137fe2d34b6b3edf3d756b3">OSS_RESULTCODE_REQUEST_TIME_TOO_SKEWED</a> = 5017, 
+<br/>
+&#160;&#160;<a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356a251346918de269fca3c9c25efd321860">OSS_RESULTCODE_REQUEST_TIMEOUT</a> = 5018, 
+<a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356ae5031f6befb7bb9e6b787321d50032d1">OSS_RESULTCODE_SIGNATURE_DOES_NOT_MATCH</a> = 5019, 
+<a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356a96d9e63bfad64b793cbb74f10a1012a6">OSS_RESULTCODE_TOO_MANY_BUCKETS</a> =5020
+<br/>
+ }</td></tr>
+<tr class="separator:afad70044f7e0276cf1a71f4944acf356"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">枚举类型说明</h2>
+<a class="anchor" id="a9cfe8bb854494b6024442614b372ee35"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="_o_s_s_api_8h.html#a9cfe8bb854494b6024442614b372ee35">CannedAclType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl><dt><b>枚举值: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" id="a9cfe8bb854494b6024442614b372ee35a29c96f02c8d5bae2a806155cea423a41"></a>CannedAclType_Private</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a9cfe8bb854494b6024442614b372ee35a25afeee3eabeabf7381010adbb5495e8"></a>CannedAclType_PublicRead</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a9cfe8bb854494b6024442614b372ee35a00034bdf752d6ed743b90b3beffbbf1e"></a>CannedAclType_PublicReadWrite</em>&nbsp;</td><td>
+</td></tr>
+</table>
+</dd>
+</dl>
+
+<p>在文件 <a class="el" href="_o_s_s_api_8h_source.html">OSSApi.h</a> 第 <a class="el" href="_o_s_s_api_8h_source.html#l00035">35</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa4b089c92291ec7e6d91aa9dfedbdeba"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="_o_s_s_api_8h.html#aa4b089c92291ec7e6d91aa9dfedbdeba">Chartset</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl><dt><b>枚举值: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" id="aa4b089c92291ec7e6d91aa9dfedbdebaa062778002043fe34c6c2d642b98a2ed3"></a>Chartset_ASCII</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="aa4b089c92291ec7e6d91aa9dfedbdebaab705342ee4c27b5254150be35576581a"></a>Chartset_UTF8</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="aa4b089c92291ec7e6d91aa9dfedbdebaa2094150c53337250be75611811313210"></a>Chartset_ISO_8859_1</em>&nbsp;</td><td>
+</td></tr>
+</table>
+</dd>
+</dl>
+
+<p>在文件 <a class="el" href="_o_s_s_api_8h_source.html">OSSApi.h</a> 第 <a class="el" href="_o_s_s_api_8h_source.html#l00029">29</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5801c37ead7e55ab7b64caa594bda3de"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="_o_s_s_api_8h.html#a5801c37ead7e55ab7b64caa594bda3de">HTTP_RESULTCODE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl><dt><b>枚举值: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" id="a5801c37ead7e55ab7b64caa594bda3deadfd9a08e42e7bb6caa3b777e20afde9d"></a>HTTPRESULT_OK</em>&nbsp;</td><td>
+<p>成功 </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a5801c37ead7e55ab7b64caa594bda3deac91ca24f177479750e61477bfea9770f"></a>HTTPRESULT_TIMEOUT</em>&nbsp;</td><td>
+<p>请求超时 </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a5801c37ead7e55ab7b64caa594bda3dea6f6cdca9c049d8fa6c1a4fac5339076d"></a>HTTPRESULT_CANTRESOLVE</em>&nbsp;</td><td>
+<p>不能解析地址 </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a5801c37ead7e55ab7b64caa594bda3deaa3ec44a3933cb9828df6e0419b6aa5d7"></a>HTTPRESULT_CANTCONNECT</em>&nbsp;</td><td>
+<p>不能连接 </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a5801c37ead7e55ab7b64caa594bda3dea669ef1c7148bc53d88c3de49ed202023"></a>HTTPRESULT_ERROR</em>&nbsp;</td><td>
+<p>HTTP请求的数据错误 </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a5801c37ead7e55ab7b64caa594bda3deae891b179fc8fd3d5c5cda6710500c79a"></a>HTTPRESULT_TOOLAGRE</em>&nbsp;</td><td>
+<p>返回的数据量太大 </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a5801c37ead7e55ab7b64caa594bda3deac20aa32be03f3d80de4f517fa55ae3fb"></a>HTTPRESULT_FAIL</em>&nbsp;</td><td>
+<p>失败 </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a5801c37ead7e55ab7b64caa594bda3deaa3cc507ff7e3d8774fe81fc8707a8330"></a>HTTPRESULT_OPITON_ERR</em>&nbsp;</td><td>
+<p>类型错误，无法生成有效url </p>
+</td></tr>
+</table>
+</dd>
+</dl>
+
+<p>在文件 <a class="el" href="_o_s_s_api_8h_source.html">OSSApi.h</a> 第 <a class="el" href="_o_s_s_api_8h_source.html#l00042">42</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4353a75834bb35c4acd80b51434eef59"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="_o_s_s_api_8h.html#a4353a75834bb35c4acd80b51434eef59">HttpMethod</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl><dt><b>枚举值: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" id="a4353a75834bb35c4acd80b51434eef59a15157b100d9d3b6616eb9db7b40159c3"></a>HttpMethod_GET</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a4353a75834bb35c4acd80b51434eef59a3b15a5236f67cfa20f5ee092442c340c"></a>HttpMethod_POST</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a4353a75834bb35c4acd80b51434eef59a2d15595e95dcd80e98be57c4c943c24a"></a>HttpMethod_HEAD</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a4353a75834bb35c4acd80b51434eef59abd8434eec4b19c00cc3bc91ad73b6d8d"></a>HttpMethod_PUT</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a4353a75834bb35c4acd80b51434eef59a02bd892fecfaa22a33926fa24054efda"></a>HttpMethod_DELETE</em>&nbsp;</td><td>
+</td></tr>
+</table>
+</dd>
+</dl>
+
+<p>在文件 <a class="el" href="_o_s_s_api_8h_source.html">OSSApi.h</a> 第 <a class="el" href="_o_s_s_api_8h_source.html#l00021">21</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="afad70044f7e0276cf1a71f4944acf356"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="_o_s_s_api_8h.html#afad70044f7e0276cf1a71f4944acf356">OSS_RESULTCODE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl><dt><b>枚举值: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" id="afad70044f7e0276cf1a71f4944acf356a3359fcba4c631ed42b9d973fd0174ab4"></a>OSS_RESULTCODE_OK</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="afad70044f7e0276cf1a71f4944acf356acbcb8448d29370e41071aa6899ffa2d5"></a>OSS_RESULTCODE_INVALID</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="afad70044f7e0276cf1a71f4944acf356a6390894aa1f248f69100b28a05c7ce09"></a>OSS_RESULTCODE_ACCESS_DENIED</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="afad70044f7e0276cf1a71f4944acf356a186ec0545f8f13a91de6cfd9150bd577"></a>OSS_RESULTCODE_BUCKES_ALREADY_EXISTS</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="afad70044f7e0276cf1a71f4944acf356acc6168f17b544a44e057f416e30c8dec"></a>OSS_RESULTCODE_BUCKETS_NOT_EMPTY</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="afad70044f7e0276cf1a71f4944acf356abcd8359ff639232dbda94225377b1f56"></a>OSS_RESULTCODE_FILE_GROUP_TOO_LARGE</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="afad70044f7e0276cf1a71f4944acf356af1584c1e99c117bafb3dc0571ead2523"></a>OSS_RESULTCODE_FILE_PART_STALE</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="afad70044f7e0276cf1a71f4944acf356af4ba535e2e8e8215c8ef6fe018c8a4ab"></a>OSS_RESULTCODE_INVALID_ARGUMENT</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="afad70044f7e0276cf1a71f4944acf356aead34a1afa4e92ec05e7502e7cf70546"></a>OSS_RESULTCODE_INVALID_ACCESS_KEY_ID</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="afad70044f7e0276cf1a71f4944acf356aeb2834867143da9141c6aa370497764f"></a>OSS_RESULTCODE_INVALID_BUCKET_NAME</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="afad70044f7e0276cf1a71f4944acf356aac55720c0a1f3e6179e86ea27147a67c"></a>OSS_RESULTCODE_INVALID_OBJECT_NAME</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="afad70044f7e0276cf1a71f4944acf356a680f9c38c304401f0e738083a8ceb49b"></a>OSS_RESULTCODE_INVALID_PART</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="afad70044f7e0276cf1a71f4944acf356a2b04196c0e7b40feb41a75dfdb86f485"></a>OSS_RESULTCODE_INVALID_PART_ORDER</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="afad70044f7e0276cf1a71f4944acf356aa353bb12d45b298acf4177419a937b8a"></a>OSS_RESULTCODE_INTERNAL_ERROR</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="afad70044f7e0276cf1a71f4944acf356ab72ea2f1674b10126e56690fd71e6fad"></a>OSS_RESULTCODE_MISSING_CONTENT_LENGTH</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="afad70044f7e0276cf1a71f4944acf356a87dacac6309fd2e277be3c615883af07"></a>OSS_RESULTCODE_NO_SUCH_BUCKET</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="afad70044f7e0276cf1a71f4944acf356ad7c113ef473fa2eef60d2ec63ce9d6d7"></a>OSS_RESULTCODE_NO_SUCH_KEY</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="afad70044f7e0276cf1a71f4944acf356aa75cd17e1c2e613fd61003c559e2cb24"></a>OSS_RESULTCODE_NOT_IMPLEMENTED</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="afad70044f7e0276cf1a71f4944acf356a7dec5e462e058c425a8a722c3c36ed3d"></a>OSS_RESULTCODE_PRECONDITION_FAILED</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="afad70044f7e0276cf1a71f4944acf356aa11e1efc5137fe2d34b6b3edf3d756b3"></a>OSS_RESULTCODE_REQUEST_TIME_TOO_SKEWED</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="afad70044f7e0276cf1a71f4944acf356a251346918de269fca3c9c25efd321860"></a>OSS_RESULTCODE_REQUEST_TIMEOUT</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="afad70044f7e0276cf1a71f4944acf356ae5031f6befb7bb9e6b787321d50032d1"></a>OSS_RESULTCODE_SIGNATURE_DOES_NOT_MATCH</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="afad70044f7e0276cf1a71f4944acf356a96d9e63bfad64b793cbb74f10a1012a6"></a>OSS_RESULTCODE_TOO_MANY_BUCKETS</em>&nbsp;</td><td>
+</td></tr>
+</table>
+</dd>
+</dl>
+
+<p>在文件 <a class="el" href="_o_s_s_api_8h_source.html">OSSApi.h</a> 第 <a class="el" href="_o_s_s_api_8h_source.html#l00053">53</a> 行定义.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2012年 九月 28日 星期五 14:56:22 , 为 libOSS使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.2
+</small></address>
+</body>
+</html>
